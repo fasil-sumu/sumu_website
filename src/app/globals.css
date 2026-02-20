@@ -1,0 +1,142 @@
+@import 'tailwindcss';
+/* vendors css will be added here */
+
+@import '../styles/variables.css';
+@import '../styles/icon-font.css';
+@import '../styles/typography.css';
+@import '../styles/common.css';
+@import '../styles/base.css';
+@import '../styles/button.css';
+@import '../styles/badge.css';
+@import '../styles/header.css';
+@import '../styles/custom-swiper.css';
+@import '../styles/number-animation.css';
+@import '../styles/lenis.css';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* RTL-specific styles */
+.rtl .text-left {
+  text-align: right;
+}
+
+.rtl .text-right {
+  text-align: left;
+}
+
+.rtl .ml-auto {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.rtl .mr-auto {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.rtl .pl-4 {
+  padding-left: 0;
+  padding-right: 1rem;
+}
+
+.rtl .pr-4 {
+  padding-right: 0;
+  padding-left: 1rem;
+}
+
+.rtl .border-l {
+  border-left: none;
+  border-right: 1px solid;
+}
+
+.rtl .border-r {
+  border-right: none;
+  border-left: 1px solid;
+}
+
+/* RTL flexbox adjustments */
+.rtl .flex-row {
+  flex-direction: row-reverse;
+}
+
+.rtl .space-x-4 > * + * {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+.rtl .space-x-2 > * + * {
+  margin-left: 0;
+  margin-right: 0.5rem;
+}
+
+/* RTL dropdown positioning */
+.rtl .absolute.right-0 {
+  right: auto;
+  left: 0;
+}
+
+/* RTL form elements */
+.rtl input[type='text'],
+.rtl input[type='email'],
+.rtl input[type='password'],
+.rtl textarea {
+  text-align: right;
+}
+
+/* RTL navigation */
+.rtl .navbar-nav {
+  flex-direction: row-reverse;
+}
+
+/* RTL icons and arrows */
+.rtl .arrow-left {
+  transform: scaleX(-1);
+}
+
+.rtl .arrow-right {
+  transform: scaleX(-1);
+}
+
+/* Prevent layout shift during hydration */
+header {
+  min-height: 0px;
+}
+
+/* Ensure navbar stays centered during load */
+header > div {
+  will-change: auto;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Smooth navbar fade-in animation */
+@keyframes fadeInNav {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+/* Loading skeleton pulse animation */
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

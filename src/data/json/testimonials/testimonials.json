@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "quote": "Integrating OceanSmart saved us hours each week and improved our cash flow visibility.",
+    "avatar": "/images/avatar/ahmed-testimonial.jpg",
+    "name": "Ahmed Saleem",
+    "position": "CEO, Saleem Enterprises",
+    "rating": "4.9"
+  },
+  {
+    "id": 2,
+    "quote": "The built-in payment tracking has helped us maintain cash flow clarity like never before.",
+    "avatar": "/images/avatar/omar-testimonial.jpg",
+    "name": "Omar Khan",
+    "position": "Owner, Oman Crafts",
+    "rating": "5.0"
+  },
+  {
+    "id": 3,
+    "quote": "As a small business owner, your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations. your service has been a lifesaver in managing cash flow and optimizing financial strategies. It has truly exceeded my expectations.  ",
+    "avatar": "/images/avatar/sarah-testimonial.jpg",
+    "name": "Emma Rodriguez",
+    "position": "Operations Manager",
+    "rating": "4.8"
+  },
+  {
+    "id": 4,
+    "quote": "OceanSmart’s intuitive interface simplified our billing process. Our finance team loves it!",
+    "avatar": "/images/avatar/testimonial04.jpg",
+    "name": "Layla Hassan",
+    "position": "Finance Manager, Gulf Retail",
+    "rating": "3.8"
+  }
+
+]
