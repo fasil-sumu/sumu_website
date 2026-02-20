@@ -1,28 +1,19 @@
 'use client';
 
 import { useMobileMenuContext } from '@/context/MobileMenuContext';
+import { navigationItems } from '@/data/header';
 import { cn } from '@/utils/cn';
 import logoDark from '@public/images/shared/logo-dark.svg';
 import logo from '@public/images/shared/logo.svg';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
-import AboutUsMenu from './mobile-menu/AboutUsMenu';
-// import BlogMenu from './mobile-menu/BlogMenu';
-import FeaturesMenu from './mobile-menu/FeaturesMenu';
-import HomeMenu from './mobile-menu/HomeMenu';
-// import IntegrationMenu from './mobile-menu/IntegrationMenu';
-// import LoginMenu from './mobile-menu/LoginMenu';
-// import PricingMenu from './mobile-menu/PricingMenu';
-// import ProcessMenu from './mobile-menu/ProcessMenu';
-import ServicesMenu from './mobile-menu/ServicesMenu';
-// import SignUpMenu from './mobile-menu/SignUpMenu';
-// import TeamsMenu from './mobile-menu/TeamsMenu';
-// import TestimonialMenu from './mobile-menu/TestimonialMenu';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 const MobileMenu = () => {
   const { isOpen, closeMenu } = useMobileMenuContext();
+  const { t } = useTranslation();
   const sidebarRef = useRef<HTMLElement>(null);
 
   // Handle click outside to close menu
@@ -66,29 +57,16 @@ const MobileMenu = () => {
         </div>
         <div className="scroll-bar h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">
           <ul>
-            <HomeMenu />
-
-            <AboutUsMenu />
-
-            {/* <BlogMenu /> */}
-
-            <ServicesMenu />
-
-            {/* <IntegrationMenu /> */}
-
-            <FeaturesMenu />
-
-            {/* <ProcessMenu />
-
-            <TestimonialMenu />
-
-            <TeamsMenu />
-
-            <PricingMenu />
-
-            <LoginMenu />
-
-            <SignUpMenu /> */}
+            {navigationItems.map((item) => (
+              <li key={item.id}>
+                <Link
+                  href={item.href ?? '#'}
+                  onClick={closeMenu}
+                  className="text-tagline-1 text-secondary/60 dark:text-accent/60 border-stroke-4 dark:border-stroke-6 block w-full border-b py-3 text-left font-normal transition-all duration-200 hover:text-brand">
+                  {t(item.label)}
+                </Link>
+              </li>
+            ))}
           </ul>
 
           {/* Language Switcher */}
