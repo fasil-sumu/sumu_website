@@ -1,8 +1,8 @@
 import avatar1Img from '@public/images/about-page-03/avatar-1.png';
 import avatar2Img from '@public/images/about-page-03/avatar-2.png';
 import avatar3Img from '@public/images/about-page-03/avatar-3.png';
-import heroImageDarkImg from '@public/images/home-page-13/hero-image-dark.png';
-import heroImageImg from '@public/images/home-page-13/hero-image.png';
+import heroImageDarkImg from '@public/images/about-page-03/hero-image-dark.png';
+import heroImageImg from '@public/images/about-page-03/hero-image.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 

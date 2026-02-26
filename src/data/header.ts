@@ -35,7 +35,7 @@ export const navigationItems: NavigationItem[] = [
   {
     id: 'about',
     label: 'navigation.about',
-    href: '/about-01',
+    href: '/about-03',
     hasDropdown: false,
     megaMenuComponent: 'AboutMenu',
   },
