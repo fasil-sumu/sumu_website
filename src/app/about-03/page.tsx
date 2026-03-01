@@ -12,8 +12,8 @@ import Feature2 from '@/components/features-02/Features';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'AboutPage-03 - NextSaaS',
-  description: 'About Page - NextSaaS',
+  title: 'About - Sumu',
+  description: 'About Sumu fintech and business platform',
 };
 
 const AboutPage03 = () => {
@@ -26,8 +26,8 @@ const AboutPage03 = () => {
       <main className="bg-background-3 dark:bg-background-5">
         <PageHero
           className="bg-background-3 pt-32 sm:pt-36 md:pt-40 xl:pt-[170px] dark:bg-background-5"
-          title="About us 3"
-          heading="About us"
+          title="About"
+          heading="About"
           link="/about-03"
         />
         <Feature />

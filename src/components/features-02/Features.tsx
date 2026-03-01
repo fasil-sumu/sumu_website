@@ -23,12 +23,12 @@ const Features = () => {
           {/* feature heading  */}
           <div className="space-y-3 text-center">
             <RevealAnimation delay={0.3}>
-              <h2 className="max-w-[814px] mx-auto">Everything you need to manage money smarter</h2>
+              <h2 className="max-w-[814px] mx-auto">A unified ecosystem built for modern businesses</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[734px] mx-auto">
-                NextSaaS simplifies finance with powerful tools designed for clarity, speed, and growth. Whether you’re
-                budgeting, forecasting, or tracking cash flow—our platform keeps you in control.
+                Sumu goes beyond traditional accounting and payment tools by combining automation, compliance,
+                analytics, and integrations in one platform designed for real business growth.
               </p>
             </RevealAnimation>
           </div>
@@ -44,13 +44,13 @@ const Features = () => {
                   <figure className="overflow-hidden p-4 bg-background-3 dark:bg-background-7 rounded-2xl">
                     <Image
                       src={cardOneImg}
-                      alt="Fast and secure cloud upload feature"
+                      alt="Invoice and VAT automation feature"
                       className="w-full h-full object-cover dark:hidden"
                       loading="lazy"
                     />
                     <Image
                       src={cardOneImgDark}
-                      alt="Fast and secure cloud upload feature"
+                      alt="Invoice and VAT automation feature"
                       className="w-full h-full object-cover hidden dark:block"
                       loading="lazy"
                     />
@@ -58,8 +58,8 @@ const Features = () => {
                 </div>
                 {/* card content  */}
                 <div className="space-y-1">
-                  <h3 className="text-heading-5">Fast &amp; secure cloud upload</h3>
-                  <p>Store, access, and manage data from anywhere.</p>
+                  <h3 className="text-heading-5">Invoice and VAT automation</h3>
+                  <p>Create invoices and automate VAT with ease.</p>
                 </div>
               </div>
             </RevealAnimation>
@@ -71,13 +71,13 @@ const Features = () => {
                   <figure className="overflow-hidden p-4 bg-background-3 dark:bg-background-7 rounded-2xl">
                     <Image
                       src={cardTwoImg}
-                      alt="Automated workflows feature"
+                      alt="Payments management feature"
                       className="w-full h-full object-cover dark:hidden"
                       loading="lazy"
                     />
                     <Image
                       src={cardTwoImgDark}
-                      alt="Automated workflows feature"
+                      alt="Payments management feature"
                       className="w-full h-full object-cover hidden dark:block"
                       loading="lazy"
                     />
@@ -85,8 +85,8 @@ const Features = () => {
                 </div>
                 {/* card content  */}
                 <div className="space-y-1">
-                  <h3 className="text-heading-5">Automated workflows</h3>
-                  <p>Store, access, and manage data from anywhere.</p>
+                  <h3 className="text-heading-5">Effortless payment management</h3>
+                  <p>Accept and manage payments from one place.</p>
                 </div>
               </div>
             </RevealAnimation>
@@ -98,13 +98,13 @@ const Features = () => {
                   <figure className="overflow-hidden p-4 bg-background-3 dark:bg-background-7 rounded-2xl">
                     <Image
                       src={cardThreeImg}
-                      alt="Smart search and AI insights feature"
+                      alt="Compliance and regulation feature"
                       className="w-full h-full object-cover dark:hidden"
                       loading="lazy"
                     />
                     <Image
                       src={cardThreeImgDark}
-                      alt="Smart search and AI insights feature"
+                      alt="Compliance and regulation feature"
                       className="w-full h-full object-cover hidden dark:block"
                       loading="lazy"
                     />
@@ -112,8 +112,8 @@ const Features = () => {
                 </div>
                 {/* card content  */}
                 <div className="space-y-1">
-                  <h3 className="text-heading-5">Smart search &amp; AI insights</h3>
-                  <p>Store, access, and manage data from anywhere.</p>
+                  <h3 className="text-heading-5">Regional compliance by design</h3>
+                  <p>Stay aligned with tax and regulatory frameworks.</p>
                 </div>
               </div>
             </RevealAnimation>
@@ -129,13 +129,13 @@ const Features = () => {
                   <figure className="overflow-hidden p-4 bg-background-3 dark:bg-background-7 rounded-2xl">
                     <Image
                       src={cardFourImg}
-                      alt="Teamwork and leadership feature"
+                      alt="Cash flow tracking feature"
                       className="w-full h-full object-cover dark:hidden"
                       loading="lazy"
                     />
                     <Image
                       src={cardFourImgDark}
-                      alt="Teamwork and leadership feature"
+                      alt="Cash flow tracking feature"
                       className="w-full h-full object-cover hidden dark:block"
                       loading="lazy"
                     />
@@ -143,8 +143,8 @@ const Features = () => {
                 </div>
                 {/* card content  */}
                 <div className="space-y-1">
-                  <h3 className="text-heading-5">Teamwork &amp; leadership</h3>
-                  <p>Store, access, and manage data from anywhere.</p>
+                  <h3 className="text-heading-5">Real-time operational control</h3>
+                  <p>Track expenses, payroll, and cash flow in real time.</p>
                 </div>
               </div>
             </RevealAnimation>
@@ -156,13 +156,13 @@ const Features = () => {
                   <figure className="overflow-hidden p-4 bg-background-3 dark:bg-background-7 rounded-2xl">
                     <Image
                       src={cardFiveImg}
-                      alt="Custom dashboards feature"
+                      alt="Analytics and API feature"
                       className="w-full h-full object-cover dark:hidden"
                       loading="lazy"
                     />
                     <Image
                       src={cardFiveImgDark}
-                      alt="Custom dashboards feature"
+                      alt="Analytics and API feature"
                       className="w-full h-full object-cover hidden dark:block"
                       loading="lazy"
                     />
@@ -170,8 +170,8 @@ const Features = () => {
                 </div>
                 {/* card content  */}
                 <div className="space-y-1">
-                  <h3 className="text-heading-5">Custom dashboards</h3>
-                  <p>Store, access, and manage data from anywhere.</p>
+                  <h3 className="text-heading-5">Analytics and secure APIs</h3>
+                  <p>Unlock insights and connect with partners, banks, and platforms.</p>
                 </div>
               </div>
             </RevealAnimation>

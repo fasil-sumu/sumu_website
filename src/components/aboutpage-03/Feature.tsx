@@ -15,18 +15,20 @@ const Feature = () => {
       <div className="main-container space-y-14 md:space-y-[70px]">
         <div className="space-y-3 text-center">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan mb-5">Passion meets purpose</span>
+            <span className="badge badge-cyan mb-5">About</span>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
             <h2 className="xl:text-heading-1 font-medium lg:max-w-[980px] mx-auto">
-              Engineered for advancement. Crafted for potential.
+              Sumu is your digital companion for business growth and automation.
             </h2>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <p className="lg:max-w-[904px] mx-auto">
-              At NextSaaS, we create tools that simplify your work, scale with your growth, and bring clarity to
-              complexity. From streamlining operations to unlocking insights, our platform is built to support your
-              entire journey—from startup to enterprise.
+              Sumu is a next-generation, bilingual (Arabic-English) business and fintech platform designed to empower
+              SMEs, startups, and independent professionals across the Middle East, GCC, and global markets. Built on
+              simplicity, compliance, and intelligence, Sumu helps businesses automate financial and operational tasks
+              while staying aligned with regional regulations and future-ready for open banking and digital
+              transformation.
             </p>
           </RevealAnimation>
         </div>
@@ -93,7 +95,7 @@ const Feature = () => {
             {/* Investment  */}
             <RevealAnimation delay={0.4} direction="right">
               <div className="flex items-start flex-col bg-secondary dark:bg-accent w-full md:w-[148px] h-auto md:h-[91px] gap-1 p-4 rounded-2xl">
-                <h3 className="text-tagline-2 text-accent dark:text-secondary font-normal">Investment target</h3>
+                <h3 className="text-tagline-2 text-accent dark:text-secondary font-normal">VAT automation</h3>
                 <h3 className="text-heading-5 flex items-center justify-center gap-0.5 text-ns-green dark:text-secondary font-normal">
                   <NumberAnimation number={76} speed={2500} interval={180} rooms={2} heightSpaceRatio={2.6}>
                     76
@@ -107,7 +109,7 @@ const Feature = () => {
             <RevealAnimation delay={0.6} direction="right">
               <div className="bg-white dark:bg-black rounded-2xl p-6 max-w-full md:max-w-[288px] min-w-full md:min-w-[288px]">
                 <div className="text-left">
-                  <span className="text-tagline-2 font-normal text-secondary dark:text-accent">Balance</span>
+                  <span className="text-tagline-2 font-normal text-secondary dark:text-accent">Connected accounts</span>
                   <h3 className="text-[40px] flex items-center font-normal leading-[1.2] mt-2 mb-[30px]">
                     $
                     <NumberAnimation number={45324} speed={2000} interval={200} rooms={5} heightSpaceRatio={2.2} />
@@ -121,7 +123,7 @@ const Feature = () => {
                       <span className="bg-ns-red flex items-center justify-center rounded-full size-[18px] p-1">
                         <DownArrowIcon className="size-[8px] dark:fill-background-5" />
                       </span>
-                      Income
+                      Payments
                     </div>
                     <div className="text-lg flex items-center font-medium leading-[1.5] dark:text-accent">
                       $

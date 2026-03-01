@@ -16,15 +16,16 @@ const OurMission = () => {
           <div className="col-span-12 lg:col-span-6 mx-4 xl:mx-0">
             <div className="space-y-3">
               <RevealAnimation delay={0.1}>
-                <span className="badge badge-cyan mb-5">Our Mission</span>
+                <span className="badge badge-cyan mb-5">Mission</span>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <h2>Empowering teams to collaborate and thrive with intelligent</h2>
+                <h2>Simplifying business operations through smart automation and AI.</h2>
               </RevealAnimation>
               <RevealAnimation delay={0.4}>
                 <p>
-                  In today&apos;s fast-paced, digitally connected world, successful teams rely on more than just
-                  talent—they thrive on intelligent collaboration.
+                  Our mission is to keep businesses compliant with regional tax and financial regulations, connect
+                  global financial systems with local language and culture, and provide secure, scalable solutions that
+                  grow alongside every client.
                 </p>
               </RevealAnimation>
             </div>
@@ -119,9 +120,11 @@ const OurMission = () => {
                     </div>
                   </div>
                   <h6 className="mb-1 text-secondary dark:text-accent text-xl font-normal leading-[1 .5]">
-                    20k+ global investment
+                    Secure, scalable, and compliant
                   </h6>
-                  <p className="text-secondary/60 dark:text-accent/60">Get Global Investment policy in the year</p>
+                  <p className="text-secondary/60 dark:text-accent/60">
+                    Built for SMEs, startups, and independent professionals.
+                  </p>
                 </div>
               </div>
             </RevealAnimation>

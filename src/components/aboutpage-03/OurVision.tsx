@@ -12,16 +12,15 @@ const OurVision = () => {
       <div className="main-container space-y-16 md:space-y-[100px]">
         <div className="space-y-3 text-center">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-cyan mb-5">Our vision</span>
+            <span className="badge badge-cyan mb-5">Vision</span>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <h2>Motivated by Intent, steered by insight</h2>
+            <h2>Leading bilingual fintech for the Middle East and beyond.</h2>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <p className="max-w-[806px] mx-auto">
-              Every great journey begins with a clear purpose—and it&apos;s that sense of intent that drives everything
-              we do. But purpose alone isn&apos;t enough. To truly make meaningful progress, we combine our motivation
-              with sharp
+              Our vision is to become the leading Arabic-English fintech and business platform, empowering SMEs and
+              entrepreneurs with intelligent, compliant, and future-ready tools for sustainable long-term growth.
             </p>
           </RevealAnimation>
         </div>

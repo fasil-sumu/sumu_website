@@ -7,19 +7,23 @@ import LinkButton from '../ui/button/LinkButton';
 const checklist = [
   {
     id: 1,
-    text: 'Embracing clarity means prioritizing simplicity and focus',
+    text: 'Innovation: smarter business solutions through advanced technology.',
   },
   {
     id: 2,
-    text: 'Innovation driven by customer insights leads to solutions',
+    text: 'Integrity: trust through transparency, compliance, and accountability.',
   },
   {
     id: 3,
-    text: 'Implementing security measures as a foundational principle',
+    text: 'Simplicity: accessible and intuitive tools for everyday operations.',
   },
   {
     id: 4,
-    text: 'Building transparency and trust is essential for fostering',
+    text: 'Empowerment: helping SMEs and entrepreneurs focus on growth.',
+  },
+  {
+    id: 5,
+    text: 'Sustainability: long-term support for resilient, future-ready businesses.',
   },
 ];
 const Innovation = () => {
@@ -34,13 +38,13 @@ const Innovation = () => {
             <div className="py-14 px-6 md:px-11 grid max-sm:grid-cols-1 grid-cols-2 max-sm:gap-10 gap-5">
               <div className="max-w-[500px]">
                 <h2 className="text-accent text-heading-5 mb-8">
-                  At our core, we believe in integrity, innovation, and collaboration.
+                  Our commitment is to bridge local business needs with global digital transformation.
                 </h2>
                 <div>
                   <LinkButton
                     href="/contact-us"
                     className="btn btn-md btn-white hover:btn-primary dark:btn-transparent">
-                    Get started
+                    Contact Sales
                   </LinkButton>
                 </div>
               </div>

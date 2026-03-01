@@ -7,7 +7,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import CTAV1 from '../shared/cta/CTAV1';
 
 const CTA = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
   const isRTL = i18n.language === 'ar';
 
   return (
@@ -25,12 +25,12 @@ const CTA = () => {
 
             <CTAV1
               className="lg:py-[100px] py-[50px] md:py-20 "
-              description={t('homepage08.cta.description')}
+              description="Contact Sales | Contact Support | Careers. Join us to transform businesses in Oman and across MENA, and explore our Blogs and Partnerships."
               headingClass="text-accent"
               descriptionClass="text-accent/60"
-              ctaHeading={t('homepage08.cta.heading')}
-              ctaBtnText={t('homepage08.cta.button')}
-              badgeText={t('homepage08.cta.badge')}
+              ctaHeading="Ready to grow with Sumu?"
+              ctaBtnText="Contact Sales"
+              badgeText="Support, Careers, and Partnerships"
               badgeClass="badge badge-blur text-ns-green"
               inputFieldClass="sm:w-auto flex-1 bg-accent/5 border-0 px-5 py-3 shadow-1 rounded-full min-h-[48px] h-12 placeholder:text-accent/40 placeholder:text-tagline-1 placeholder:font-normal focus:outline-none focus:border focus:border-primary-600 dark:focus:border-primary-400 text-accent font-normal w-[85%]"
               listTextClass="text-accent font-normal text-tagline-3 sm:text-tagline-2"
