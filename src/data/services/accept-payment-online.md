@@ -1,44 +1,38 @@
 ---
 title: 'Accept Payment Online'
-description: 'Seamless, Secure, and Global Payment Solutions. With Sumu, accepting payments online has never been easier. Whether you run a small business, startup, or growing enterprise, our platform—powered through licensed payment partners—gives you the ability to collect payments from your customers securely and effortlessly.'
+description: 'Seamless, Secure, and Global Payment Solutions. With Sumu, accepting payments online has never been easier. Our platform gives you the ability to collect payments from your customers securely and effortlessly.'
 icon: 'ns-shape-10'
-image: '/images/home-page-1/services-payment-online.svg'
-coverImg: '/images/services/service-payment-online-cover.png'
+image: '/images/home-page-1/services-accept-payment.svg'
+coverImg: '/images/services/service-accept-payment-cover.png'
 userReview:
-  name: 'Fatima Al-Zahra'
-  image: '/images/avatar/avatar-4.png'
-  reviewContent: 'Start accepting payments online today with Sumu. From the moment you’re connected, your customers can pay you—fast, safe, and hassle-free.'
-  userRole: 'E-commerce Manager, Digital Retail Solutions'
+  name: 'Mohammed Al-Hashimi'
+  image: '/images/avatar/avatar-8.png'
+  reviewContent: 'Accepting online payments has never been easier. Sumu integration is seamless, and our customers love the variety of payment options available.'
+  userRole: 'E-commerce Director'
 ---
 
-## Seamless, Secure, and Global Payment Solutions
+## Seamless, Secure, and Global Payments
 
-With Sumu, accepting payments online has never been easier. Whether you run a small business, startup, or growing enterprise, our platform—powered through licensed payment partners—gives you the ability to collect payments from your customers securely and effortlessly.
+With Sumu, accepting payments online has never been easier. Our platform—powered through licensed payment partners—gives you the ability to collect payments securely and effortlessly.
 
-## Why Choose Sumu for Online Payments?
+## Why Choose Sumu?
 
-- **Effortless Setup**: Get started quickly with simple integration into your website, mobile app, or invoicing system.
-- **Licensed Partner Network**: We work with trusted, regulated payment providers to ensure compliance, security, and peace of mind.
-- **Multiple Payment Methods**: Accept credit and debit cards, bank transfers, mobile wallets, and more—tailored to your customers' preferences.
-- **Global Reach**: Expand beyond borders with support for international currencies and cross-border payments.
-- **Transparent Pricing**: No hidden charges—clear and fair fees, so you always know what you're paying.
-- **Secure & Compliant**: Transactions are protected with advanced encryption and industry-standard compliance measures.
+- **Effortless Setup** – Simple integration into your website, mobile app, or invoicing system
+- **Licensed Partners** – Trusted, regulated payment providers ensure compliance and security
+- **Multiple Payment Methods** – Accept cards, bank transfers, mobile wallets, and more
+- **Global Reach** – Support for international currencies and cross-border payments
+- **Transparent Pricing** – Clear and fair fees with no hidden charges
+- **Secure & Compliant** – Advanced encryption and industry-standard compliance
 
-## How It Works
+## Payment Methods
 
-- **Sign Up with Sumu**: Create your account and connect to our platform.
-- **Integrate Payment Gateway**: Use our simple APIs or pre-built plugins to start collecting payments online.
-- **Start Accepting Payments**: From the moment you're connected, your customers can pay you—fast, safe, and hassle-free.
+Accept payments the way your customers prefer:
 
-## Designed for Every Business
+- Credit and debit cards (Visa, Mastercard, Amex)
+- Bank transfers and direct debits
+- Mobile wallets (Apple Pay, Google Pay)
+- Local and international payment options
 
-- **E-Commerce Stores** – Streamline checkout and boost conversions.
-- **Freelancers & SMEs** – Send VAT-compliant invoices and get paid online.
-- **Subscription Businesses** – Automate recurring billing with ease.
-- **Enterprises** – Scale globally with advanced integrations.
+## Security First
 
-## Grow with Sumu
-
-Sumu is more than a payments solution—it's your partner in growth. With tools for analytics, invoicing, and financial automation, we help your business save time, stay compliant, and focus on what matters most: your customers.
-
-Start accepting payments online today with Sumu.
+End-to-end encryption, PCI DSS Level 1 compliance, 3D Secure authentication, fraud detection algorithms, and secure tokenization protect your customers' payment data.

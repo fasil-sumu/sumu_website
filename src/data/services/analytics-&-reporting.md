@@ -1,41 +1,37 @@
 ---
 title: 'Analytics & Reporting'
-description: "Transform Data Into Actionable Insights. Sumu's analytics and reporting tools help you turn raw financial and business data into actionable insights that drive growth and improve decision-making across your organization."
+description: 'Turn Data into Decisions. With Sumu Analytics and Reporting, you gain actionable insights into your finances, operations, and growth all from one intuitive dashboard.'
 icon: 'ns-shape-13'
 image: '/images/home-page-1/services-analytics-reporting.svg'
 coverImg: '/images/services/service-analytics-reporting-cover.png'
 userReview:
-  name: 'Khalil Rahman'
-  image: '/images/avatar/avatar-1.png'
-  reviewContent: 'Sumu transforms complex data into clear, actionable insights that help us make better business decisions. The real-time dashboards are game-changers for our strategic planning.'
-  userRole: 'Business Intelligence Director, Growth Analytics Inc.'
+  name: 'Khalid Al-Mansouri'
+  image: '/images/avatar/avatar-7.png'
+  reviewContent: 'The analytics dashboard gives us real-time insights that help us make faster, smarter decisions. It is like having a financial advisor built into the platform.'
+  userRole: 'Business Owner'
 ---
 
-## Transform Data Into Actionable Insights
+## Turn Data into Decisions
 
-Sumu's analytics and reporting tools help you turn raw financial and business data into actionable insights that drive growth and improve decision-making across your organization.
+With Sumu's Analytics & Reporting, you gain actionable insights into your finances, operations, and growth—all from one intuitive dashboard. Track performance, monitor cash flow, and make smarter decisions backed by real-time data.
 
-## Key Features
+## Why Choose Sumu?
 
-- **Real-Time Dashboards**: Visualize your most important metrics on customizable dashboards.
-- **Financial Analytics**: Understand profitability, cash flow, and financial performance trends.
-- **Sales Performance**: Track sales metrics, conversion rates, and revenue trends.
-- **Custom Reports**: Build reports tailored to your specific business needs.
-- **Predictive Analytics**: Leverage machine learning to forecast trends and identify opportunities.
-- **Automated Insights**: Receive alerts and recommendations based on data patterns.
+- **Unified Dashboard** – See payments, invoices, bank accounts, VAT, and expenses in one place
+- **Real-Time Insights** – Live financial and operational metrics that matter most
+- **Customizable Reports** – Generate tailored reports for revenue, expenses, or VAT summaries
+- **Data-Driven Growth** – Identify trends, track KPIs, and forecast performance
+- **Export & Share** – Download reports in multiple formats for easy sharing
+- **Secure & Reliable** – All reports generated securely with compliance and data integrity
 
-## Advanced Analytics Capabilities
+## Real-Time Business Intelligence
 
-- **Comparative Analysis**: Compare performance across time periods, departments, or business units.
-- **Drill-Down Functionality**: Explore details behind high-level metrics with a few clicks.
-- **Interactive Visualizations**: Charts, graphs, and tables that respond to your input.
-- **Benchmarking**: Compare your performance against industry standards or historical data.
-- **Data Export**: Export reports in multiple formats for presentations or further analysis.
+Monitor revenue trends and identify best-performing products. Track spending patterns and identify cost-reduction opportunities. Predict future cash positions based on historical data. Understand payment behaviors and identify valuable customers.
 
-## Industry-Specific Solutions
+## Customizable Reporting
 
-Our analytics tools are designed to meet the unique needs of businesses in the GCC region, with support for local currencies, languages, and regulatory requirements. Whether you're in manufacturing, retail, services, or e-commerce, our analytics platform adapts to your business model.
+Choose from pre-built templates or create custom reports. Filter by date range, client, product, or category. Export to PDF, Excel, or CSV formats. Schedule automated report generation and share securely with stakeholders.
 
-## Data Security & Compliance
+## Who Benefits?
 
-All analytics and reporting features are built with security in mind, ensuring your sensitive business data remains protected and compliant with regional regulations.
+Perfect for SMEs and freelancers simplifying bookkeeping, finance teams automating reporting, and business leaders making strategic decisions with clear, data-driven insights.

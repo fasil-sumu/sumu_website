@@ -1,36 +1,37 @@
 ---
 title: 'Banking & Accounts Aggregation'
-description: 'Streamline Your Financial Operations. With Sumu, connect all your banking accounts in one place for better visibility and control over your financial operations. Our secure aggregation tools bring together data from multiple banks and financial institutions into a unified dashboard.'
+description: 'All Your Finances. One Smart Dashboard. Managing multiple bank accounts can be overwhelming. With Sumu Bank Accounts Aggregation, you can securely connect and view all your financial accounts in one place.'
 icon: 'ns-shape-12'
 image: '/images/home-page-1/services-banking-aggregation.svg'
 coverImg: '/images/services/service-banking-aggregation-cover.png'
 userReview:
-  name: 'Layla Hassan'
-  image: '/images/avatar/avatar-2.png'
-  reviewContent: 'Gain complete oversight of your financial position across all accounts with Sumu. The unified dashboard gives you real-time insights into cash flows and account balances.'
-  userRole: 'Financial Controller, Regional Holdings'
+  name: 'Fatima Al-Zahra'
+  image: '/images/avatar/avatar-4.png'
+  reviewContent: 'Sumu has transformed how we manage our multiple bank accounts. Everything is now visible in one dashboard, making financial decisions so much easier.'
+  userRole: 'Finance Manager'
 ---
 
-## Streamline Your Financial Operations
+## All Your Finances. One Dashboard.
 
-With Sumu, connect all your banking accounts in one place for better visibility and control over your financial operations. Our secure aggregation tools bring together data from multiple banks and financial institutions into a unified dashboard.
+Managing multiple bank accounts can be overwhelming. With Sumu's Bank Accounts Aggregation, you can securely connect and view all your financial accounts in one place. Gain real-time visibility and make smarter business decisions.
 
-## Key Benefits
+## Why Choose Sumu?
 
-- **Unified View**: See all your accounts at a glance, regardless of which bank or institution they're held with.
-- **Real-Time Monitoring**: Track transactions as they happen across all your accounts.
-- **Automated Reconciliation**: Match transactions to your accounting records with minimal effort.
-- **Cash Flow Forecasting**: Better predict your financial position based on aggregated data.
-- **Security First**: Enterprise-grade encryption and security protocols protect your financial data.
-- **Compliance Ready**: Maintain regulatory compliance with detailed audit trails and reporting.
+- **One Unified View** – See balances, transactions, and cash flows across all accounts
+- **Licensed & Trusted Partners** – Regulated open-banking providers ensure safe connections
+- **Real-Time Insights** – Up-to-date financial data for tracking expenses and liquidity
+- **Smart Categorization** – Automatically categorize transactions for easier accounting
+- **Better Decisions** – Forecast, plan, and manage working capital with confidence
+- **Secure & Compliant** – Enterprise-grade encryption and banking standards compliance
 
 ## How It Works
 
-- **Connect Accounts**: Securely link accounts from multiple banks and financial institutions.
-- **Sync Data**: Automatic daily synchronization keeps your financial picture up-to-date.
-- **Monitor & Analyze**: Use our dashboard to track spending, cash flow, and financial trends.
-- **Report & Export**: Generate custom reports and export data for your accounting systems.
+Authorize your bank connections securely via licensed open-banking partners. View balances, transactions, and summaries in real time on your Sumu dashboard. Use integrated analytics to monitor cash flow and optimize financial decisions.
 
-## Designed for Modern Businesses
+## Automate Reconciliation
 
-Whether you operate multiple business accounts, investment portfolios, or simply want better visibility into your financial position, Sumu's banking aggregation tools give you the insights you need to make informed decisions.
+Reconcile bank and credit card statements with ease. Our intelligent matching algorithm identifies and matches transactions between your bank statement and accounting records automatically.
+
+## Who Benefits?
+
+Perfect for SMEs, freelancers managing multiple accounts, growing companies with branches, and finance teams saving time on reconciliation.

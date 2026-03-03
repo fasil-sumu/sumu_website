@@ -63,28 +63,36 @@ Common Styles all over the sites
 /* ==========SERVICES DETAILS========== */
 .services-details-content {
   h2 {
-    @apply text-heading-4 pb-2 font-normal;
+    @apply text-heading-4 md:text-heading-3 pb-4 md:pb-5 pt-2 font-medium text-secondary dark:text-accent;
+  }
+
+  h2:first-child {
+    @apply pt-0;
   }
 
   p {
-    @apply py-4 md:py-6;
+    @apply py-2 md:py-3 leading-[1.8] text-base md:text-lg opacity-90;
     img {
       @apply !rounded-2xl overflow-hidden;
     }
   }
 
+  strong {
+    @apply font-semibold text-secondary dark:text-accent;
+  }
+
   img {
-    @apply h-full w-full !rounded-2xl object-cover max-w-[767px] py-8 md:py-[72px] overflow-hidden;
+    @apply h-full w-full !rounded-2xl object-cover max-w-[767px] py-6 md:py-8 overflow-hidden;
   }
 
   ul {
-    @apply space-y-4;
+    @apply space-y-3 md:space-y-4 my-6;
     li {
-      @apply flex items-start gap-3 first:mt-8;
+      @apply flex items-start gap-4 text-base md:text-lg leading-[1.7];
 
       &::before {
         content: '';
-        @apply shrink-0 mt-2;
+        @apply shrink-0 mt-[0.35rem];
         width: 20px;
         height: 20px;
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='10' fill='%231a1a1c'/%3E%3Cpath d='M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z' fill='%23ffffff'/%3E%3C/svg%3E");
@@ -94,6 +102,11 @@ Common Styles all over the sites
 
       .dark &::before {
         background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='20' height='20' rx='10' fill='%23fcfcfd'/%3E%3Cpath d='M9.31661 13.7561L14.7491 8.42144C15.0836 8.0959 15.0836 7.5697 14.7491 7.24416C14.4145 6.91861 13.8736 6.91861 13.539 7.24416L8.7116 11.9901L6.46096 9.78807C6.12636 9.46253 5.58554 9.46253 5.25095 9.78807C4.91635 10.1136 4.91635 10.6398 5.25095 10.9654L8.1066 13.7561C8.27347 13.9184 8.49253 14 8.7116 14C8.93067 14 9.14974 13.9184 9.31661 13.7561Z' fill='%23000000'/%3E%3C/svg%3E");
+      }
+
+      /* Better alignment for feature name and description */
+      strong {
+        @apply inline-block min-w-[180px] md:min-w-[200px];
       }
     }
   }

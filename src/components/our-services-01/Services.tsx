@@ -4,7 +4,25 @@ import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
 const Services = () => {
-  const servicesData: IService[] = getMarkDownData('src/data/services').slice(0, 6);
+  // Get all services and filter for the main Sumu services
+  const allServices: IService[] = getMarkDownData('src/data/services');
+
+  // Define the main services we want to display in order
+  const mainServiceSlugs = [
+    'sales-&-invoicing',
+    'accounting',
+    'accept-payment-online',
+    'vat-automation',
+    'banking-&-accounts-aggregation',
+    'analytics-&-reporting',
+    'api-&-integrations',
+    'ai-assistant',
+  ];
+
+  // Filter and sort services based on the main services list
+  const servicesData = mainServiceSlugs
+    .map((slug) => allServices.find((service) => service.slug === slug))
+    .filter((service): service is IService => service !== undefined);
 
   return (
     <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px] pt-[100px]">
@@ -15,12 +33,12 @@ const Services = () => {
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2 className="max-w-[878px] mx-auto">Leading companies around the globe rely on nexSaas.</h2>
+              <h2 className="max-w-[878px] mx-auto">Complete Financial Solutions for Your Business</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[700px] mx-auto">
-                Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not
-                Latin, though it looks like it, and it actually has no meaning.
+                From invoicing to AI-powered insights, Sumu provides everything you need to manage your business
+                finances efficiently and stay compliant.
               </p>
             </RevealAnimation>
           </div>
@@ -29,7 +47,7 @@ const Services = () => {
           {servicesData.map((service, index) => (
             <RevealAnimation key={service.id} delay={0.5 + index * 0.1}>
               <div className="col-span-12 md:col-span-6 xl:col-span-4">
-                <div className="px-6 py-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6 text-center grid items-center justify-center hover:translate-y-[-10px] transition-transform duration-500 ease-in-out">
+                <div className="px-6 py-8 rounded-[20px] bg-background-3 dark:bg-background-7 space-y-6 text-center grid items-center justify-center hover:translate-y-[-10px] transition-transform duration-500 ease-in-out min-h-[320px]">
                   <div className="flex items-center justify-center">
                     <span className={`${service.icon} text-[52px] text-secondary dark:text-accent`} />
                   </div>

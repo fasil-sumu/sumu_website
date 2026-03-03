@@ -1,46 +1,41 @@
 ---
 title: 'AI Assistant'
-description: "Intelligent Automation for Modern Businesses. Sumu's AI Assistant leverages artificial intelligence to automate routine tasks, provide intelligent insights, and help you make better business decisions faster. Our AI technology understands your business context and provides relevant, actionable recommendations."
+description: 'Your Smart Business Companion. Running a business comes with countless tasks from managing invoices to tracking expenses and staying compliant. With Sumu AI Assistant, you get an always-available digital partner.'
 icon: 'ns-shape-15'
 image: '/images/home-page-1/services-ai-assistant.svg'
 coverImg: '/images/services/service-ai-assistant-cover.png'
 userReview:
-  name: 'Nadia Al-Khatib'
-  image: '/images/avatar/avatar-9.png'
-  reviewContent: 'Sumu AI Assistant saves us hours each week by automating routine tasks and highlighting important insights I might have missed. It’s like having an extra team member who knows our business inside and out.'
-  userRole: 'Operations Manager, Smart Solutions LLC'
+  name: 'Amira Al-Said'
+  image: '/images/avatar/avatar-10.png'
+  reviewContent: 'The AI Assistant is like having a financial expert on call 24/7. It answers my questions instantly and helps me stay on top of everything.'
+  userRole: 'Founder'
 ---
 
-## Intelligent Automation for Modern Businesses
+## Your Smart Business Companion
 
-Sumu's AI Assistant leverages artificial intelligence to automate routine tasks, provide intelligent insights, and help you make better business decisions faster. Our AI technology understands your business context and provides relevant, actionable recommendations.
+Running a business comes with countless tasks—from managing invoices to tracking expenses and staying compliant. With Sumu's AI Assistant, you get an always-available digital partner that helps you save time and make smarter decisions.
 
-## Key AI Capabilities
+## AI-Powered Automation
 
-- **Smart Data Analysis**: Automatically identifies trends, anomalies, and opportunities in your business data.
-- **Predictive Insights**: Forecasts cash flow, sales trends, and potential issues before they become critical.
-- **Automated Workflows**: Streamline routine tasks like data entry, categorization, and report generation.
-- **Natural Language Processing**: Ask questions about your business data using plain English.
-- **Intelligent Recommendations**: Receive personalized suggestions based on your business patterns and goals.
-- **24/7 Availability**: Get assistance anytime, anywhere, without waiting for human support.
+- **Smart Invoicing** – Automatically generate VAT-compliant invoices and track payments
+- **Expense Management** – Categorize and analyze expenses instantly
+- **Insights on Demand** – Ask questions and get immediate answers about your finances
+- **Compliance Reminders** – Stay on top of VAT deadlines and reporting obligations
+- **Multilingual Support** – Communicate in Arabic or English
+- **Always Learning** – Becomes smarter and more personalized with use
 
-## Practical Applications
+## Natural Language Processing
 
-- **Invoice Processing**: Automatically extract and process invoice data to reduce manual entry.
-- **Expense Categorization**: AI automatically sorts and categorizes expenses based on patterns.
-- **Cash Flow Prediction**: Anticipate cash needs and opportunities weeks in advance.
-- **Performance Alerts**: Get notified of unusual patterns or important changes in your business metrics.
-- **Document Processing**: Extract relevant information from contracts, receipts, and other documents.
-- **Customer Insights**: Understand customer behavior and preferences through data analysis.
+Interact with your business data naturally. Ask "Show me this month's revenue" or "Which clients haven't paid yet?" Create invoices, generate reports, or check balances with simple commands.
 
-## How AI Assistant Helps Your Business
+## Smart Automation
 
-- **Save Time**: Automate routine tasks to free up time for strategic activities.
-- **Reduce Errors**: Minimize human errors in data processing and analysis.
-- **Gain Insights**: Discover patterns and opportunities that might be missed manually.
-- **Improve Decision-Making**: Base decisions on comprehensive data analysis.
-- **Scale Operations**: Handle increased business volume without proportional staff increases.
+Let the AI Assistant handle routine tasks: automatic invoice generation, smart expense categorization, payment reminder scheduling, report generation, data entry validation, and anomaly detection in transactions.
 
-## Privacy & Security
+## Security & Privacy
 
-Your data privacy is paramount. All AI processing is done securely, with strict adherence to data protection regulations. Your business data is never shared with third parties or used to train models for other customers.
+End-to-end encryption, no data sharing with third parties, compliance with data protection regulations, secure authentication, and audit trails for all AI actions.
+
+## Who Benefits?
+
+Perfect for SMEs and freelancers reducing admin time, finance teams automating tasks, and business leaders accessing quick insights for better decision-making.

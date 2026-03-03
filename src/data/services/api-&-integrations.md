@@ -1,46 +1,37 @@
 ---
 title: 'API & Integrations'
-description: "Connect Your Business Ecosystem. Sumu's powerful API and integration capabilities allow you to connect your existing tools and systems, creating a seamless workflow that eliminates data silos and reduces manual work."
+description: 'Connect. Automate. Scale. Your business tools should work together, not in silos. With Sumu powerful APIs and seamless integrations, you can connect your favorite applications and automate workflows.'
 icon: 'ns-shape-14'
 image: '/images/home-page-1/services-api-integrations.svg'
 coverImg: '/images/services/service-api-integrations-cover.png'
 userReview:
-  name: 'Youssef El-Amin'
-  image: '/images/avatar/avatar-8.png'
-  reviewContent: 'Sumu API integrations transformed our business operations. We now have seamless data flow between all our systems, eliminating duplicate data entry and reducing errors.'
-  userRole: 'IT Director, Tech Solutions Group'
+  name: 'Youssef Ibrahim'
+  image: '/images/avatar/avatar-9.png'
+  reviewContent: 'The API documentation is clear and comprehensive. We integrated Sumu with our ERP system in just a few days, and everything works flawlessly.'
+  userRole: 'CTO'
 ---
 
-## Connect Your Business Ecosystem
+## Connect. Automate. Scale.
 
-Sumu's powerful API and integration capabilities allow you to connect your existing tools and systems, creating a seamless workflow that eliminates data silos and reduces manual work.
+Your business tools should work together, not in silos. With Sumu's powerful APIs and seamless integrations, you can connect your favorite applications, automate workflows, and build custom solutions.
 
-## Key Integration Features
+## Why Choose Sumu?
 
-- **RESTful APIs**: Secure, well-documented APIs that follow industry standards.
-- **Pre-Built Connectors**: Ready-made integrations for popular business applications.
-- **Webhook Support**: Real-time notifications when important events occur in your Sumu account.
-- **Two-Way Sync**: Keep data consistent across all your connected applications.
-- **OAuth 2.0 Security**: Enterprise-grade authentication and authorization.
-- **Rate Limiting**: Fair usage policies that ensure reliable performance for all users.
+- **Open & Flexible APIs** – Secure, developer-friendly APIs with complete flexibility
+- **Seamless Integrations** – Connect to accounting software, e-commerce platforms, and ERP systems
+- **Automated Workflows** – Eliminate repetitive tasks and reduce errors
+- **Data Synchronization** – Keep payments, invoices, VAT, and bank data synced
+- **Scalable Infrastructure** – Designed for startups, SMEs, and enterprises
+- **Secure by Design** – Encrypted connections with open-banking standards compliance
+
+## API Features
+
+RESTful API with standard REST endpoints. Webhooks for real-time event notifications. OAuth 2.0 for secure authentication. Rate limiting for reliability. Sandbox environment for safe testing. Comprehensive documentation with guides and examples.
 
 ## Popular Integrations
 
-- **E-commerce Platforms**: Shopify, WooCommerce, Magento, Amazon Seller Central
-- **ERP Systems**: SAP, Oracle, Microsoft Dynamics, NetSuite
-- **Accounting Software**: QuickBooks, Xero, Sage, MYOB
-- **CRM Systems**: Salesforce, HubSpot, Pipedrive, Zoho CRM
-- **Payment Gateways**: Stripe, PayPal, Square, Authorize.Net
-- **Banking**: Major banks and financial institutions across the GCC
-- **Inventory Management**: TradeGecko, Cin7, DEAR Systems
+Connect with accounting software (QuickBooks, Xero, Zoho Books), e-commerce platforms (Shopify, WooCommerce, Magento), CRM systems (Salesforce, HubSpot), ERP solutions (SAP, Oracle, Microsoft Dynamics), payment gateways, banking platforms, and analytics tools.
 
-## Developer Resources
+## Who Benefits?
 
-- **Comprehensive Documentation**: Detailed guides, tutorials, and code samples.
-- **Sandbox Environment**: Test your integrations safely before going live.
-- **SDKs**: Libraries available in multiple programming languages.
-- **Support**: Dedicated developer support for integration challenges.
-
-## Custom Integration Services
-
-Need a specific integration that isn't available? Our team of experts can help you build custom integrations tailored to your unique business requirements. We follow best practices for security, reliability, and maintainability to ensure your custom integration stands the test of time.
+Perfect for developers building custom solutions, SMEs using plug-and-play integrations, and enterprises integrating deeply into ERP, CRM, and finance systems for full automation.
