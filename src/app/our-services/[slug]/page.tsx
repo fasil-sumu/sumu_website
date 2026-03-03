@@ -27,8 +27,7 @@ const OurServicesDetails = async ({ params }: { params: Promise<{ slug: string }
         className="bg-white/60 backdrop-blur-[25px] dark:border dark:border-stroke-7 dark:bg-background-7"
         btnClassName="btn-secondary hover:btn-primary dark:btn-accent"
       />
-      <main className="bg-background-3 dark:bg-background-7">
-        <PageHero title="Our Services Details" heading="Services Details" link="#" />
+      <main className="bg-background-3 dark:bg-background-7 pt-8">
         <Contents slug={slug} />
         <CTAV1
           className="dark:bg-background-6 bg-white"

@@ -12,8 +12,8 @@ const Contents = ({ slug }: { slug: string }) => {
   return (
     <section className="pt-14 md:pt-16 lg:pt-[88px] xl:pt-[100px] pb-24 md:pb-36 lg:pb-44 xl:pb-[200px]">
       <div className="main-container">
-        <div className="flex items-start lg:gap-[72px]">
-          <div className="lg:max-w-[767px] max-w-full w-full">
+        <div className="flex flex-col lg:flex-row lg:items-start lg:gap-[72px]">
+          <div className="lg:max-w-[767px] max-w-full w-full mb-8 lg:mb-0">
             <RevealAnimation delay={0.3}>
               <div className="services-details-content mb-[72px]">
                 <ReactMarkdown rehypePlugins={[[rehypeSlug]]}>{service.content}</ReactMarkdown>
@@ -25,7 +25,9 @@ const Contents = ({ slug }: { slug: string }) => {
           </div>
 
           {/* Table of Contents */}
-          <TableOfContent markdownContent={service.content} />
+          <div className="w-full lg:w-auto">
+            <TableOfContent markdownContent={service.content} />
+          </div>
         </div>
       </div>
     </section>

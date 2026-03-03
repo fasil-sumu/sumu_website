@@ -1,49 +1,44 @@
 ---
 title: 'Sales Management'
-description: 'Streamline your sales process, empower your team, and close deals faster with a data-driven sales management solution built for modern businesses.'
+description: 'Optimize Your Sales Pipeline with Sumu. Our sales management solution helps businesses track leads, manage opportunities, and close deals more efficiently. Built for SMEs and startups in the GCC region with bilingual support.'
 icon: 'ns-shape-8'
 image: '/images/home-page-1/services-sales-management.svg'
 coverImg: '/images/services/service-sales-management-cover.png'
 userReview:
-  name: 'Matthew Harris'
-  image: '/images/avatar/avatar-7.png'
-  reviewContent: 'Since adopting the sales management platform, our pipeline visibility has improved dramatically. Reps spend less time on admin and more time closing deals.'
-  userRole: 'VP of Sales, GrowthSphere'
+  name: 'Ahmad Al-Shamsi'
+  image: '/images/avatar/avatar-10.png'
+  reviewContent: 'Sumu has transformed how we manage our sales process. We now have clear visibility into our pipeline and can focus on what matters most - closing deals.'
+  userRole: 'Sales Manager, Regional Business Solutions'
 ---
 
-### Accelerate Sales with Smarter Management
+## Optimize Your Sales Pipeline with Sumu
 
-Modern businesses need more than spreadsheets to drive revenue growth. Our **sales management solution** centralizes pipelines, automates workflows, and provides actionable insights—helping your team focus on building relationships and winning deals.
+Our sales management solution helps businesses track leads, manage opportunities, and close deals more efficiently. Built for SMEs and startups in the GCC region with bilingual support.
 
-From lead capture to closing, every stage of the sales process is streamlined for speed and efficiency.
+## Key Features
 
-![Service images](/images/services/service-details-1.png)
+- **Lead Management** – Capture, qualify, and nurture leads through every stage of your sales process.
+- **Opportunity Tracking** – Monitor deals from initial contact through to closure.
+- **Sales Pipeline Visualization** – Get a clear view of your sales funnel and forecast revenue.
+- **Activity Management** – Schedule and track follow-ups, meetings, and sales activities.
+- **Performance Analytics** – Measure sales team performance and identify improvement areas.
+- **Integration Ready** – Connect with your CRM, accounting, and other business tools.
 
-### What’s included
+## Benefits for Your Business
 
-- **Pipeline management** – Visualize and track deals at every stage.
-- **Lead scoring & prioritization** – Focus efforts on the most promising opportunities.
-- **Task & activity automation** – Automate reminders, follow-ups, and deal updates.
-- **Team collaboration tools** – Share notes, assign tasks, and collaborate in real time.
-- **Sales forecasting** – Predict revenue with AI-driven forecasting models.
-- **CRM integration** – Connect seamlessly with your existing customer systems.
+- **Increased Efficiency** – Automate routine tasks and focus on selling.
+- **Better Visibility** – Understand where prospects are in your sales process.
+- **Improved Forecasting** – Make data-driven decisions about future sales.
+- **Enhanced Collaboration** – Share information across your sales team seamlessly.
+- **Regional Compliance** – Built with GCC business requirements in mind.
 
-![Service images](/images/services/service-details-2.png)
+## How It Works
 
-### Use cases
+- **Setup**: Configure your sales stages and processes to match your business.
+- **Import Leads**: Bring in existing prospects or start capturing new ones.
+- **Track Activity**: Log interactions and track progress through the pipeline.
+- **Analyze Results**: Use built-in reports to optimize your sales performance.
 
-- **B2B sales teams** – Manage long, complex deal cycles more efficiently.
-- **Startups** – Scale sales processes with automation and data-driven insights.
-- **E-commerce** – Track upselling, cross-selling, and repeat purchase opportunities.
-- **Enterprises** – Standardize sales workflows across global teams.
-- **Agencies & consultancies** – Manage client relationships and new business pipelines.
+## Perfect for Growing Businesses
 
-![Service images](/images/services/service-details-3.jpg)
-
-### Built-in security and controls
-
-- **Role-based access control** to protect sensitive sales data
-- **End-to-end encryption** for all communications and records
-- **Secure cloud hosting** with 99.9% uptime
-- **Compliance with SOC 2 & GDPR standards**
-- **Comprehensive audit trails** for accountability
+Whether you're a startup looking to establish structured sales processes or an established business seeking to optimize your sales performance, our solution scales with your needs. With support for both Arabic and English, it's ideal for the diverse business environment of the GCC.

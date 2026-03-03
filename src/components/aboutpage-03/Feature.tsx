@@ -1,9 +1,9 @@
 import { DownArrowIcon, UpArrowIcon } from '@/icons';
-import featureImg from '@public/images/about-page-03/feature.png';
-import salesAssetDarkImg from '@public/images/about-page-03/sales-asset-dark.svg';
+import featureImg from '@public/images/about-page-03/ns-img-365.webp';
+import salesAssetDarkImg from '@public/images/about-page-03/ns-img-363.webp';
 import salesAssetImg from '@public/images/about-page-03/sales-asset.svg';
 import satisfiedUserAssetLightImg from '@public/images/about-page-03/satisfied-user-asset-light.png';
-import satisfiedUserAssetImg from '@public/images/about-page-03/satisfied-user-asset.png';
+// import satisfiedUserAssetImg from '@public/images/about-page-03/satisfied-user-asset.png';
 import badge3Img from '@public/images/home-page-7/badge-3.svg';
 import Image from 'next/image';
 import NumberAnimation from '../animation/NumberAnimation';
@@ -58,11 +58,7 @@ const Feature = () => {
 
             <RevealAnimation delay={0.5} duration={2.2} useSpring={true}>
               <figure className="max-w-[143px] rounded-2xl shadow-2 overflow-hidden max-h-[110px]">
-                <Image
-                  src={satisfiedUserAssetImg}
-                  className="size-full object-cover block dark:hidden"
-                  alt="Sales Asset"
-                />
+                <Image src={salesAssetDarkImg} className="size-full object-cover block dark:hidden" alt="Sales Asset" />
                 <Image
                   src={satisfiedUserAssetLightImg}
                   className="size-full object-cover hidden dark:block"
