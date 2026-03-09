@@ -10,7 +10,7 @@ import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Our Services - Sumu',
+  title: 'Products - Sumu',
 };
 
 const OurServices01 = () => {
@@ -23,8 +23,8 @@ const OurServices01 = () => {
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero
           className="pt-32 sm:pt-36 md:pt-40 xl:pt-[170px]"
-          title="Our Services"
-          heading="Our Services"
+          title="Products"
+          heading="Products"
           link="/our-services-01"
         />
         <Services />

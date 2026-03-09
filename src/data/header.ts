@@ -40,11 +40,23 @@ export const navigationItems: NavigationItem[] = [
     megaMenuComponent: 'AboutMenu',
   },
   {
-    id: 'services',
-    label: 'navigation.services',
+    id: 'products',
+    label: 'navigation.products',
     href: '/our-services-01',
-    hasDropdown: false,
+    hasDropdown: true,
     megaMenuComponent: 'ServicesMenu',
+  },
+  {
+    id: 'solutions',
+    label: 'navigation.solutions',
+    href: '/solutions',
+    hasDropdown: false,
+  },
+  {
+    id: 'resources',
+    label: 'navigation.resources',
+    href: '/resources',
+    hasDropdown: false,
   },
   // {
   //   id: 'blog',
@@ -78,10 +90,12 @@ export const blogMenuItems: MegaMenuItem[] = [
 
 // Services Menu Data
 export const servicesMenuItems: MegaMenuItem[] = [
-  { id: 'services-1', label: 'Services Page 01', href: '/our-services-01' },
-  { id: 'services-2', label: 'Services Page 02', href: '/our-services-02' },
-  { id: 'services-3', label: 'Services Page 03', href: '/our-services-03' },
-  { id: 'services-details', label: 'Services Details', href: '/our-services/cost-allocation-and-calculation' },
+  { id: 'product-invoicing', label: 'Invoicing', href: '/our-services/sales-&-invoicing' },
+  { id: 'product-payments', label: 'Payments', href: '/our-services/accept-payment-online' },
+  { id: 'product-expenses', label: 'Expenses', href: '/our-services/vat-automation' },
+  { id: 'product-accounting', label: 'Accounting', href: '/our-services/accounting' },
+  { id: 'product-reporting', label: 'Reporting', href: '/our-services/analytics-&-reporting' },
+  { id: 'product-clients', label: 'Clients', href: '/our-services/banking-&-accounts-aggregation' },
 ];
 
 // Home Mega Menu Data (3 columns)

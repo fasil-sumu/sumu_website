@@ -1,37 +1,61 @@
 ---
-title: 'Banking & Accounts Aggregation'
-description: 'All Your Finances. One Smart Dashboard. Managing multiple bank accounts can be overwhelming. With Sumu Bank Accounts Aggregation, you can securely connect and view all your financial accounts in one place.'
-icon: 'ns-shape-12'
+title: 'Clients'
+description: 'Manage customers, contacts, and billing information.'
+icon: 'ns-shape-11'
 image: '/images/home-page-1/services-banking-aggregation.svg'
 coverImg: '/images/services/service-banking-aggregation-cover.png'
 userReview:
-  name: 'Fatima Al-Zahra'
-  image: '/images/avatar/avatar-4.png'
-  reviewContent: 'Sumu has transformed how we manage our multiple bank accounts. Everything is now visible in one dashboard, making financial decisions so much easier.'
-  userRole: 'Finance Manager'
+  name: 'Fatima Al-Balushi'
+  image: '/images/avatar/avatar-2.png'
+  reviewContent: 'Client records and transaction history are now centralized and easy to manage.'
+  userRole: 'Accounts Lead'
 ---
 
-## All Your Finances. One Dashboard.
+## Manage Your Customers and Business Relationships
 
-Managing multiple bank accounts can be overwhelming. With Sumu's Bank Accounts Aggregation, you can securely connect and view all your financial accounts in one place. Gain real-time visibility and make smarter business decisions.
+Sumu provides a centralized client management system that helps businesses organize customer information, track transactions, and maintain clear records of all client activities.
 
-## Why Choose Sumu?
+By keeping all client details in one place, Sumu allows businesses to manage customer relationships efficiently while connecting clients directly to invoices, payments, and financial records.
 
-- **One Unified View** – See balances, transactions, and cash flows across all accounts
-- **Licensed & Trusted Partners** – Regulated open-banking providers ensure safe connections
-- **Real-Time Insights** – Up-to-date financial data for tracking expenses and liquidity
-- **Smart Categorization** – Automatically categorize transactions for easier accounting
-- **Better Decisions** – Forecast, plan, and manage working capital with confidence
-- **Secure & Compliant** – Enterprise-grade encryption and banking standards compliance
+This ensures that every transaction associated with a client is properly documented and easily accessible.
 
-## How It Works
+Start managing your clients with Sumu.
 
-Authorize your bank connections securely via licensed open-banking partners. View balances, transactions, and summaries in real time on your Sumu dashboard. Use integrated analytics to monitor cash flow and optimize financial decisions.
+## Organize Client Information
 
-## Automate Reconciliation
+Sumu enables businesses to maintain structured and accessible client records.
 
-Reconcile bank and credit card statements with ease. Our intelligent matching algorithm identifies and matches transactions between your bank statement and accounting records automatically.
+- **Store Client Details**: Record essential customer information including name, contact details, email, mobile number, and business information.
+- **Manage Business Clients**: Maintain profiles for companies, organizations, or individual customers to ensure accurate invoicing and transaction tracking.
+- **Track Client Activity**: Monitor the number of invoices issued, payment history, and outstanding balances for each client.
+- **Client Status Management**: Easily manage active and inactive clients to keep your customer database clean and organized.
 
-## Who Benefits?
+## Connect Clients to Financial Transactions
 
-Perfect for SMEs, freelancers managing multiple accounts, growing companies with branches, and finance teams saving time on reconciliation.
+Each client profile is directly linked to related business transactions.
+
+This allows businesses to track:
+
+- invoices issued to each client
+- payment history and outstanding balances
+- transaction records and invoice activity
+- client-specific sales performance
+
+This centralized approach simplifies client relationship management and financial tracking.
+
+## Maintain Organized Customer Records
+
+Having structured client data improves operational efficiency and ensures accurate business documentation.
+
+Benefits include:
+
+- organized client database
+- faster invoice creation
+- improved payment tracking
+- better visibility into customer activity
+
+## Build Stronger Client Management
+
+Sumu helps businesses maintain reliable client records and manage customer relationships efficiently as the business grows.
+
+Start organizing your clients with Sumu today.

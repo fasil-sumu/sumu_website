@@ -1,36 +1,76 @@
 ---
-title: 'Sales & Invoicing'
-description: 'Smarter Invoicing for Growing Businesses. Managing sales should not be complicated. With Sumu, you can create, send, and track invoices in just a few clicks fully compliant, bilingual, and designed for SMEs and startups in the GCC and beyond.'
+title: 'Invoicing'
+description: 'Create, send, and manage invoices easily.'
 icon: 'ns-shape-8'
 image: '/images/home-page-1/services-sales-invoicing.svg'
 coverImg: '/images/services/service-sales-invoicing-cover.png'
 userReview:
   name: 'Sarah Ahmed'
   image: '/images/avatar/avatar-5.png'
-  reviewContent: 'The best Invoicing platform to enhance your business growth. Revolutionize your invoicing with Sumu! Creates customized invoices in seconds.'
+  reviewContent: 'We cut billing time significantly and improved payment speed with Sumu Invoicing.'
   userRole: 'Finance Director'
 ---
 
-## Smarter Invoicing for Growing Businesses
+## Professional Invoicing Made Simple
 
-Managing sales shouldn't be complicated. With Sumu, you can create, send, and track invoices in just a few clicks—fully compliant, bilingual, and designed for SMEs and startups in the GCC and beyond.
+### Create, Send, and Track Invoices with Complete Control
 
-## Key Features
+Sumu's Smart Invoicing system enables businesses to create professional invoices, automate billing processes, and track payments in real time from a single dashboard.
 
-- **Instant Invoicing** – Generate professional invoices in Arabic or English with your branding and tax details
-- **VAT-Compliant** – Automated VAT calculation and filing support for local tax regulations
-- **Sales Tracking** – Monitor outstanding payments and track client histories
-- **Recurring Billing** – Automate subscriptions or repeat invoices for regular clients
-- **Smart Payments** – Accept online payments securely through licensed partners
-- **Reports & Analytics** – Real-time insights into sales performance and payment behavior
+Generate compliant electronic invoices, send them instantly to customers, and maintain complete visibility over your receivables.
 
-## Professional & Customizable
+Start managing your billing operations more efficiently and keep your cash flow under control.
 
-Create professional-looking invoices with ease. Add your brand logo, customize business details, and choose from multiple templates and 24 color palettes to match your brand identity.
+Start Free Trial
 
-## Streamlined Operations
+## Everything You Need to Manage Invoices
 
-- Works offline – receive cash and eWallet payments without internet
-- Multi-tab billing for faster customer service
-- Manage invoicing, accounting, and inventory in one app
-- Eliminates manual calculations and keeps data updated
+Sumu provides a powerful invoicing solution designed to simplify billing while maintaining accurate financial records.
+
+- **Create Professional Invoices**: Design and issue branded invoices in seconds using customizable templates that reflect your company identity.
+- **Send Invoices Instantly**: Deliver invoices to customers via email or secure links with just a few clicks.
+- **Track Invoice Status**: Monitor when invoices are sent, viewed, paid, or overdue with real-time tracking.
+- **Automate Recurring Billing**: Set up recurring invoices for subscriptions, retainers, or regular services.
+- **Receive Smart Payment Notifications**: Get automatic alerts when payments are received or when invoices become overdue.
+
+## Faster Payments, Better Cash Flow
+
+Improve your cash flow by making it easier for customers to pay.
+
+Add payment links directly to invoices and allow customers to complete payments quickly and securely.
+
+With automated reminders and payment tracking, you always stay informed about the status of your receivables.
+
+## Stay Organized with Real-Time Financial Insights
+
+Sumu provides a clear overview of your financial activity so you always know where your business stands.
+
+Monitor:
+
+- outstanding invoices
+- total revenue
+- payment trends
+- customer billing history
+
+All insights are available instantly from your dashboard.
+
+## Built for Growing Businesses
+
+Sumu's invoicing system is designed for businesses that need efficiency, accuracy, and scalability.
+
+Whether you manage a small business or a growing company, Sumu helps you maintain organized financial records while reducing manual work.
+
+Benefits include:
+
+- reduced administrative workload
+- faster payment collection
+- improved financial visibility
+- accurate transaction records
+
+## Simplify Your Invoicing Workflow
+
+Join businesses that trust Sumu to manage invoicing with speed, accuracy, and professionalism.
+
+Start issuing smarter invoices today and take control of your financial operations.
+
+Start Your Free Trial

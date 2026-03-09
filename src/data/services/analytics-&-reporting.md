@@ -1,37 +1,64 @@
 ---
-title: 'Analytics & Reporting'
-description: 'Turn Data into Decisions. With Sumu Analytics and Reporting, you gain actionable insights into your finances, operations, and growth all from one intuitive dashboard.'
+title: 'Reporting'
+description: 'Generate financial insights and business performance reports.'
 icon: 'ns-shape-13'
 image: '/images/home-page-1/services-analytics-reporting.svg'
 coverImg: '/images/services/service-analytics-reporting-cover.png'
 userReview:
   name: 'Khalid Al-Mansouri'
   image: '/images/avatar/avatar-7.png'
-  reviewContent: 'The analytics dashboard gives us real-time insights that help us make faster, smarter decisions. It is like having a financial advisor built into the platform.'
+  reviewContent: 'Reporting in Sumu gives us fast, reliable visibility for better business decisions.'
   userRole: 'Business Owner'
 ---
 
-## Turn Data into Decisions
+## Understand Your Business Performance
 
-With Sumu's Analytics & Reporting, you gain actionable insights into your finances, operations, and growth—all from one intuitive dashboard. Track performance, monitor cash flow, and make smarter decisions backed by real-time data.
+Sumu provides powerful reporting tools that help businesses understand their financial performance and make informed decisions.
 
-## Why Choose Sumu?
+With structured financial reports generated from your accounting data, Sumu allows you to monitor revenue, expenses, profitability, and overall financial health.
 
-- **Unified Dashboard** – See payments, invoices, bank accounts, VAT, and expenses in one place
-- **Real-Time Insights** – Live financial and operational metrics that matter most
-- **Customizable Reports** – Generate tailored reports for revenue, expenses, or VAT summaries
-- **Data-Driven Growth** – Identify trends, track KPIs, and forecast performance
-- **Export & Share** – Download reports in multiple formats for easy sharing
-- **Secure & Reliable** – All reports generated securely with compliance and data integrity
+The reporting module is designed for businesses operating in Oman, helping organizations maintain financial transparency and prepare reports that support internal management, financial analysis, and regulatory compliance with Oman Tax Authority requirements.
 
-## Real-Time Business Intelligence
+Start analyzing your business performance with Sumu.
 
-Monitor revenue trends and identify best-performing products. Track spending patterns and identify cost-reduction opportunities. Predict future cash positions based on historical data. Understand payment behaviors and identify valuable customers.
+## Essential Financial Reports
 
-## Customizable Reporting
+Sumu automatically generates key financial reports based on your recorded transactions, invoices, payments, and expenses.
 
-Choose from pre-built templates or create custom reports. Filter by date range, client, product, or category. Export to PDF, Excel, or CSV formats. Schedule automated report generation and share securely with stakeholders.
+- **Profit and Loss Report**: Analyze your business profitability by reviewing total revenue, expenses, and net profit over a selected period.
+- **Balance Sheet**: View a complete snapshot of your company's financial position, including assets, liabilities, and equity.
+- **Cash Flow Report**: Monitor how cash moves through your business by tracking incoming and outgoing cash flows.
+- **Sales Reports**: Track sales performance, invoice activity, and revenue trends across clients and time periods.
+- **Expense Reports**: Analyze business spending by category, vendor, or period to identify cost patterns and manage expenses effectively.
+- **VAT Reports**: Generate VAT-related summaries to support tax reporting and compliance with Oman Tax Authority requirements.
 
-## Who Benefits?
+## Built for Financial Transparency
 
-Perfect for SMEs and freelancers simplifying bookkeeping, finance teams automating reporting, and business leaders making strategic decisions with clear, data-driven insights.
+Sumu reports provide structured financial insights that help businesses understand operational performance and maintain proper financial oversight.
+
+Track and analyze:
+
+- revenue and profitability trends
+- business expenses and cost patterns
+- client sales activity
+- cash flow movements
+- VAT-related financial data
+
+All reports are generated directly from your financial records, ensuring consistency and accuracy.
+
+## Support Better Business Decisions
+
+Reliable financial reporting helps businesses evaluate performance and plan for future growth.
+
+Benefits include:
+
+- clear financial visibility
+- faster business decision-making
+- improved financial analysis
+- organized data for accounting and tax purposes
+
+## Monitor Your Business Performance with Confidence
+
+Sumu provides the reporting tools businesses need to track financial performance, maintain transparency, and support effective financial management.
+
+Start generating financial reports with Sumu today.

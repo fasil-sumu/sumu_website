@@ -21,6 +21,8 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
   const { t, i18n } = useTranslation();
   const [isMounted, setIsMounted] = useState(false);
   const isRTL = i18n.language === 'ar';
+  const copyrightText = isMounted ? t('homepage08.footer.copyright') : '\u00A9 2025 Sumu. All rights reserved.';
+  const formattedCopyrightText = copyrightText.replace(/\s*(All rights reserved\.?)/i, '\n$1');
 
   useEffect(() => {
     setIsMounted(true);
@@ -387,9 +389,7 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
         <div className="relative overflow-hidden pt-6 pb-[60px] text-center">
           <FooterDivider className="bg-stroke-2 dark:bg-accent/5" />
           <div className="mt-4">
-            <p className="text-secondary dark:text-accent/60">
-              {isMounted ? t('homepage08.footer.copyright') : '© 2025 Sumu. All rights reserved.'}
-            </p>
+            <p className="text-secondary dark:text-accent/60 whitespace-pre-line">{formattedCopyrightText}</p>
           </div>
         </div>
       </div>

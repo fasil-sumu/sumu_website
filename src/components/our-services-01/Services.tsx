@@ -4,22 +4,20 @@ import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 
 const Services = () => {
-  // Get all services and filter for the main Sumu services
+  // Get all services and filter for the main Sumu products
   const allServices: IService[] = getMarkDownData('src/data/services');
 
-  // Define the main services we want to display in order
+  // Define the main products we want to display in order
   const mainServiceSlugs = [
     'sales-&-invoicing',
-    'accounting',
     'accept-payment-online',
     'vat-automation',
-    'banking-&-accounts-aggregation',
+    'accounting',
     'analytics-&-reporting',
-    'api-&-integrations',
-    'ai-assistant',
+    'banking-&-accounts-aggregation',
   ];
 
-  // Filter and sort services based on the main services list
+  // Filter and sort services based on the main products list
   const servicesData = mainServiceSlugs
     .map((slug) => allServices.find((service) => service.slug === slug))
     .filter((service): service is IService => service !== undefined);
@@ -29,16 +27,15 @@ const Services = () => {
       <div className="main-container">
         <div className="text-center space-y-5 mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-yellow-v2">Our Services</span>
+            <span className="badge badge-yellow-v2">Our Products</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2 className="max-w-[878px] mx-auto">Complete Financial Solutions for Your Business</h2>
+              <h2 className="max-w-[878px] mx-auto">Products Built to Run Your Business Better</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[700px] mx-auto">
-                From invoicing to AI-powered insights, Sumu provides everything you need to manage your business
-                finances efficiently and stay compliant.
+                Invoicing, payments, expenses, accounting, reporting, and client management in one connected platform.
               </p>
             </RevealAnimation>
           </div>

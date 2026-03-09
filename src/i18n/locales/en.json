@@ -32,7 +32,10 @@
     "about": "About",
     "features": "Features",
     "services": "Services",
+    "products": "Products",
+    "solutions": "Solutions",
     "pricing": "Pricing",
+    "resources": "Resources",
     "blog": "Blog",
     "contact": "Contact",
     "login": "Login",
@@ -283,7 +286,7 @@
       "refundPolicy": "Refund Policy",
       "gdprCompliance": "GDPR Compliance",
       "affiliatePolicy": "Affiliate Policy",
-      "copyright": "Sumu - a business platform owned and operated by OceanGate for Smart Technologies LLC, a FinTech and Software-as-a-Service (SaaS) solutions company. All rights reserved © 2025."
+      "copyright": "Sumu - a business platform owned and operated by OceanGate for Smart Technologies LLC, a FinTech and Software-as-a-Service (SaaS) solutions company.  All rights reserved © 2026."
     }
   }
 }

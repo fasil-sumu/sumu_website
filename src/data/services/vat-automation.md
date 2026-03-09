@@ -1,33 +1,62 @@
 ---
-title: 'VAT Automation'
-description: 'Simplify Compliance. Save Time. Stay Focused. Managing VAT does not have to be complex. With Sumu VAT Automation Tools, businesses can automatically calculate, file, and stay compliant with local tax regulations.'
-icon: 'ns-shape-11'
+title: 'Expenses'
+description: 'Record and categorize business expenses.'
+icon: 'ns-shape-5'
 image: '/images/home-page-1/services-vat-automation.svg'
 coverImg: '/images/services/service-vat-automation-cover.png'
 userReview:
-  name: 'Omar Al-Mahmoud'
+  name: 'Aisha Al-Sinani'
   image: '/images/avatar/avatar-6.png'
-  reviewContent: 'Compliance Made Simple. Submit reports to the tax authority with confidence knowing that Sumu handles all VAT calculations and filings accurately.'
-  userRole: 'Tax Consultant'
+  reviewContent: 'Expense tracking became structured and transparent, which improved our cost control.'
+  userRole: 'Operations Manager'
 ---
 
-## Simplify Compliance. Save Time.
+## Track and Control Your Business Expenses
 
-Managing VAT doesn't have to be complex. With Sumu's VAT Automation Tools, businesses can automatically calculate, file, and stay compliant with local tax regulations—so you can focus on running your business.
+Sumu helps you record, categorize, and monitor your business expenses from a single dashboard.
 
-## Why Choose Sumu?
+Maintain organized financial records, track spending patterns, and gain clear visibility into where your money goes.
 
-- **Automatic VAT Calculation** – Real-time VAT calculation based on local laws
-- **Seamless Integration** – Works directly within your Sumu platform
-- **Regulatory Compliance** – Stay aligned with Oman VAT requirements
-- **Smart Filing & Reports** – Generate ready-to-file VAT reports instantly
-- **Error-Free Accounting** – Reduce manual mistakes and avoid penalties
-- **Multi-Business Friendly** – Manage VAT across multiple entities from one dashboard
+By keeping your expenses properly documented and categorized, Sumu helps you maintain accurate financial records and better manage your business costs.
 
-## How It Works
+Start Free Trial
 
-Set up your business profile with VAT registration details. Every invoice and transaction is automatically VAT-adjusted. Generate VAT summaries and filing-ready documents instantly. Submit reports to the tax authority with minimal effort.
+## Simplify Expense Management
 
-## Designed for Modern Businesses
+Sumu provides practical tools that make it easy to record and organize business expenses while keeping your financial data accurate and up to date.
 
-Perfect for SMEs, startups, freelancers, and enterprises. No need for expensive accountants—let Sumu handle VAT compliance automatically while you focus on growth.
+- **Record Expenses Easily**: Quickly record business expenses and assign them to the appropriate categories.
+- **Organize Expense Categories**: Group expenses by category, vendor, or type to maintain structured financial records.
+- **Attach Supporting Documents**: Upload receipts, invoices, or supporting files to keep proper documentation for every expense.
+- **Track Spending by Vendor or Category**: Monitor where your money is being spent and identify cost patterns across suppliers and expense types.
+- **Maintain Accurate Expense Records**: Ensure every business expense is recorded and properly documented for accounting and reporting purposes.
+
+## Gain Better Visibility into Business Spending
+
+Understanding your expenses is essential for managing profitability and controlling costs.
+
+Sumu provides a clear overview of your spending so you can easily monitor:
+
+- total business expenses
+- expenses by category
+- vendor spending patterns
+- expense trends over time
+
+All information is available directly from your financial dashboard.
+
+## Designed for Organized Financial Management
+
+Sumu's expense management tools help businesses maintain reliable financial records while simplifying day-to-day bookkeeping tasks.
+
+Benefits include:
+
+- better control over business spending
+- organized and accurate expense records
+- simplified bookkeeping processes
+- improved financial visibility
+
+## Manage Your Expenses with Confidence
+
+Keep your business spending organized and maintain accurate financial records with Sumu's expense management tools.
+
+Start managing your expenses with Sumu today.
