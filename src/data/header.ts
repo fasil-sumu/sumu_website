@@ -18,13 +18,13 @@ export interface MegaMenuColumn {
 }
 
 export const navigationItems: NavigationItem[] = [
-  {
-    id: 'home',
-    label: 'navigation.home',
-    href: '/',
-    hasDropdown: false,
-    megaMenuComponent: 'HomeMegaMenu',
-  },
+  // {
+  //   id: 'home',
+  //   label: 'navigation.home',
+  //   href: '/',
+  //   hasDropdown: false,
+  //   megaMenuComponent: 'HomeMegaMenu',
+  // },
   // {
   //   id: 'pages',
   //   label: 'Pages',
@@ -32,13 +32,13 @@ export const navigationItems: NavigationItem[] = [
   //   hasDropdown: false,
   //   megaMenuComponent: 'PageMegaMenu',
   // },
-  {
-    id: 'about',
-    label: 'navigation.about',
-    href: '/about-03',
-    hasDropdown: false,
-    megaMenuComponent: 'AboutMenu',
-  },
+  // {
+  //   id: 'about',
+  //   label: 'navigation.about',
+  //   href: '/about-03',
+  //   hasDropdown: false,
+  //   megaMenuComponent: 'AboutMenu',
+  // },
   {
     id: 'products',
     label: 'navigation.products',
