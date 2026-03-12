@@ -10,6 +10,7 @@ import AboutMenu from '../mega-menu/AboutMenu';
 import BlogMenu from '../mega-menu/BlogMenu';
 import HomeMegaMenu from '../mega-menu/HomeMegaMenu';
 import PageMegaMenu from '../mega-menu/PageMegaMenu';
+import ResourcesMenu from '../mega-menu/ResourcesMenu';
 import ServicesMenu from '../mega-menu/ServicesMenu';
 import Logo from './Logo';
 import MobileMenuButton from './MobileMenuButton';
@@ -42,6 +43,8 @@ const NavbarThree = ({ btnClassName }: { btnClassName?: string }) => {
                           return <AboutMenu />;
                         case 'ServicesMenu':
                           return <ServicesMenu />;
+                        case 'ResourcesMenu':
+                          return <ResourcesMenu />;
                         case 'BlogMenu':
                           return <BlogMenu />;
                         default:

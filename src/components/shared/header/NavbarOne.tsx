@@ -19,6 +19,7 @@ const AboutMenu = lazy(() => import('../mega-menu/AboutMenu'));
 const BlogMenu = lazy(() => import('../mega-menu/BlogMenu'));
 const HomeMegaMenu = lazy(() => import('../mega-menu/HomeMegaMenu'));
 const PageMegaMenu = lazy(() => import('../mega-menu/PageMegaMenu'));
+const ResourcesMenu = lazy(() => import('../mega-menu/ResourcesMenu'));
 const ServicesMenu = lazy(() => import('../mega-menu/ServicesMenu'));
 
 interface NavbarOneProps {
@@ -62,6 +63,8 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                         return <AboutMenu className={megaMenuColor} />;
                       case 'ServicesMenu':
                         return <ServicesMenu className={megaMenuColor} />;
+                      case 'ResourcesMenu':
+                        return <ResourcesMenu className={megaMenuColor} />;
                       case 'BlogMenu':
                         return <BlogMenu className={megaMenuColor} />;
                       default:

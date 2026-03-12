@@ -17,6 +17,19 @@ export interface MegaMenuColumn {
   items: MegaMenuItem[];
 }
 
+export interface ResourcesMenuSection {
+  id: string;
+  title: string;
+  description: string;
+  items: MegaMenuItem[];
+}
+
+export interface ResourcesTopMenuItem {
+  id: string;
+  label: string;
+  href: string;
+}
+
 export const navigationItems: NavigationItem[] = [
   // {
   //   id: 'home',
@@ -56,7 +69,8 @@ export const navigationItems: NavigationItem[] = [
     id: 'resources',
     label: 'navigation.resources',
     href: '/resources',
-    hasDropdown: false,
+    hasDropdown: true,
+    megaMenuComponent: 'ResourcesMenu',
   },
   // {
   //   id: 'blog',
@@ -96,6 +110,45 @@ export const servicesMenuItems: MegaMenuItem[] = [
   { id: 'product-accounting', label: 'Accounting', href: '/our-services/accounting' },
   { id: 'product-reporting', label: 'Reporting', href: '/our-services/analytics-&-reporting' },
   { id: 'product-clients', label: 'Clients', href: '/our-services/banking-&-accounts-aggregation' },
+];
+
+// Resources Menu Data
+export const resourcesMenuSections: ResourcesMenuSection[] = [
+  {
+    id: 'learn',
+    title: 'Learn',
+    description: 'Insights, how-tos, and what’s new.',
+    items: [
+      { id: 'resources-blog', label: 'Blog', href: '/resources/blog' },
+      { id: 'resources-guides', label: 'Guides & Tutorials', href: '/resources/guides-tutorials' },
+      { id: 'resources-updates', label: 'Product Updates', href: '/resources/product-updates' },
+    ],
+  },
+  {
+    id: 'support',
+    title: 'Support',
+    description: 'Find answers fast and keep moving.',
+    items: [
+      { id: 'resources-help-center', label: 'Help Center', href: '/resources/help-center' },
+      { id: 'resources-documentation', label: 'Documentation', href: '/resources/documentation' },
+    ],
+  },
+  {
+    id: 'company',
+    title: 'Company',
+    description: 'Who we are and how to reach us.',
+    items: [
+      { id: 'resources-about', label: 'About Sumu', href: '/resources/about-sumu' },
+      { id: 'resources-contact', label: 'Contact Us', href: '/resources/contact-us' },
+    ],
+  },
+];
+
+// Resources (Top-level) Menu Data
+export const resourcesTopMenuItems: ResourcesTopMenuItem[] = [
+  { id: 'resources-top-learn', label: 'Learn', href: '/resources/learn' },
+  { id: 'resources-top-support', label: 'Support', href: '/resources/support' },
+  { id: 'resources-top-company', label: 'Company', href: '/resources/company' },
 ];
 
 // Home Mega Menu Data (3 columns)

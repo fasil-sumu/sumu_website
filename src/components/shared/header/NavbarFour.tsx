@@ -12,6 +12,7 @@ import AboutMenu from '../mega-menu/AboutMenu';
 import BlogMenu from '../mega-menu/BlogMenu';
 import HomeMegaMenu from '../mega-menu/HomeMegaMenu';
 import PageMegaMenu from '../mega-menu/PageMegaMenu';
+import ResourcesMenu from '../mega-menu/ResourcesMenu';
 import ServicesMenu from '../mega-menu/ServicesMenu';
 import MobileMenuButton from './MobileMenuButton';
 import NavCTAButton from './NavCTAButton';
@@ -54,6 +55,8 @@ const NavbarFour = ({ className, megaMenuColor, btnClassName }: NavbarFourProps)
                         return <AboutMenu className={megaMenuColor} />;
                       case 'ServicesMenu':
                         return <ServicesMenu className={megaMenuColor} />;
+                      case 'ResourcesMenu':
+                        return <ResourcesMenu className={megaMenuColor} />;
                       case 'BlogMenu':
                         return <BlogMenu className={megaMenuColor} />;
                       default:
