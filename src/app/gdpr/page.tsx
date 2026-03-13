@@ -19,7 +19,7 @@ const GDPR = () => {
         megaMenuColor="dark:!bg-background-9"
       />
       <main className="bg-background-3 dark:bg-background-6">
-        <PageHero title="GDPR" heading="GDPR" link="/gdpr" />
+        <PageHero className="pt-32 sm:pt-36 md:pt-40 xl:pt-[170px]" title="GDPR" heading="GDPR" link="/gdpr" />
         <GdprContent />
         <CTAV1
           className="dark:bg-background-5 bg-white"
