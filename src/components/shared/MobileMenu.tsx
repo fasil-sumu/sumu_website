@@ -1,15 +1,22 @@
 'use client';
 
 import { useMobileMenuContext } from '@/context/MobileMenuContext';
-import { navigationItems } from '@/data/header';
+import {
+  navigationItems,
+  servicesMenuItems,
+  resourcesTopMenuItems,
+  MegaMenuItem,
+  ResourcesTopMenuItem,
+} from '@/data/header';
 import { cn } from '@/utils/cn';
-import logoDark from '@public/images/shared/logo-dark.svg';
-import logo from '@public/images/shared/logo.svg';
+import logoDark from '@public/images/shared/logo-removebg.png';
+import logo from '@public/images/shared/logo-removebg.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import MobileMenuItem from './mobile-menu/MobileMenuItem';
 
 const MobileMenu = () => {
   const { isOpen, closeMenu } = useMobileMenuContext();
@@ -40,7 +47,7 @@ const MobileMenu = () => {
         <div className="flex items-center justify-between">
           <Link href="/">
             <span className="sr-only">Home</span>
-            <figure className="max-w-[44px]">
+            <figure className="max-w-[85px] p-2">
               <Image src={logo} alt="Sumu" className="block w-full dark:hidden" />
               <Image src={logoDark} alt="Sumu" className="hidden w-full dark:block" />
             </figure>
@@ -56,17 +63,42 @@ const MobileMenu = () => {
           </button>
         </div>
         <div className="scroll-bar h-[85vh] w-full overflow-x-hidden overflow-y-auto pb-10">
-          <ul>
-            {navigationItems.map((item) => (
-              <li key={item.id}>
-                <Link
-                  href={item.href ?? '#'}
-                  onClick={closeMenu}
-                  className="text-tagline-1 text-secondary/60 dark:text-accent/60 border-stroke-4 dark:border-stroke-6 block w-full border-b py-3 text-left font-normal transition-all duration-200 hover:text-brand">
-                  {t(item.label)}
-                </Link>
-              </li>
-            ))}
+          <ul className="mt-4">
+            {navigationItems.map((item) => {
+              if (item.hasDropdown) {
+                let subItems: (MegaMenuItem | ResourcesTopMenuItem)[] = [];
+                if (item.megaMenuComponent === 'ServicesMenu') subItems = servicesMenuItems;
+                else if (item.megaMenuComponent === 'ResourcesMenu') subItems = resourcesTopMenuItems;
+
+                return (
+                  <MobileMenuItem key={item.id} id={item.id} title={t(item.label)} hasSubmenu>
+                    <ul className="flex flex-col space-y-2 py-2">
+                      {subItems.map((subItem) => (
+                        <li key={subItem.id}>
+                          <Link
+                            href={subItem.href}
+                            onClick={closeMenu}
+                            className="text-tagline-1 text-secondary/70 dark:text-accent/70 block w-full py-2 pl-4 text-left font-normal transition-all duration-200 hover:text-brand">
+                            {t(subItem.label)}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </MobileMenuItem>
+                );
+              }
+
+              return (
+                <li key={item.id}>
+                  <Link
+                    href={item.href ?? '#'}
+                    onClick={closeMenu}
+                    className="text-tagline-1 text-secondary/60 dark:text-accent/60 border-stroke-4 dark:border-stroke-6 block w-full border-b py-3 text-left font-normal transition-all duration-200 hover:text-brand">
+                    {t(item.label)}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
 
           {/* Language Switcher */}

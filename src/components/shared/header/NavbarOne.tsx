@@ -6,7 +6,7 @@ import { navigationItems } from '@/data/header';
 import { useNavbarScroll } from '@/hooks/useScrollHeader';
 import { useLanguage } from '@/hooks/useLanguage';
 import { cn } from '@/utils/cn';
-import { FC, lazy, Suspense } from 'react';
+import { FC, lazy, Suspense, useState, useRef, useEffect } from 'react';
 import MobileMenu from '../MobileMenu';
 import Logo from './Logo';
 import MobileMenuButton from './MobileMenuButton';
@@ -30,7 +30,19 @@ interface NavbarOneProps {
 
 const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName }) => {
   const { isScrolled } = useNavbarScroll(100);
-  const { isRTL, isMounted } = useLanguage();
+  const { isRTL } = useLanguage();
+  const [openDropdownId, setOpenDropdownId] = useState<string | null>(null);
+  const navRef = useRef<HTMLUListElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setOpenDropdownId(null);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <MobileMenuProvider>
@@ -50,8 +62,9 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
           </div>
           {/* navigation */}
           <nav className="hidden items-center xl:flex flex-1 justify-center">
-            <ul className={`flex items-center ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
+            <ul ref={navRef} className={`flex items-center ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
               {navigationItems.map((item) => {
+                const isOpen = openDropdownId === item?.id;
                 const renderMegaMenu = () => {
                   const menuComponent = (() => {
                     switch (item?.megaMenuComponent) {
@@ -62,9 +75,9 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                       case 'AboutMenu':
                         return <AboutMenu className={megaMenuColor} />;
                       case 'ServicesMenu':
-                        return <ServicesMenu className={megaMenuColor} />;
+                        return <ServicesMenu className={megaMenuColor} isOpen={isOpen} />;
                       case 'ResourcesMenu':
-                        return <ResourcesMenu className={megaMenuColor} />;
+                        return <ResourcesMenu className={megaMenuColor} isOpen={isOpen} />;
                       case 'BlogMenu':
                         return <BlogMenu className={megaMenuColor} />;
                       default:
@@ -84,8 +97,12 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
 
                 // mega menu render
                 return (
-                  <li key={item?.id} className={cn('py-2.5', item?.hasDropdown && 'group/nav relative cursor-pointer')}>
-                    <NavItemLink item={item} />
+                  <li key={item?.id} className={cn('py-2.5', item?.hasDropdown && 'relative')}>
+                    <NavItemLink
+                      item={item}
+                      isOpen={isOpen}
+                      onToggle={() => setOpenDropdownId(isOpen ? null : item.id)}
+                    />
                     {item.hasDropdown && renderMegaMenu()}
                   </li>
                 );
