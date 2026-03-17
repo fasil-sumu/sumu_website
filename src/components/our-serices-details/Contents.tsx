@@ -7,6 +7,7 @@ import RevealAnimation from '../animation/RevealAnimation';
 import gradient16 from '@public/images/gradient/gradient-16.png';
 import gradient27 from '@public/images/gradient/gradient-27.png';
 import gradient6 from '@public/images/gradient/gradient-6.png';
+import ProductDetailsWhatWeOffer, { type ProductOfferCard } from './ProductDetailsWhatWeOffer';
 
 const backgroundStyles = [
   {
@@ -35,62 +36,121 @@ const Contents = ({ slug }: { slug: string }) => {
   const service = getMarkDownContent('src/data/services/', slug);
   const serviceData = service.data as IService;
 
-  // Split content by ## tags to create individual cards
   const sections = service.content.split(/(?=^##\s)/m).filter((section) => section.trim().length > 0);
+
+  const parseSection = (section: string) => {
+    const lines = section.trim().split('\n');
+    const rawHeading = lines[0] || '';
+    const heading = rawHeading.replace(/^##\s*/, '').trim();
+    const body = lines.slice(1).join('\n').trim();
+    return { heading, body };
+  };
+
+  const primarySection = sections[0] ? parseSection(sections[0]) : { heading: '', body: '' };
+  const featureSections = sections.slice(1).map(parseSection);
+
+  const heroCards = featureSections.slice(0, 5);
+  const remainingFeatures = featureSections.slice(3);
+
+  const toPlainText = (md: string) =>
+    md
+      .replace(/!\[.*?\]\(.*?\)/g, '')
+      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+      .replace(/[`*_>#-]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
+
+  const makeCardDescription = (body: string) => {
+    const plain = toPlainText(body);
+    if (!plain) return '';
+    const sentenceEnd = plain.search(/[.!?]\s/);
+    const short = sentenceEnd > 60 ? plain.slice(0, sentenceEnd + 1) : plain;
+    return short.length > 140 ? `${short.slice(0, 137)}...` : short;
+  };
+
+  const offerCards: ProductOfferCard[] = heroCards.map((c, idx) => ({
+    id: `${slug}-offer-${idx}`,
+    icon: serviceData.icon,
+    title: c.heading || serviceData.title,
+    description: makeCardDescription(c.body),
+  }));
 
   return (
     <section className="pb-[200px] pt-32 sm:pt-36 md:pt-40 xl:pt-[200px]">
-      <div className="main-container">
-        <div className="space-y-[70px] changelog">
-          <div className="space-y-3 text-center">
-            <RevealAnimation delay={0.3}>
-              <h2>{serviceData.title}</h2>
-            </RevealAnimation>
-            <RevealAnimation delay={0.4}>
-              <p>{serviceData.description}</p>
-            </RevealAnimation>
-          </div>
-          <div className="space-y-8">
-            <RevealAnimation delay={0.5}>
-              <h3 className="max-w-[850px] mx-auto">Feature Overview</h3>
+      <div className="main-container space-y-20">
+        <div className="relative">
+          {backgroundStyles.map((bg, index) => (
+            <div key={index} className={bg.className}>
+              <Image src={bg.gradient} alt="gradient" />
+            </div>
+          ))}
+          <ProductDetailsWhatWeOffer
+            heading={`${serviceData.title}.`}
+            description={serviceData.description}
+            ctaHref="/our-services-01"
+            ctaLabel="Explore our services"
+            cards={offerCards}
+            coverImg={serviceData.coverImg}
+          />
+        </div>
+
+        {/* Full content: modern cards, not document-like */}
+        {remainingFeatures.length > 0 && (
+          <div className="space-y-10">
+            <RevealAnimation delay={0.15}>
+              <div className="text-center space-y-3 max-w-[760px] mx-auto">
+                <h3>Everything you get with {serviceData.title}</h3>
+                <p className="text-secondary/70 dark:text-accent/70">
+                  A complete set of capabilities, explained clearly so you can see exactly how Sumu fits your workflow.
+                </p>
+              </div>
             </RevealAnimation>
 
-            {sections.map((section, index) => {
-              const bgStyle = backgroundStyles[index % backgroundStyles.length];
-              return (
-                <RevealAnimation delay={0.6 + index * 0.1} key={index}>
-                  <div className="bg-background-2 dark:bg-background-6 px-[42px] py-14 space-y-6 rounded-[20px] relative overflow-hidden z-10 max-w-[850px] mx-auto">
-                    <div className={bgStyle.className}>
-                      <Image src={bgStyle.gradient} alt="gradient" />
+            <div className="grid grid-cols-12 gap-y-5 lg:gap-y-6 lg:gap-x-8">
+              {remainingFeatures.map((section, index) => (
+                <div key={section.heading || index} className="col-span-12 lg:col-span-6">
+                  <RevealAnimation delay={0.2 + index * 0.06}>
+                    <div className="sm:max-w-[596px] lg:mx-0 mx-auto sm:py-6 py-5 sm:px-[34px] px-7 bg-white dark:bg-background-8 sm:rounded-[20px] rounded-2xl flex items-start sm:gap-[22px] gap-4 border border-secondary/10 dark:border-accent/10 shadow-sm">
+                      <div>
+                        <div className="size-10 rounded-full bg-ns-yellow text-tagline-1 font-semibold text-secondary flex items-center justify-center shrink-0">
+                          {index + 4}
+                        </div>
+                      </div>
+                      <div className="space-y-2 text-left">
+                        {section.heading && (
+                          <h4 className="text-lg font-medium leading-[27px] text-secondary dark:text-accent">
+                            {section.heading}
+                          </h4>
+                        )}
+                        {section.body && (
+                          <ReactMarkdown
+                            rehypePlugins={[[rehypeSlug]]}
+                            components={{
+                              p: ({ node: _node, ...props }) => (
+                                <p className="text-secondary/70 dark:text-accent/70" {...props} />
+                              ),
+                              ul: ({ node: _node, ...props }) => (
+                                <ul
+                                  className="mt-2 space-y-2 list-disc list-inside text-secondary/70 dark:text-accent/70"
+                                  {...props}
+                                />
+                              ),
+                              li: ({ node: _node, ...props }) => <li {...props} />,
+                              strong: ({ node: _node, ...props }) => (
+                                <span className="font-semibold text-secondary dark:text-accent" {...props} />
+                              ),
+                            }}>
+                            {section.body}
+                          </ReactMarkdown>
+                        )}
+                      </div>
                     </div>
-                    <ReactMarkdown
-                      rehypePlugins={[[rehypeSlug]]}
-                      components={{
-                        h2: ({ node: _node, ...props }) => <h4 className="mb-6 first:mt-0" {...props} />,
-                        h3: ({ node: _node, ...props }) => (
-                          <div className="space-y-3">
-                            <p className="text-secondary dark:text-accent mt-10 mb-3 font-semibold" {...props} />
-                          </div>
-                        ),
-                        p: ({ node: _node, ...props }) => <p className="mb-6" {...props} />,
-                        ul: ({ node: _node, ...props }) => (
-                          <ul
-                            className="space-y-3 list-disc list-inside text-tagline-1 font-normal text-secondary/60 dark:text-accent/60 mb-6"
-                            {...props}
-                          />
-                        ),
-                        li: ({ node: _node, ...props }) => (
-                          <li className="text-secondary/60 dark:text-accent/60" {...props} />
-                        ),
-                      }}>
-                      {section}
-                    </ReactMarkdown>
-                  </div>
-                </RevealAnimation>
-              );
-            })}
+                  </RevealAnimation>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );
