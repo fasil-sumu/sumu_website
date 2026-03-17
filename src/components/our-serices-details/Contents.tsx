@@ -76,9 +76,9 @@ const Contents = ({ slug }: { slug: string }) => {
   }));
 
   return (
-    <section className="pb-[200px] pt-32 sm:pt-36 md:pt-40 xl:pt-[200px]">
+    <section className="pb-[200px] pt-32 sm:pt-36 md:pt-40 xl:pt-[200px] overflow-x-clip">
       <div className="main-container space-y-20">
-        <div className="relative">
+        <div className="relative overflow-x-clip">
           {backgroundStyles.map((bg, index) => (
             <div key={index} className={bg.className}>
               <Image src={bg.gradient} alt="gradient" />
