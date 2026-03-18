@@ -1,14 +1,14 @@
 import { IService } from '@/interface';
 import getMarkDownContent from '@/utils/getMarkDownContent';
 import Image from 'next/image';
-import ReactMarkdown from 'react-markdown';
-import rehypeSlug from 'rehype-slug';
-import RevealAnimation from '../animation/RevealAnimation';
 import gradient16 from '@public/images/gradient/gradient-16.png';
 import gradient27 from '@public/images/gradient/gradient-27.png';
 import gradient6 from '@public/images/gradient/gradient-6.png';
-import ProductDetailsWhatWeOffer, { type ProductOfferCard } from './ProductDetailsWhatWeOffer';
-import ProductDetailsProcess from './ProductDetailsProcess';
+import ProductHero from './ProductHero';
+import ProductFeatures from './ProductFeatures';
+import ProductBenefits from './ProductBenefits';
+import ProductInsights from './ProductInsights';
+import ProductCTA from './ProductCTA';
 
 const backgroundStyles = [
   {
@@ -37,76 +37,24 @@ const Contents = ({ slug }: { slug: string }) => {
   const service = getMarkDownContent('src/data/services/', slug);
   const serviceData = service.data as IService;
 
-  const sections = service.content.split(/(?=^##\s)/m).filter((section) => section.trim().length > 0);
-
-  const parseSection = (section: string) => {
-    const lines = section.trim().split('\n');
-    const rawHeading = lines[0] || '';
-    const heading = rawHeading.replace(/^##\s*/, '').trim();
-    const body = lines.slice(1).join('\n').trim();
-    return { heading, body };
-  };
-
-  const primarySection = sections[0] ? parseSection(sections[0]) : { heading: '', body: '' };
-  const featureSections = sections.slice(1).map(parseSection);
-
-  const heroCards = featureSections.slice(0, 5);
-  const remainingFeatures = featureSections.slice(3);
-
-  const toPlainText = (md: string) =>
-    md
-      .replace(/!\[.*?\]\(.*?\)/g, '')
-      .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
-      .replace(/[`*_>#-]/g, '')
-      .replace(/\s+/g, ' ')
-      .trim();
-
-  const makeCardDescription = (body: string) => {
-    const plain = toPlainText(body);
-    if (!plain) return '';
-    const sentenceEnd = plain.search(/[.!?]\s/);
-    const short = sentenceEnd > 60 ? plain.slice(0, sentenceEnd + 1) : plain;
-    return short.length > 140 ? `${short.slice(0, 137)}...` : short;
-  };
-
-  const offerCards: ProductOfferCard[] = heroCards.map((c, idx) => ({
-    id: `${slug}-offer-${idx}`,
-    icon: serviceData.icon,
-    title: c.heading || serviceData.title,
-    description: makeCardDescription(c.body),
-  }));
-
-  const heroParagraph =
-    makeCardDescription(primarySection.body) || makeCardDescription(serviceData.description) || serviceData.description;
-
   return (
-    <section className="pb-[200px] pt-32 sm:pt-36 md:pt-40 xl:pt-[200px] overflow-x-clip">
-      <div className="main-container space-y-20">
-        <div className="relative overflow-x-clip">
-          {backgroundStyles.map((bg, index) => (
-            <div key={index} className={bg.className}>
-              <Image src={bg.gradient} alt="gradient" />
-            </div>
-          ))}
-          <ProductDetailsWhatWeOffer
-            heading={`${serviceData.title}.`}
-            description={heroParagraph}
-            ctaHref="https://sumu-frontend.vercel.app/"
-            ctaLabel="Explore our services"
-            cards={offerCards}
-            coverImg={serviceData.coverImg}
-          />
-        </div>
-
-        {remainingFeatures.length > 0 && (
-          <ProductDetailsProcess
-            title={serviceData.title}
-            steps={remainingFeatures.map((s) => ({ heading: s.heading, body: s.body }))}
-          />
-        )}
+    <section className="pb-[120px] pt-32 sm:pt-36 md:pt-40 xl:pt-[180px] overflow-x-clip">
+      <div className="relative overflow-x-clip">
+        {backgroundStyles.map((bg, index) => (
+          <div key={index} className={bg.className}>
+            <Image src={bg.gradient} alt="gradient" />
+          </div>
+        ))}
+        <ProductHero service={serviceData} />
       </div>
+
+      <ProductFeatures service={serviceData} />
+      <ProductBenefits service={serviceData} />
+      <ProductInsights service={serviceData} />
+      <ProductCTA service={serviceData} />
     </section>
   );
 };
+
 Contents.displayName = 'Contents';
 export default Contents;

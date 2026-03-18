@@ -1,0 +1,74 @@
+import { IService } from '@/interface';
+import Image from 'next/image';
+import RevealAnimation from '../animation/RevealAnimation';
+
+const ProductBenefits = ({ service }: { service: IService }) => {
+  const benefits = service.benefits;
+  if (!benefits || benefits.length === 0) return null;
+
+  return (
+    <section className="main-container mt-20 md:mt-28 lg:mt-[100px]">
+      <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+        {/* Left: cover image */}
+        <RevealAnimation delay={0.2} direction="right">
+          <div className="relative rounded-[24px] overflow-hidden border border-stroke-1 dark:border-stroke-5 bg-background-2 dark:bg-background-6 shadow-sm">
+            {service.coverImg ? (
+              <Image
+                src={service.coverImg}
+                alt={service.benefitsTitle || service.title}
+                width={960}
+                height={640}
+                className="w-full h-auto object-cover"
+              />
+            ) : (
+              <div className="aspect-square flex items-center justify-center">
+                <span className={`${service.icon} text-[100px] text-primary-500/20`} />
+              </div>
+            )}
+          </div>
+        </RevealAnimation>
+
+        {/* Right: benefits */}
+        <div className="space-y-6 lg:space-y-8">
+          <RevealAnimation delay={0.2}>
+            <span className="badge badge-primary-light inline-block">Benefits</span>
+          </RevealAnimation>
+          <RevealAnimation delay={0.3}>
+            <h2 className="text-balance">{service.benefitsTitle || 'Why Choose Sumu'}</h2>
+          </RevealAnimation>
+          {service.benefitsDescription && (
+            <RevealAnimation delay={0.4}>
+              <p className="text-secondary/70 dark:text-accent/70 leading-relaxed">{service.benefitsDescription}</p>
+            </RevealAnimation>
+          )}
+          <ul className="space-y-4">
+            {benefits.map((benefit, index) => (
+              <RevealAnimation key={index} delay={0.35 + index * 0.07}>
+                <li className="flex items-start gap-3">
+                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary-500 mt-0.5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={14}
+                      height={14}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      strokeWidth={2.5}
+                      strokeLinecap="round"
+                      strokeLinejoin="round">
+                      <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                  </div>
+                  <span className="text-secondary dark:text-accent leading-relaxed">{benefit.text}</span>
+                </li>
+              </RevealAnimation>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+ProductBenefits.displayName = 'ProductBenefits';
+export default ProductBenefits;

@@ -40,6 +40,15 @@ export interface IPosition {
   [key: string]: any;
 }
 
+export interface IServiceFeature {
+  title: string;
+  description: string;
+}
+
+export interface IServiceBenefit {
+  text: string;
+}
+
 export interface IService {
   id: number;
   title: string;
@@ -49,6 +58,20 @@ export interface IService {
   image2?: string;
   image3?: string;
   coverImg: string;
+  heroTitle?: string;
+  heroSubtitle?: string;
+  heroDescription?: string;
+  featuresTitle?: string;
+  featuresDescription?: string;
+  features?: IServiceFeature[];
+  benefitsTitle?: string;
+  benefitsDescription?: string;
+  benefits?: IServiceBenefit[];
+  insightsTitle?: string;
+  insightsDescription?: string;
+  insights?: string[];
+  ctaTitle?: string;
+  ctaDescription?: string;
   userReview: {
     name: string;
     image: string;

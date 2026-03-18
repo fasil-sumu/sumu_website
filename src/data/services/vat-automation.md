@@ -4,59 +4,41 @@ description: 'Record and categorize business expenses.'
 icon: 'ns-shape-5'
 image: '/images/home-page-1/services-vat-automation.svg'
 coverImg: '/images/services/service-vat-automation-cover.png'
+heroTitle: 'Track and Control Your Business Expenses'
+heroSubtitle: 'Simplify Expense Management from a Single Dashboard'
+heroDescription: 'Sumu helps you record, categorize, and monitor your business expenses from a single dashboard. Maintain organized financial records, track spending patterns, and gain clear visibility into where your money goes. By keeping your expenses properly documented and categorized, Sumu helps you maintain accurate financial records and better manage your business costs.'
+featuresTitle: 'Simplify Expense Management'
+featuresDescription: 'Sumu provides practical tools that make it easy to record and organize business expenses while keeping your financial data accurate and up to date.'
+features:
+  - title: 'Record Expenses Easily'
+    description: 'Quickly record business expenses and assign them to the appropriate categories.'
+  - title: 'Organize Expense Categories'
+    description: 'Group expenses by category, vendor, or type to maintain structured financial records.'
+  - title: 'Attach Supporting Documents'
+    description: 'Upload receipts, invoices, or supporting files to keep proper documentation for every expense.'
+  - title: 'Track Spending by Vendor or Category'
+    description: 'Monitor where your money is being spent and identify cost patterns across suppliers and expense types.'
+  - title: 'Maintain Accurate Expense Records'
+    description: 'Ensure every business expense is recorded and properly documented for accounting and reporting purposes.'
+benefitsTitle: 'Designed for Organized Financial Management'
+benefitsDescription: "Sumu's expense management tools help businesses maintain reliable financial records while simplifying day-to-day bookkeeping tasks."
+benefits:
+  - text: 'Better control over business spending'
+  - text: 'Organized and accurate expense records'
+  - text: 'Simplified bookkeeping processes'
+  - text: 'Improved financial visibility'
+insightsTitle: 'Gain Better Visibility into Business Spending'
+insightsDescription: 'Understanding your expenses is essential for managing profitability and controlling costs. Sumu provides a clear overview of your spending. All information is available directly from your financial dashboard.'
+insights:
+  - 'Total business expenses'
+  - 'Expenses by category'
+  - 'Vendor spending patterns'
+  - 'Expense trends over time'
+ctaTitle: 'Manage Your Expenses with Confidence'
+ctaDescription: 'Keep your business spending organized and maintain accurate financial records with Sumu expense management tools.'
 userReview:
   name: 'Aisha Al-Sinani'
   image: '/images/avatar/avatar-6.png'
   reviewContent: 'Expense tracking became structured and transparent, which improved our cost control.'
   userRole: 'Operations Manager'
 ---
-
-## Track and Control Your Business Expenses
-
-Sumu helps you record, categorize, and monitor your business expenses from a single dashboard.
-
-Maintain organized financial records, track spending patterns, and gain clear visibility into where your money goes.
-
-By keeping your expenses properly documented and categorized, Sumu helps you maintain accurate financial records and better manage your business costs.
-
-Start Free Trial
-
-## Simplify Expense Management
-
-Sumu provides practical tools that make it easy to record and organize business expenses while keeping your financial data accurate and up to date.
-
-- **Record Expenses Easily**: Quickly record business expenses and assign them to the appropriate categories.
-- **Organize Expense Categories**: Group expenses by category, vendor, or type to maintain structured financial records.
-- **Attach Supporting Documents**: Upload receipts, invoices, or supporting files to keep proper documentation for every expense.
-- **Track Spending by Vendor or Category**: Monitor where your money is being spent and identify cost patterns across suppliers and expense types.
-- **Maintain Accurate Expense Records**: Ensure every business expense is recorded and properly documented for accounting and reporting purposes.
-
-## Gain Better Visibility into Business Spending
-
-Understanding your expenses is essential for managing profitability and controlling costs.
-
-Sumu provides a clear overview of your spending so you can easily monitor:
-
-- total business expenses
-- expenses by category
-- vendor spending patterns
-- expense trends over time
-
-All information is available directly from your financial dashboard.
-
-## Designed for Organized Financial Management
-
-Sumu's expense management tools help businesses maintain reliable financial records while simplifying day-to-day bookkeeping tasks.
-
-Benefits include:
-
-- better control over business spending
-- organized and accurate expense records
-- simplified bookkeeping processes
-- improved financial visibility
-
-## Manage Your Expenses with Confidence
-
-Keep your business spending organized and maintain accurate financial records with Sumu's expense management tools.
-
-Start managing your expenses with Sumu today.
