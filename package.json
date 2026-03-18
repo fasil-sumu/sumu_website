@@ -61,7 +61,8 @@
       "prettier --write"
     ],
     "**/*.{json,css,scss,md,html}": [
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   }
 }
