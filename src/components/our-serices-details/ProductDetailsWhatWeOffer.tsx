@@ -1,10 +1,10 @@
 'use client';
 
-import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
 import StackCardItem from '../ui/stack-card/StackCardItem';
 import StackCardWrapper from '../ui/stack-card/StackCardWrapper';
+import SkeletonImage from '../ui/SkeletonImage';
 
 export interface ProductOfferCard {
   id: string;
@@ -50,6 +50,8 @@ const ProductDetailsWhatWeOffer = ({
                   <div>
                     <LinkButton
                       href={ctaHref}
+                      target={ctaHref.startsWith('http') ? '_blank' : undefined}
+                      rel={ctaHref.startsWith('http') ? 'noreferrer' : undefined}
                       className="btn btn-white btn-lg lg:btn-xl w-[90%] md:w-auto mx-auto md:mx-0 dark:btn-transparent hover:btn-secondary dark:hover:btn-accent">
                       {ctaLabel}
                     </LinkButton>
@@ -82,11 +84,12 @@ const ProductDetailsWhatWeOffer = ({
                   <StackCardItem key="cover-image">
                     <div className="border border-stroke-1/90 dark:border-stroke-5 bg-white dark:bg-background-6 rounded-[20px] p-4 h-full">
                       <figure className="rounded-[16px] overflow-hidden">
-                        <Image
+                        <SkeletonImage
                           src={coverImg}
                           alt={heading}
                           width={960}
                           height={520}
+                          showDimensions
                           className="w-full h-auto object-cover"
                         />
                       </figure>

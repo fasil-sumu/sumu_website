@@ -8,6 +8,7 @@ import gradient16 from '@public/images/gradient/gradient-16.png';
 import gradient27 from '@public/images/gradient/gradient-27.png';
 import gradient6 from '@public/images/gradient/gradient-6.png';
 import ProductDetailsWhatWeOffer, { type ProductOfferCard } from './ProductDetailsWhatWeOffer';
+import ProductDetailsProcess from './ProductDetailsProcess';
 
 const backgroundStyles = [
   {
@@ -75,6 +76,9 @@ const Contents = ({ slug }: { slug: string }) => {
     description: makeCardDescription(c.body),
   }));
 
+  const heroParagraph =
+    makeCardDescription(primarySection.body) || makeCardDescription(serviceData.description) || serviceData.description;
+
   return (
     <section className="pb-[200px] pt-32 sm:pt-36 md:pt-40 xl:pt-[200px] overflow-x-clip">
       <div className="main-container space-y-20">
@@ -86,70 +90,19 @@ const Contents = ({ slug }: { slug: string }) => {
           ))}
           <ProductDetailsWhatWeOffer
             heading={`${serviceData.title}.`}
-            description={serviceData.description}
-            ctaHref="/our-services-01"
+            description={heroParagraph}
+            ctaHref="https://sumu-frontend.vercel.app/"
             ctaLabel="Explore our services"
             cards={offerCards}
             coverImg={serviceData.coverImg}
           />
         </div>
 
-        {/* Full content: modern cards, not document-like */}
         {remainingFeatures.length > 0 && (
-          <div className="space-y-10">
-            <RevealAnimation delay={0.15}>
-              <div className="text-center space-y-3 max-w-[760px] mx-auto">
-                <h3>Everything you get with {serviceData.title}</h3>
-                <p className="text-secondary/70 dark:text-accent/70">
-                  A complete set of capabilities, explained clearly so you can see exactly how Sumu fits your workflow.
-                </p>
-              </div>
-            </RevealAnimation>
-
-            <div className="grid grid-cols-12 gap-y-5 lg:gap-y-6 lg:gap-x-8">
-              {remainingFeatures.map((section, index) => (
-                <div key={section.heading || index} className="col-span-12 lg:col-span-6">
-                  <RevealAnimation delay={0.2 + index * 0.06}>
-                    <div className="sm:max-w-[596px] lg:mx-0 mx-auto sm:py-6 py-5 sm:px-[34px] px-7 bg-white dark:bg-background-8 sm:rounded-[20px] rounded-2xl flex items-start sm:gap-[22px] gap-4 border border-secondary/10 dark:border-accent/10 shadow-sm">
-                      <div>
-                        <div className="size-10 rounded-full bg-ns-yellow text-tagline-1 font-semibold text-secondary flex items-center justify-center shrink-0">
-                          {index + 4}
-                        </div>
-                      </div>
-                      <div className="space-y-2 text-left">
-                        {section.heading && (
-                          <h4 className="text-lg font-medium leading-[27px] text-secondary dark:text-accent">
-                            {section.heading}
-                          </h4>
-                        )}
-                        {section.body && (
-                          <ReactMarkdown
-                            rehypePlugins={[[rehypeSlug]]}
-                            components={{
-                              p: ({ node: _node, ...props }) => (
-                                <p className="text-secondary/70 dark:text-accent/70" {...props} />
-                              ),
-                              ul: ({ node: _node, ...props }) => (
-                                <ul
-                                  className="mt-2 space-y-2 list-disc list-inside text-secondary/70 dark:text-accent/70"
-                                  {...props}
-                                />
-                              ),
-                              li: ({ node: _node, ...props }) => <li {...props} />,
-                              strong: ({ node: _node, ...props }) => (
-                                <span className="font-semibold text-secondary dark:text-accent" {...props} />
-                              ),
-                            }}>
-                            {section.body}
-                          </ReactMarkdown>
-                        )}
-                      </div>
-                    </div>
-                  </RevealAnimation>
-                </div>
-              ))}
-            </div>
-          </div>
+          <ProductDetailsProcess
+            title={serviceData.title}
+            steps={remainingFeatures.map((s) => ({ heading: s.heading, body: s.body }))}
+          />
         )}
       </div>
     </section>
