@@ -17,12 +17,14 @@ const ProductHero = ({ service }: { service: IService }) => {
 
           {service.heroSubtitle && (
             <RevealAnimation delay={0.3}>
-              <p className="text-tagline-1 text-primary-500 uppercase tracking-wider">{service.heroSubtitle}</p>
+              <p className="text-tagline-1 text-primary-500 uppercase tracking-wider">
+                {service.heroTitle || service.title}
+              </p>
             </RevealAnimation>
           )}
 
           <RevealAnimation delay={0.35}>
-            <h1 className="text-heading-2 md:text-heading-1 text-balance">{service.heroTitle || service.title}</h1>
+            <h2 className="text-heading-2 md:text-heading-1 text-balance">{service.heroSubtitle}</h2>
           </RevealAnimation>
 
           <RevealAnimation delay={0.45}>
@@ -39,11 +41,6 @@ const ProductHero = ({ service }: { service: IService }) => {
                 rel="noreferrer"
                 className="btn btn-primary btn-lg w-full sm:w-auto hover:btn-secondary dark:hover:btn-accent">
                 Start Free Trial
-              </LinkButton>
-              <LinkButton
-                href="#features"
-                className="btn btn-white btn-lg w-full sm:w-auto dark:btn-transparent hover:btn-secondary dark:hover:btn-accent">
-                Learn More
               </LinkButton>
             </div>
           </RevealAnimation>
