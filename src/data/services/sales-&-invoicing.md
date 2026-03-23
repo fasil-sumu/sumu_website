@@ -20,6 +20,8 @@ features:
     description: 'Set up recurring invoices for subscriptions, retainers, or regular services.'
   - title: 'Receive Smart Payment Notifications'
     description: 'Get automatic alerts when payments are received or when invoices become overdue.'
+  - title: 'Customize Invoice Templates'
+    description: 'Adjust layouts, fields, and branding to match your business identity and client requirements.'
 benefitsTitle: 'Faster Payments, Better Cash Flow'
 benefitsDescription: 'Improve your cash flow by making it easier for customers to pay. Add payment links directly to invoices and allow customers to complete payments quickly and securely. With automated reminders and payment tracking, you always stay informed about the status of your receivables.'
 benefits:

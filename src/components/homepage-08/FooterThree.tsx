@@ -189,31 +189,124 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
             </RevealAnimation>
           </div>
           <div className="col-span-12 grid grid-cols-12 gap-x-4 gap-y-8 sm:gap-x-6 lg:col-span-8">
-            <div className="col-span-6 sm:col-span-6 md:col-span-4">
+            {/* Products Column */}
+            <div className="col-span-12 sm:col-span-4">
               {isMounted ? (
                 <RevealAnimation delay={0.1}>
                   <div className="space-y-8">
                     <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                      {t('homepage08.footer.company')}
+                      {t('homepage08.footer.products')}
                     </p>
                     <ul className="space-y-5">
                       <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.aboutUs')}
+                        <Link href="/our-services/sales-&-invoicing" className="footer-link-v2">
+                          {t('homepage08.footer.invoicing')}
                         </Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.career')}
+                        <Link href="/our-services/accept-payment-online" className="footer-link-v2">
+                          {t('homepage08.footer.payments')}
                         </Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.caseStudies')}
+                        <Link href="/our-services/vat-automation" className="footer-link-v2">
+                          {t('homepage08.footer.expenses')}
                         </Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
+                        <Link href="/our-services/accounting" className="footer-link-v2">
+                          {t('homepage08.footer.accounting')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/our-services/analytics-&-reporting" className="footer-link-v2">
+                          {t('homepage08.footer.reporting')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/our-services/banking-&-accounts-aggregation" className="footer-link-v2">
+                          {t('homepage08.footer.clients')}
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </RevealAnimation>
+              ) : (
+                <div className="space-y-8">
+                  <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
+                    Products
+                  </p>
+                  <ul className="space-y-5">
+                    <li>
+                      <Link href="/our-services/sales-&-invoicing" className="footer-link-v2">
+                        Invoicing
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/our-services/accept-payment-online" className="footer-link-v2">
+                        Payments
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/our-services/vat-automation" className="footer-link-v2">
+                        Expenses
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/our-services/accounting" className="footer-link-v2">
+                        Accounting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/our-services/analytics-&-reporting" className="footer-link-v2">
+                        Reporting
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/our-services/banking-&-accounts-aggregation" className="footer-link-v2">
+                        Clients
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+            {/* Resources Column */}
+            <div className="col-span-12 sm:col-span-4">
+              {isMounted ? (
+                <RevealAnimation delay={0.15}>
+                  <div className="space-y-8">
+                    <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
+                      {t('homepage08.footer.resources')}
+                    </p>
+                    <ul className="space-y-5">
+                      <li>
+                        <Link href="/resources/blog" className="footer-link-v2">
+                          {t('homepage08.footer.blog')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/resources/guides-tutorials" className="footer-link-v2">
+                          {t('homepage08.footer.guidesTutorials')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/resources/product-updates" className="footer-link-v2">
+                          {t('homepage08.footer.productUpdates')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/resources/help-center" className="footer-link-v2">
+                          {t('homepage08.footer.helpCenter')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/resources/documentation" className="footer-link-v2">
+                          {t('homepage08.footer.documentation')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/resources/contact-us" className="footer-link-v2">
                           {t('homepage08.footer.contactUs')}
                         </Link>
                       </li>
@@ -223,26 +316,36 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               ) : (
                 <div className="space-y-8">
                   <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                    Company
+                    Resources
                   </p>
                   <ul className="space-y-5">
                     <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
-                        About Us
+                      <Link href="/resources/blog" className="footer-link-v2">
+                        Blog
                       </Link>
                     </li>
                     <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
-                        Career
+                      <Link href="/resources/guides-tutorials" className="footer-link-v2">
+                        Guides & Tutorials
                       </Link>
                     </li>
                     <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
-                        Case Studies
+                      <Link href="/resources/product-updates" className="footer-link-v2">
+                        Product Updates
                       </Link>
                     </li>
                     <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
+                      <Link href="/resources/help-center" className="footer-link-v2">
+                        Help Center
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/resources/documentation" className="footer-link-v2">
+                        Documentation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/resources/contact-us" className="footer-link-v2">
                         Contact Us
                       </Link>
                     </li>
@@ -250,32 +353,28 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                 </div>
               )}
             </div>
-            <div className="col-span-6 sm:col-span-6 md:col-span-4">
+            {/* Legal Column */}
+            <div className="col-span-12 sm:col-span-4">
               {isMounted ? (
-                <RevealAnimation delay={0.15}>
+                <RevealAnimation delay={0.2}>
                   <div className="space-y-8">
                     <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                      {t('homepage08.footer.support')}
+                      {t('homepage08.footer.legalPolicies')}
                     </p>
                     <ul className="space-y-5">
                       <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
+                        <Link href="/privacy" className="footer-link-v2">
+                          {t('homepage08.footer.privacyPolicy')}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/faq" className="footer-link-v2">
                           {t('homepage08.footer.faq')}
                         </Link>
                       </li>
                       <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.documentation')}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.tutorial')}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/suppcoming-soonort" className="footer-link-v2">
-                          {t('homepage08.footer.supportLink')}
+                        <Link href="/terms-conditions" className="footer-link-v2">
+                          {t('homepage08.footer.termsConditions')}
                         </Link>
                       </li>
                     </ul>
@@ -284,104 +383,26 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
               ) : (
                 <div className="space-y-8">
                   <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                    Support
+                    Legal & Policies
                   </p>
                   <ul className="space-y-5">
                     <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
+                      <Link href="/privacy" className="footer-link-v2">
+                        Privacy Policy
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/faq" className="footer-link-v2">
                         FAQ
                       </Link>
                     </li>
                     <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
-                        Documentation
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
-                        Tutorial
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/coming-soon" className="footer-link-v2">
-                        Support
+                      <Link href="/terms-conditions" className="footer-link-v2">
+                        Terms & Conditions
                       </Link>
                     </li>
                   </ul>
                 </div>
-              )}
-            </div>
-            <div className="col-span-6 sm:col-span-6 md:col-span-4">
-              {isMounted ? (
-                <RevealAnimation delay={0.6}>
-                  <div className="space-y-8">
-                    <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                      {t('homepage08.footer.legalPolicies')}
-                    </p>
-                    <ul className="space-y-5">
-                      <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.termsConditions')}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.privacyPolicy')}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/refund-policy" className="footer-link-v2">
-                          {t('homepage08.footer.refundPolicy')}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.gdprCompliance')}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/coming-soon" className="footer-link-v2">
-                          {t('homepage08.footer.affiliatePolicy')}
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </RevealAnimation>
-              ) : (
-                <RevealAnimation delay={0.16}>
-                  <div className="space-y-8">
-                    <p className="sm:text-heading-6 text-tagline-1 text-secondary dark:text-accent font-normal">
-                      Legal & Policies
-                    </p>
-                    <ul className="space-y-5">
-                      <li>
-                        <Link href="/terms-conditions" className="footer-link-v2">
-                          Terms & Conditions
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/privacy" className="footer-link-v2">
-                          Privacy Policy
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/refund-policy" className="footer-link-v2">
-                          Refund Policy
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/gdpr" className="footer-link-v2">
-                          GDPR Compliance
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href="/affiliate-policy" className="footer-link-v2">
-                          Affiliate Policy
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </RevealAnimation>
               )}
             </div>
           </div>
