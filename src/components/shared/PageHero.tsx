@@ -1,11 +1,12 @@
 import { cn } from '@/utils/cn';
 // import Link from 'next/link';
 import RevealAnimation from '../animation/RevealAnimation';
+import { ReactNode } from 'react';
 
 interface PageHeroProps {
   className?: string;
-  title?: string;
-  heading?: string;
+  title?: ReactNode;
+  heading?: ReactNode;
   link?: string;
 }
 

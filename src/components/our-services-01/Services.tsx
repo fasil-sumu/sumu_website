@@ -2,6 +2,7 @@ import { IService } from '@/interface';
 import getMarkDownData from '@/utils/getMarkDownData';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import TranslatedText from '../shared/TranslatedText';
 
 const Services = () => {
   // Get all services and filter for the main Sumu products
@@ -22,20 +23,39 @@ const Services = () => {
     .map((slug) => allServices.find((service) => service.slug === slug))
     .filter((service): service is IService => service !== undefined);
 
+  const serviceKeyBySlug: Record<string, string> = {
+    'sales-&-invoicing': 'salesInvoicing',
+    'accept-payment-online': 'payments',
+    'vat-automation': 'expenses',
+    accounting: 'accounting',
+    'analytics-&-reporting': 'reporting',
+    'banking-&-accounts-aggregation': 'clients',
+  };
+
   return (
     <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px] pt-[100px]">
       <div className="main-container">
         <div className="text-center space-y-5 mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-yellow-v2">Our Products</span>
+            <span className="badge badge-yellow-v2">
+              <TranslatedText i18nKey="productsPage.services.badge" defaultText="Our Products" />
+            </span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2 className="max-w-[878px] mx-auto">Products Built to Run Your Business Better</h2>
+              <h2 className="max-w-[878px] mx-auto">
+                <TranslatedText
+                  i18nKey="productsPage.services.title"
+                  defaultText="Products Built to Run Your Business Better"
+                />
+              </h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
               <p className="max-w-[700px] mx-auto">
-                Invoicing, payments, expenses, accounting, reporting, and client management in one connected platform.
+                <TranslatedText
+                  i18nKey="productsPage.services.description"
+                  defaultText="Invoicing, payments, expenses, accounting, reporting, and client management in one connected platform."
+                />
               </p>
             </RevealAnimation>
           </div>
@@ -49,14 +69,24 @@ const Services = () => {
                     <span className={`${service.icon} text-[52px] text-secondary dark:text-accent`} />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-heading-5">{service.title}</h3>
-                    <p className="max-w-[361px] mx-auto line-clamp-3">{service.description}</p>
+                    <h3 className="text-heading-5">
+                      <TranslatedText
+                        i18nKey={`productsPage.services.items.${serviceKeyBySlug[service.slug]}.title`}
+                        defaultText={service.title}
+                      />
+                    </h3>
+                    <p className="max-w-[361px] mx-auto line-clamp-3">
+                      <TranslatedText
+                        i18nKey={`productsPage.services.items.${serviceKeyBySlug[service.slug]}.description`}
+                        defaultText={service.description}
+                      />
+                    </p>
                   </div>
                   <div>
                     <LinkButton
                       href={`/our-services/${service.slug}`}
                       className="btn btn-white dark:btn-transparent dark:hover:btn-accent hover:btn-secondary btn-md">
-                      Read more
+                      <TranslatedText i18nKey="productsPage.services.readMore" defaultText="Read more" />
                     </LinkButton>
                   </div>
                 </div>

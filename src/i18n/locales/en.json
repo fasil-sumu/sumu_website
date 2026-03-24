@@ -290,5 +290,108 @@
       "termsConditions": "Terms & Conditions",
       "copyright": "Sumu - a business platform owned and operated by OceanGate for Smart Technologies LLC, a FinTech and Software-as-a-Service (SaaS) solutions company.  All rights reserved © 2026."
     }
+  },
+  "productsPage": {
+    "hero": {
+      "title": "Products",
+      "heading": "Products"
+    },
+    "services": {
+      "badge": "Our Products",
+      "title": "Products Built to Run Your Business Better",
+      "description": "Invoicing, payments, expenses, accounting, reporting, and client management in one connected platform.",
+      "readMore": "Read more",
+      "items": {
+        "salesInvoicing": {
+          "title": "Invoicing",
+          "description": "Create, send, and manage invoices easily."
+        },
+        "payments": {
+          "title": "Payments",
+          "description": "Accept payments online and get paid faster."
+        },
+        "expenses": {
+          "title": "Expenses",
+          "description": "Automate VAT and track business expenses with clarity."
+        },
+        "accounting": {
+          "title": "Accounting",
+          "description": "Keep your books organized and your records accurate."
+        },
+        "reporting": {
+          "title": "Reporting",
+          "description": "Monitor performance with real-time analytics and reports."
+        },
+        "clients": {
+          "title": "Clients",
+          "description": "Manage client data and accounts in one place."
+        }
+      }
+    },
+    "features": {
+      "badge": "Feature",
+      "title": "Streamline your business operations.",
+      "list": {
+        "item1": "Add a feature section about the product.",
+        "item2": "Add a feature section about the product.",
+        "item3": "Single upfront payment."
+      }
+    },
+    "solutions": {
+      "badge": "Strong solutions",
+      "title": "Ensure strong solutions are available at all times",
+      "description": "Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like nothing.",
+      "bullets": {
+        "support": "On Demand Support",
+        "sharing": "Information Sharing",
+        "cloud": "Cloud Technology"
+      }
+    },
+    "pricing": {
+      "badge": "Our Pricing",
+      "title": "Select the pricing plan that best suits your needs.",
+      "save40": "save 40%",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "perYear": "Per Year",
+      "perMonth": "Per Month",
+      "plans": {
+        "simplified": {
+          "name": "Simplified",
+          "tagline": "For individuals and small teams with unlimited trial access.",
+          "features": {
+            "singlePayment": "Single Payment",
+            "sellingOwnItems": "Selling your own items",
+            "powerfulIntegration": "Powerful integration"
+          }
+        },
+        "basic": {
+          "name": "Basic",
+          "tagline": "For individuals and small teams with unlimited trial access.",
+          "features": {
+            "unlimitedBandwidth": "Unlimited Bandwidth",
+            "promotionalTools": "Promotional Tools",
+            "singlePayment": "Single Payment",
+            "sellingOwnItems": "Selling your own items",
+            "powerfulIntegration": "Powerful integration"
+          }
+        },
+        "enhanced": {
+          "name": "Enhanced",
+          "tagline": "For individuals and small teams with unlimited trial access.",
+          "features": {
+            "sellingOnOwnConditions": "Selling on your own conditions",
+            "seamlessIntegrations": "Seamless integrations",
+            "realTimeStreaming": "Real-time streaming"
+          }
+        }
+      }
+    },
+    "cta": {
+      "heading": "Ready to transform your business",
+      "span": "finances?",
+      "description": "Start your free trial today and experience the power of Sumu's complete financial platform.",
+      "button": "Get started"
+    }
   }
 }

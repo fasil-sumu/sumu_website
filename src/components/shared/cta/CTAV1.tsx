@@ -2,16 +2,18 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import { cn } from '@/utils/cn';
 import CTACheckList from './CTACheckList';
 import CtaInputForm from './CtaInputForm';
+import { ReactNode } from 'react';
+import TranslatedText from '../TranslatedText';
 
 interface CTAV1Props {
   className?: string;
   badgeClass?: string;
-  ctaHeading?: string;
-  spanText?: string;
-  description?: string;
+  ctaHeading?: ReactNode;
+  spanText?: ReactNode;
+  description?: ReactNode;
   btnClass?: string;
-  ctaBtnText?: string;
-  badgeText?: string;
+  ctaBtnText?: ReactNode;
+  badgeText?: ReactNode;
   descriptionClass?: string;
   headingClass?: string;
   listTextClass?: string;
@@ -71,11 +73,11 @@ const CTAV1 = ({
               ctaCheckListData={[
                 {
                   id: '1',
-                  text: 'No credit card required',
+                  text: <TranslatedText i18nKey="homepage08.cta.noCreditCard" defaultText="No credit card required" />,
                 },
                 {
                   id: '2',
-                  text: '14-Day free trial',
+                  text: <TranslatedText i18nKey="homepage08.cta.freeTrial" defaultText="14-Day free trial" />,
                 },
               ]}
               listTextClass={listTextClass}

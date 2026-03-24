@@ -3,10 +3,11 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { cn } from '@/utils/cn';
 import { useTranslation } from 'react-i18next';
+import { ReactNode } from 'react';
 
 interface CtaInputFormProps {
   btnClass?: string;
-  ctaBtnText?: string;
+  ctaBtnText?: ReactNode;
   inputFieldClass?: string;
   emailPlaceholder?: string;
 }

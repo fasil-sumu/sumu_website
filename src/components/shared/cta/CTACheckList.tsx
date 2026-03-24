@@ -1,12 +1,13 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { CheckIcon } from '@/icons';
 import { cn } from '@/utils/cn';
+import { ReactNode } from 'react';
 
 interface CTACheckListProps {
   className?: string;
   ctaCheckListData: {
     id: string;
-    text: string;
+    text: ReactNode;
   }[];
   listClass?: string;
   listTextClass?: string;

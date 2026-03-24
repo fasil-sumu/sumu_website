@@ -8,6 +8,7 @@ import gradient7 from '@public/images/gradient/gradient-7.png';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import TranslatedText from '../shared/TranslatedText';
 
 const Features = ({
   className,
@@ -27,12 +28,19 @@ const Features = ({
       <div className="main-container">
         <div className="flex items-center flex-wrap lg:flex-nowrap gap-y-8 lg:gap-4 xl:gap-8">
           <div className="w-full lg:w-1/2">
-            <div className="text-center lg:text-left">
+            <div className="text-center lg:text-start">
               <RevealAnimation delay={0.1}>
-                <span className={cn('badge badge-yellow-v2 mb-5', badgeClassName)}>Feature</span>
+                <span className={cn('badge badge-yellow-v2 mb-5', badgeClassName)}>
+                  <TranslatedText i18nKey="productsPage.features.badge" defaultText="Feature" />
+                </span>
               </RevealAnimation>
               <RevealAnimation delay={0.2}>
-                <h2 className="mb-8 max-w-[520px] mx-auto lg:mx-0">Streamline your business operations.</h2>
+                <h2 className="mb-8 max-w-[520px] mx-auto lg:mx-0">
+                  <TranslatedText
+                    i18nKey="productsPage.features.title"
+                    defaultText="Streamline your business operations."
+                  />
+                </h2>
               </RevealAnimation>
               <ul className="space-y-4 mb-14">
                 <RevealAnimation delay={0.3}>
@@ -54,7 +62,10 @@ const Features = ({
                       />
                     </svg>
                     <span className="text-secondary/40 dark:text-accent/60">
-                      Add a feature section about the product.
+                      <TranslatedText
+                        i18nKey="productsPage.features.list.item1"
+                        defaultText="Add a feature section about the product."
+                      />
                     </span>
                   </li>
                 </RevealAnimation>
@@ -77,7 +88,10 @@ const Features = ({
                       />
                     </svg>
                     <span className="text-secondary/40 dark:text-accent/60">
-                      Add a feature section about the product.
+                      <TranslatedText
+                        i18nKey="productsPage.features.list.item2"
+                        defaultText="Add a feature section about the product."
+                      />
                     </span>
                   </li>
                 </RevealAnimation>
@@ -99,7 +113,12 @@ const Features = ({
                         className="fill-secondary/80 dark:fill-accent/80"
                       />
                     </svg>
-                    <span className="text-secondary/40 dark:text-accent/60">Single upfront payment.</span>
+                    <span className="text-secondary/40 dark:text-accent/60">
+                      <TranslatedText
+                        i18nKey="productsPage.features.list.item3"
+                        defaultText="Single upfront payment."
+                      />
+                    </span>
                   </li>
                 </RevealAnimation>
               </ul>
@@ -108,7 +127,7 @@ const Features = ({
                   <LinkButton
                     href="/features-01"
                     className={cn('btn btn-xl dark:btn-transparent hover:btn-primary btn-secondary', btnClassName)}>
-                    Get started
+                    <TranslatedText i18nKey="common.getStarted" defaultText="Get started" />
                   </LinkButton>
                 </div>
               </RevealAnimation>

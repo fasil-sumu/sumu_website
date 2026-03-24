@@ -7,6 +7,7 @@ import userActivity from '@public/images/services/user-activity.svg';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import TranslatedText from '../shared/TranslatedText';
 
 const Solutions = () => {
   return (
@@ -14,18 +15,27 @@ const Solutions = () => {
       <div className="max-w-[1400px] xl:py-[200px] py-24 px-5 md:px-12 mx-5 sm:mx-auto bg-background-3 dark:bg-background-5 rounded-[20px] overflow-hidden">
         <div className="grid grid-cols-12 xl:gap-[100px] lg:gap-20 gap-y-24 items-end">
           <div className="col-span-12 lg:col-span-6">
-            <div className="space-y-5 lg:mt-[114px] lg:text-left sm:text-center">
+            <div className="space-y-5 lg:mt-[114px] lg:text-start sm:text-center">
               <RevealAnimation delay={0.1}>
-                <span className="badge badge-yellow-v2">Strong solutions</span>
+                <span className="badge badge-yellow-v2">
+                  <TranslatedText i18nKey="productsPage.solutions.badge" defaultText="Strong solutions" />
+                </span>
               </RevealAnimation>
               <div className="space-y-3 max-w-[595px] lg:mx-0 mx-auto">
                 <RevealAnimation delay={0.2}>
-                  <h2>Ensure strong solutions are available at all times</h2>
+                  <h2>
+                    <TranslatedText
+                      i18nKey="productsPage.solutions.title"
+                      defaultText="Ensure strong solutions are available at all times"
+                    />
+                  </h2>
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
                   <p>
-                    Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It&apos;s not
-                    Latin though it looks like nothing.
+                    <TranslatedText
+                      i18nKey="productsPage.solutions.description"
+                      defaultText="Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text. It's not Latin though it looks like nothing."
+                    />
                   </p>
                 </RevealAnimation>
               </div>
@@ -45,7 +55,12 @@ const Solutions = () => {
                         />
                       </svg>
                     </span>
-                    <p className="font-medium text-secondary dark:text-accent/60">On Demand Support</p>
+                    <p className="font-medium text-secondary dark:text-accent/60">
+                      <TranslatedText
+                        i18nKey="productsPage.solutions.bullets.support"
+                        defaultText="On Demand Support"
+                      />
+                    </p>
                   </li>
                 </RevealAnimation>
                 <RevealAnimation delay={0.5}>
@@ -61,7 +76,12 @@ const Solutions = () => {
                         />
                       </svg>
                     </span>
-                    <p className="font-medium text-secondary dark:text-accent/60">Information Sharing</p>
+                    <p className="font-medium text-secondary dark:text-accent/60">
+                      <TranslatedText
+                        i18nKey="productsPage.solutions.bullets.sharing"
+                        defaultText="Information Sharing"
+                      />
+                    </p>
                   </li>
                 </RevealAnimation>
                 <RevealAnimation delay={0.6}>
@@ -77,17 +97,19 @@ const Solutions = () => {
                         />
                       </svg>
                     </span>
-                    <p className="font-medium text-secondary dark:text-accent/60">Cloud Technology</p>
+                    <p className="font-medium text-secondary dark:text-accent/60">
+                      <TranslatedText i18nKey="productsPage.solutions.bullets.cloud" defaultText="Cloud Technology" />
+                    </p>
                   </li>
                 </RevealAnimation>
               </ul>
             </div>
             <RevealAnimation delay={0.7}>
-              <div className="text-center lg:text-left">
+              <div className="text-center lg:text-start">
                 <LinkButton
                   href="/our-services-02"
                   className="btn btn-xl dark:btn-transparent hover:btn-primary btn-secondary w-[90] sm:w-auto">
-                  Get started
+                  <TranslatedText i18nKey="common.getStarted" defaultText="Get started" />
                 </LinkButton>
               </div>
             </RevealAnimation>

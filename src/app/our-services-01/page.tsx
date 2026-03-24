@@ -6,6 +6,7 @@ import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/homepage-08/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
+import TranslatedText from '@/components/shared/TranslatedText';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 
@@ -23,8 +24,8 @@ const OurServices01 = () => {
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero
           className="pt-32 sm:pt-36 md:pt-40 xl:pt-[170px]"
-          title="Products"
-          heading="Products"
+          title={<TranslatedText i18nKey="productsPage.hero.title" defaultText="Products" />}
+          heading={<TranslatedText i18nKey="productsPage.hero.heading" defaultText="Products" />}
           link="/our-services-01"
         />
         <Services />
@@ -34,11 +35,18 @@ const OurServices01 = () => {
         <CTAV1
           className="dark:bg-background-7 bg-background-3"
           badgeClass="hidden"
-          ctaHeading="Ready to transform your business"
-          spanText="finances?"
-          description="Start your free trial today and experience the power of Sumu's complete financial platform."
+          ctaHeading={
+            <TranslatedText i18nKey="productsPage.cta.heading" defaultText="Ready to transform your business" />
+          }
+          spanText={<TranslatedText i18nKey="productsPage.cta.span" defaultText="finances?" />}
+          description={
+            <TranslatedText
+              i18nKey="productsPage.cta.description"
+              defaultText="Start your free trial today and experience the power of Sumu's complete financial platform."
+            />
+          }
           btnClass="btn-primary hover:btn-secondary dark:hover:btn-accent"
-          ctaBtnText="Get started"
+          ctaBtnText={<TranslatedText i18nKey="productsPage.cta.button" defaultText="Get started" />}
         />
       </main>
       <FooterThree />
