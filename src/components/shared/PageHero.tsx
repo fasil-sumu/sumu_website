@@ -1,6 +1,5 @@
 import { cn } from '@/utils/cn';
 // import Link from 'next/link';
-import RevealAnimation from '../animation/RevealAnimation';
 import { ReactNode } from 'react';
 
 interface PageHeroProps {
@@ -8,15 +7,23 @@ interface PageHeroProps {
   title?: ReactNode;
   heading?: ReactNode;
   link?: string;
+  showHeading?: boolean;
 }
 
-const PageHero = ({ className, heading }: PageHeroProps) => {
+const PageHero = ({ className, heading, showHeading = false }: PageHeroProps) => {
+  const shouldShowHeading = Boolean(showHeading && heading);
+
   return (
-    <section className={cn('xl:pt-[50px] md:pt-32 sm:pt-24 pt-24 ', className)} aria-label="Page hero section">
+    <section
+      className={cn(
+        shouldShowHeading ? 'xl:pt-[50px] md:pt-32 sm:pt-24 pt-24' : '!pt-24 sm:!pt-28 md:!pt-32 xl:!pt-36',
+        className,
+      )}
+      aria-label="Page hero section">
       <div className="main-container">
-        {/* Hero content */}
-        <div className="text-center space-y-2 pb-14 lg:pb-[72px]">
-          {/* <RevealAnimation delay={0.1}>
+        {shouldShowHeading ? (
+          <div className="text-center space-y-2 pb-14 lg:pb-[72px]">
+            {/* <RevealAnimation delay={0.1}>
             <span className="hero-badge text-tagline-1 inline-block text-secondary dark:text-accent">
               <Link
                 href="/"
@@ -31,10 +38,9 @@ const PageHero = ({ className, heading }: PageHeroProps) => {
               </Link>
             </span>
           </RevealAnimation> */}
-          <RevealAnimation delay={0.2}>
             <h1 className="font-normal lg:text-heading-2">{heading}</h1>
-          </RevealAnimation>
-        </div>
+          </div>
+        ) : null}
       </div>
     </section>
   );

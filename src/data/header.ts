@@ -104,12 +104,12 @@ export const blogMenuItems: MegaMenuItem[] = [
 
 // Services Menu Data
 export const servicesMenuItems: MegaMenuItem[] = [
-  { id: 'product-invoicing', label: 'Invoicing', href: '/our-services/sales-&-invoicing' },
-  { id: 'product-payments', label: 'Payments', href: '/our-services/accept-payment-online' },
-  { id: 'product-expenses', label: 'Expenses', href: '/our-services/vat-automation' },
-  { id: 'product-accounting', label: 'Accounting', href: '/our-services/accounting' },
-  { id: 'product-reporting', label: 'Reporting', href: '/our-services/analytics-&-reporting' },
-  { id: 'product-clients', label: 'Clients', href: '/our-services/banking-&-accounts-aggregation' },
+  { id: 'product-invoicing', label: 'homepage08.footer.invoicing', href: '/our-services/sales-&-invoicing' },
+  { id: 'product-payments', label: 'homepage08.footer.payments', href: '/our-services/accept-payment-online' },
+  { id: 'product-expenses', label: 'homepage08.footer.expenses', href: '/our-services/vat-automation' },
+  { id: 'product-accounting', label: 'homepage08.footer.accounting', href: '/our-services/accounting' },
+  { id: 'product-reporting', label: 'homepage08.footer.reporting', href: '/our-services/analytics-&-reporting' },
+  { id: 'product-clients', label: 'homepage08.footer.clients', href: '/our-services/banking-&-accounts-aggregation' },
 ];
 
 // Resources Menu Data
@@ -146,9 +146,9 @@ export const resourcesMenuSections: ResourcesMenuSection[] = [
 
 // Resources (Top-level) Menu Data
 export const resourcesTopMenuItems: ResourcesTopMenuItem[] = [
-  { id: 'resources-top-learn', label: 'Learn', href: '/resources/learn' },
-  { id: 'resources-top-support', label: 'Support', href: '/resources/support' },
-  { id: 'resources-top-company', label: 'Company', href: '/resources/company' },
+  { id: 'resources-top-learn', label: 'resourcesMenu.learn', href: '/resources/learn' },
+  { id: 'resources-top-support', label: 'resourcesMenu.support', href: '/resources/support' },
+  { id: 'resources-top-company', label: 'resourcesMenu.company', href: '/resources/company' },
 ];
 
 // Home Mega Menu Data (3 columns)

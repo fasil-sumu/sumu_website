@@ -416,5 +416,10 @@
       "description": "Start your free trial today and see your ideas come to life easily and creatively.",
       "button": "Get started"
     }
+  },
+  "resourcesMenu": {
+    "learn": "Learn",
+    "support": "Support",
+    "company": "Company"
   }
 }

@@ -11,7 +11,6 @@ interface NavItemLinkProps {
   item: NavigationItem;
   variant?: NavItemVariant;
   isOpen?: boolean;
-  onToggle?: () => void;
 }
 
 const getVariantClasses = (variant: NavItemVariant = 'default', isOpen: boolean = false): string => {
@@ -40,7 +39,7 @@ const getVariantClasses = (variant: NavItemVariant = 'default', isOpen: boolean 
   return `${variants[variant]} ${openClasses[variant]}`;
 };
 
-const NavItemLink = ({ item, variant = 'default', isOpen = false, onToggle }: NavItemLinkProps) => {
+const NavItemLink = ({ item, variant = 'default', isOpen = false }: NavItemLinkProps) => {
   const { t } = useTranslation();
 
   return (
@@ -50,17 +49,12 @@ const NavItemLink = ({ item, variant = 'default', isOpen = false, onToggle }: Na
       </Link>
 
       {item?.hasDropdown && (
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            onToggle?.();
-          }}
+        <span
           className={cn(
             'block origin-center transition-transform duration-300 flex-shrink-0 ml-1 p-[2px] rounded-full hover:bg-secondary/10 dark:hover:bg-white/10',
             isOpen ? 'rotate-180' : 'rotate-0',
           )}
-          aria-label="Toggle Submenu">
+          aria-hidden="true">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -70,7 +64,7 @@ const NavItemLink = ({ item, variant = 'default', isOpen = false, onToggle }: Na
             className="size-4">
             <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
           </svg>
-        </button>
+        </span>
       )}
     </div>
   );

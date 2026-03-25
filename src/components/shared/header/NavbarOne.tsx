@@ -97,12 +97,14 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
 
                 // mega menu render
                 return (
-                  <li key={item?.id} className={cn('py-2.5', item?.hasDropdown && 'relative')}>
-                    <NavItemLink
-                      item={item}
-                      isOpen={isOpen}
-                      onToggle={() => setOpenDropdownId(isOpen ? null : item.id)}
-                    />
+                  <li
+                    key={item?.id}
+                    className={cn('py-2.5', item?.hasDropdown && 'relative')}
+                    onMouseEnter={() => item.hasDropdown && setOpenDropdownId(item.id)}
+                    onMouseLeave={() => item.hasDropdown && setOpenDropdownId(null)}
+                    onFocusCapture={() => item.hasDropdown && setOpenDropdownId(item.id)}
+                    onBlurCapture={() => item.hasDropdown && setOpenDropdownId(null)}>
+                    <NavItemLink item={item} isOpen={isOpen} />
                     {item.hasDropdown && renderMegaMenu()}
                   </li>
                 );
