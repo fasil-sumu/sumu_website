@@ -417,6 +417,102 @@
       "button": "Get started"
     }
   },
+  "solutionsPage": {
+    "overview": {
+      "badge": "Solutions",
+      "title": "Built for how you work",
+      "description": "Solutions for small businesses, freelancers, accountants, and growing teams."
+    },
+    "items": {
+      "smallBusinesses": {
+        "title": "Small Businesses",
+        "summary": "Simplify invoicing, payments, expenses, and reporting from one dashboard."
+      },
+      "freelancers": {
+        "title": "Freelancers & Consultants",
+        "summary": "Manage clients, invoices, and payments with clear financial control."
+      },
+      "accountants": {
+        "title": "Accountants & Bookkeepers",
+        "summary": "Maintain structured records, journal entries, and reporting with confidence."
+      },
+      "growingBusinesses": {
+        "title": "Growing Businesses",
+        "summary": "Scale financial operations with visibility across revenue and profitability."
+      }
+    },
+    "keyBenefits": "Key Benefits",
+    "details": {
+      "smallBusinesses": {
+        "heading": "Simplify Financial Management for Your Business",
+        "p1": "Running a small business requires keeping track of invoices, payments, expenses, and financial records while focusing on daily operations. Sumu provides an integrated platform that helps small business owners manage their financial activities from one centralized dashboard.",
+        "p2": "With Sumu, small businesses can create professional invoices, monitor incoming payments, record expenses, and generate financial reports without relying on multiple systems or complex accounting tools.",
+        "p3": "By maintaining organized financial records and clear visibility into business performance, Sumu helps small businesses operate more efficiently and make better financial decisions.",
+        "benefits": {
+          "b1": "Simple invoicing and payment tracking",
+          "b2": "Organized expense management",
+          "b3": "Clear financial reporting and insights",
+          "b4": "Structured accounting records",
+          "b5": "Better visibility into business performance"
+        },
+        "oman": {
+          "title": "Built for Businesses in Oman",
+          "p1": "Sumu is designed to support businesses operating in Oman by enabling structured financial management aligned with local regulatory and tax requirements.",
+          "p2": "The platform helps businesses maintain organized financial records and generate reports that support compliance with the Oman Tax Authority requirements and local financial practices."
+        }
+      },
+      "freelancers": {
+        "heading": "Professional Financial Tools for Independent Professionals",
+        "p1": "Freelancers and consultants often manage multiple clients, projects, and payments at the same time. Sumu provides a simple and reliable platform that helps independent professionals organize their financial activities and maintain professional billing processes.",
+        "p2": "With Sumu, freelancers can manage client information, issue invoices, track payments, and monitor income and expenses from one platform. This allows independent professionals to maintain clear financial records while focusing on delivering services to their clients.",
+        "p3": "Sumu helps freelancers maintain professional financial management without the complexity of traditional accounting systems, while maintaining clear financial control that supports growth.",
+        "benefits": {
+          "b1": "Manage client information and billing records",
+          "b2": "Issue professional invoices and track payments",
+          "b3": "Monitor income and business expenses",
+          "b4": "Maintain organized financial records",
+          "b5": "Generate reports for financial tracking and tax preparation"
+        }
+      },
+      "accountants": {
+        "heading": "Structured Financial Records for Accounting Professionals",
+        "p1": "Accounting professionals require reliable systems that maintain structured financial records and support accurate financial reporting. Sumu provides accounting tools that help accountants and bookkeepers manage financial data efficiently.",
+        "p2": "The platform allows accounting professionals to maintain chart of accounts structures, record journal entries, track financial transactions, and generate financial reports. This ensures that financial records remain organized, transparent, and ready for financial review or reporting.",
+        "p3": "Sumu helps accountants maintain accurate bookkeeping while supporting the financial management needs of businesses.",
+        "benefits": {
+          "b1": "Structured accounting records and financial data",
+          "b2": "Organized transaction tracking",
+          "b3": "Journal entry and ledger management",
+          "b4": "Financial reporting and analysis",
+          "b5": "Reliable documentation for financial oversight"
+        }
+      },
+      "growingBusinesses": {
+        "heading": "Scalable Financial Management for Expanding Companies",
+        "p1": "As businesses grow, financial operations become more complex. Increasing transaction volumes, expanding client bases, and larger expense structures require more organized financial management systems.",
+        "p2": "Sumu provides scalable financial tools that help growing companies maintain clear financial visibility while managing increasing operational complexity.",
+        "p3": "By centralizing invoicing, payment tracking, expense management, accounting, and reporting, Sumu enables businesses to maintain structured financial records and support informed decision-making as the company expands.",
+        "benefits": {
+          "b1": "Manage larger transaction volumes efficiently",
+          "b2": "Maintain structured financial records",
+          "b3": "Monitor revenue, expenses, and profitability",
+          "b4": "Generate financial reports for performance analysis",
+          "b5": "Support sustainable business growth"
+        }
+      }
+    },
+    "cta": {
+      "title": "Ready to manage your finances better?",
+      "description": "Choose the solution that fits your business and start your journey to better financial management today.",
+      "primary": "Start Free Trial",
+      "secondary": "Schedule a Demo"
+    },
+    "productsCta": {
+      "title": "Explore Our Products",
+      "description": "Discover the individual tools and features that power each solution.",
+      "button": "Browse All Products"
+    }
+  },
   "resourcesMenu": {
     "learn": "Learn",
     "support": "Support",

@@ -101,7 +101,6 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                     key={item?.id}
                     className={cn('py-2.5', item?.hasDropdown && 'relative')}
                     onMouseEnter={() => item.hasDropdown && setOpenDropdownId(item.id)}
-                    onMouseLeave={() => item.hasDropdown && setOpenDropdownId(null)}
                     onFocusCapture={() => item.hasDropdown && setOpenDropdownId(item.id)}
                     onBlurCapture={() => item.hasDropdown && setOpenDropdownId(null)}>
                     <NavItemLink item={item} isOpen={isOpen} />

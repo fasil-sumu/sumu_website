@@ -4,6 +4,7 @@ description: 'Manage customers, contacts, and billing information.'
 icon: 'ns-shape-11'
 image: '/images/home-page-1/services-banking-aggregation.svg'
 coverImg: '/images/services/service-banking-aggregation-cover.png'
+benefitImg: '/img/ns-img-110.webp'
 
 heroTitle: 'Manage Your Customers and Business Relationships'
 heroSubtitle: 'Centralized Client Management for Growing Businesses'

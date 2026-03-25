@@ -58,6 +58,7 @@ export interface IService {
   image2?: string;
   image3?: string;
   coverImg: string;
+  benefitImg?: string;
   heroTitle?: string;
   heroSubtitle?: string;
   heroDescription?: string;

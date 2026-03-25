@@ -9,20 +9,19 @@ const ProductBenefits = ({ service }: { service: IService }) => {
 
   return (
     <section className="main-container mt-20 md:mt-28 lg:mt-[100px]">
-      <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-center">
+      <div className="grid lg:grid-cols-2 gap-12 xl:gap-20 items-stretch">
         {/* Left: cover image */}
-        <RevealAnimation delay={0.2} direction="right">
-          <div className="relative rounded-[24px] overflow-hidden border border-stroke-1 dark:border-stroke-5 bg-background-2 dark:bg-background-6 shadow-sm">
-            {service.coverImg ? (
+        <RevealAnimation delay={0.2} direction="right" className="h-full">
+          <div className="relative rounded-[24px] overflow-hidden border border-stroke-1 dark:border-stroke-5 bg-background-2 dark:bg-background-6 shadow-sm h-full min-h-[300px]">
+            {service.benefitImg || service.coverImg ? (
               <Image
-                src={service.coverImg}
+                src={service.benefitImg || service.coverImg}
                 alt={service.benefitsTitle || service.title}
-                width={960}
-                height={640}
-                className="w-full h-auto object-cover"
+                fill
+                className="object-contain"
               />
             ) : (
-              <div className="aspect-square flex items-center justify-center">
+              <div className="absolute inset-0 flex items-center justify-center">
                 <span className={`${service.icon} text-[100px] text-primary-500/20`} />
               </div>
             )}
