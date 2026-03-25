@@ -34,8 +34,9 @@ const backgroundStyles = [
 ];
 
 const Contents = ({ slug }: { slug: string }) => {
+  const decodedSlug = decodeURIComponent(slug);
   const service = getMarkDownContent('src/data/services/', slug);
-  const serviceData = service.data as IService;
+  const serviceData = { ...(service.data as IService), slug: decodedSlug } as IService;
 
   return (
     <section className="pb-[120px] pt-32 sm:pt-36 md:pt-40 xl:pt-[180px] overflow-x-clip">

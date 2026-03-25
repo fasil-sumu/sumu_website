@@ -1,6 +1,7 @@
 import { IService } from '@/interface';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import TranslatedText from '../shared/TranslatedText';
 
 const TRIAL_URL = 'https://sumu-frontend.vercel.app/';
 
@@ -11,17 +12,30 @@ const ProductCTA = ({ service }: { service: IService }) => {
       <RevealAnimation delay={0.3}>
         <div className="rounded-[24px] bg-primary-500 px-8 py-14 md:py-20 text-center space-y-6">
           <h2 className="text-white text-balance max-w-[600px] mx-auto">
-            {service.ctaTitle || `Get Started with ${service.title}`}
+            {service.ctaTitle ? (
+              <TranslatedText i18nKey={`serviceDetails.${service.slug}.ctaTitle`} defaultText={service.ctaTitle} />
+            ) : (
+              <TranslatedText
+                i18nKey="productDetails.defaults.ctaTitle"
+                defaultText={`Get Started with ${service.title}`}
+                values={{ product: service.title }}
+              />
+            )}
           </h2>
           {service.ctaDescription && (
-            <p className="text-white/80 max-w-[520px] mx-auto leading-relaxed">{service.ctaDescription}</p>
+            <p className="text-white/80 max-w-[520px] mx-auto leading-relaxed">
+              <TranslatedText
+                i18nKey={`serviceDetails.${service.slug}.ctaDescription`}
+                defaultText={service.ctaDescription}
+              />
+            </p>
           )}
           <LinkButton
             href={TRIAL_URL}
             target="_blank"
             rel="noreferrer"
             className="btn btn-white btn-lg hover:btn-secondary dark:hover:btn-accent inline-flex">
-            Start Your Free Trial
+            <TranslatedText i18nKey="productDetails.buttons.startYourFreeTrial" defaultText="Start Your Free Trial" />
           </LinkButton>
         </div>
       </RevealAnimation>

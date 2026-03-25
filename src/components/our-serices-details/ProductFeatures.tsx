@@ -1,5 +1,6 @@
 import { IService } from '@/interface';
 import RevealAnimation from '../animation/RevealAnimation';
+import TranslatedText from '../shared/TranslatedText';
 
 const ProductFeatures = ({ service }: { service: IService }) => {
   const features = service.features;
@@ -10,16 +11,34 @@ const ProductFeatures = ({ service }: { service: IService }) => {
       {/* Section header */}
       <div className="text-center space-y-4 mb-12 md:mb-16">
         <RevealAnimation delay={0.2}>
-          <span className="badge badge-primary-light inline-block">Features</span>
+          <span className="badge badge-primary-light inline-block">
+            <TranslatedText i18nKey="productDetails.badges.features" defaultText="Features" />
+          </span>
         </RevealAnimation>
         <RevealAnimation delay={0.3}>
           <h2 className="max-w-[640px] mx-auto">
-            {service.featuresTitle || `Everything You Need to Manage ${service.title}`}
+            {service.featuresTitle ? (
+              <TranslatedText
+                i18nKey={`serviceDetails.${service.slug}.featuresTitle`}
+                defaultText={service.featuresTitle}
+              />
+            ) : (
+              <TranslatedText
+                i18nKey="productDetails.defaults.featuresTitle"
+                defaultText={`Everything You Need to Manage ${service.title}`}
+                values={{ product: service.title }}
+              />
+            )}
           </h2>
         </RevealAnimation>
         {service.featuresDescription && (
           <RevealAnimation delay={0.4}>
-            <p className="text-secondary/70 dark:text-accent/70 max-w-[560px] mx-auto">{service.featuresDescription}</p>
+            <p className="text-secondary/70 dark:text-accent/70 max-w-[560px] mx-auto">
+              <TranslatedText
+                i18nKey={`serviceDetails.${service.slug}.featuresDescription`}
+                defaultText={service.featuresDescription}
+              />
+            </p>
           </RevealAnimation>
         )}
       </div>
@@ -44,8 +63,18 @@ const ProductFeatures = ({ service }: { service: IService }) => {
                   <polyline points="20 6 9 17 4 12" />
                 </svg>
               </div>
-              <h3 className="text-heading-6 text-secondary dark:text-accent">{feature.title}</h3>
-              <p className="text-sm text-secondary/70 dark:text-accent/70 leading-relaxed">{feature.description}</p>
+              <h3 className="text-heading-6 text-secondary dark:text-accent">
+                <TranslatedText
+                  i18nKey={`serviceDetails.${service.slug}.features.${index}.title`}
+                  defaultText={feature.title}
+                />
+              </h3>
+              <p className="text-sm text-secondary/70 dark:text-accent/70 leading-relaxed">
+                <TranslatedText
+                  i18nKey={`serviceDetails.${service.slug}.features.${index}.description`}
+                  defaultText={feature.description}
+                />
+              </p>
             </div>
           </RevealAnimation>
         ))}

@@ -393,5 +393,28 @@
       "description": "Start your free trial today and experience the power of Sumu's complete financial platform.",
       "button": "Get started"
     }
+  },
+  "productDetails": {
+    "badges": {
+      "features": "Features",
+      "benefits": "Benefits",
+      "insights": "Insights"
+    },
+    "buttons": {
+      "startFreeTrial": "Start Free Trial",
+      "startYourFreeTrial": "Start Your Free Trial"
+    },
+    "defaults": {
+      "featuresTitle": "Everything You Need to Manage {{product}}",
+      "benefitsTitle": "Why Choose Sumu",
+      "insightsTitle": "Real-Time Financial Insights",
+      "ctaTitle": "Get Started with {{product}}"
+    },
+    "pageCta": {
+      "badge": "Get Started",
+      "heading": "Build a complete website using the assistance",
+      "description": "Start your free trial today and see your ideas come to life easily and creatively.",
+      "button": "Get started"
+    }
   }
 }

@@ -1,6 +1,7 @@
 import { IService } from '@/interface';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
+import TranslatedText from '../shared/TranslatedText';
 
 const ProductBenefits = ({ service }: { service: IService }) => {
   const benefits = service.benefits;
@@ -31,14 +32,30 @@ const ProductBenefits = ({ service }: { service: IService }) => {
         {/* Right: benefits */}
         <div className="space-y-6 lg:space-y-8">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-primary-light inline-block">Benefits</span>
+            <span className="badge badge-primary-light inline-block">
+              <TranslatedText i18nKey="productDetails.badges.benefits" defaultText="Benefits" />
+            </span>
           </RevealAnimation>
           <RevealAnimation delay={0.3}>
-            <h2 className="text-balance">{service.benefitsTitle || 'Why Choose Sumu'}</h2>
+            <h2 className="text-balance">
+              {service.benefitsTitle ? (
+                <TranslatedText
+                  i18nKey={`serviceDetails.${service.slug}.benefitsTitle`}
+                  defaultText={service.benefitsTitle}
+                />
+              ) : (
+                <TranslatedText i18nKey="productDetails.defaults.benefitsTitle" defaultText="Why Choose Sumu" />
+              )}
+            </h2>
           </RevealAnimation>
           {service.benefitsDescription && (
             <RevealAnimation delay={0.4}>
-              <p className="text-secondary/70 dark:text-accent/70 leading-relaxed">{service.benefitsDescription}</p>
+              <p className="text-secondary/70 dark:text-accent/70 leading-relaxed">
+                <TranslatedText
+                  i18nKey={`serviceDetails.${service.slug}.benefitsDescription`}
+                  defaultText={service.benefitsDescription}
+                />
+              </p>
             </RevealAnimation>
           )}
           <ul className="space-y-4">
@@ -59,7 +76,12 @@ const ProductBenefits = ({ service }: { service: IService }) => {
                       <polyline points="20 6 9 17 4 12" />
                     </svg>
                   </div>
-                  <span className="text-secondary dark:text-accent leading-relaxed">{benefit.text}</span>
+                  <span className="text-secondary dark:text-accent leading-relaxed">
+                    <TranslatedText
+                      i18nKey={`serviceDetails.${service.slug}.benefits.${index}.text`}
+                      defaultText={benefit.text}
+                    />
+                  </span>
                 </li>
               </RevealAnimation>
             ))}

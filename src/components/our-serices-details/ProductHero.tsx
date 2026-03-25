@@ -2,6 +2,7 @@ import { IService } from '@/interface';
 import Image from 'next/image';
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
+import TranslatedText from '../shared/TranslatedText';
 
 const TRIAL_URL = 'https://sumu-frontend.vercel.app/';
 
@@ -12,24 +13,37 @@ const ProductHero = ({ service }: { service: IService }) => {
         {/* Left: text */}
         <div className="space-y-6 lg:space-y-8">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-primary-light inline-block">{service.title}</span>
+            <span className="badge badge-primary-light inline-block">
+              <TranslatedText i18nKey={`serviceDetails.${service.slug}.title`} defaultText={service.title} />
+            </span>
           </RevealAnimation>
 
           {service.heroSubtitle && (
             <RevealAnimation delay={0.3}>
               <p className="text-tagline-1 text-primary-500 uppercase tracking-wider">
-                {service.heroTitle || service.title}
+                <TranslatedText
+                  i18nKey={`serviceDetails.${service.slug}.heroTitle`}
+                  defaultText={service.heroTitle || service.title}
+                />
               </p>
             </RevealAnimation>
           )}
 
           <RevealAnimation delay={0.35}>
-            <h2 className="text-heading-2 md:text-heading-1 text-balance">{service.heroSubtitle}</h2>
+            <h2 className="text-heading-2 md:text-heading-1 text-balance">
+              <TranslatedText
+                i18nKey={`serviceDetails.${service.slug}.heroSubtitle`}
+                defaultText={service.heroSubtitle}
+              />
+            </h2>
           </RevealAnimation>
 
           <RevealAnimation delay={0.45}>
             <p className="text-body-text text-secondary/70 dark:text-accent/70 leading-relaxed max-w-[560px]">
-              {service.heroDescription || service.description}
+              <TranslatedText
+                i18nKey={`serviceDetails.${service.slug}.heroDescription`}
+                defaultText={service.heroDescription || service.description}
+              />
             </p>
           </RevealAnimation>
 
@@ -40,7 +54,7 @@ const ProductHero = ({ service }: { service: IService }) => {
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-primary btn-lg w-full sm:w-auto hover:btn-secondary dark:hover:btn-accent">
-                Start Free Trial
+                <TranslatedText i18nKey="productDetails.buttons.startFreeTrial" defaultText="Start Free Trial" />
               </LinkButton>
             </div>
           </RevealAnimation>
