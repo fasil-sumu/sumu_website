@@ -17,12 +17,6 @@ import userActivity from '@public/images/services/user-activity.svg';
 
 const TRIAL_URL = 'https://sumu-frontend.vercel.app/';
 
-const ArrowIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 16 16" fill="none" className={cn('size-4', className)}>
-    <path d="M8 12L12 8L8 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-  </svg>
-);
-
 const SolutionsContent = () => {
   const { isRTL } = useLanguage();
 
@@ -65,13 +59,16 @@ const SolutionsContent = () => {
                 <p className="text-sm font-semibold text-secondary mb-3">
                   <TranslatedText i18nKey="solutionsPage.keyBenefits" />
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <div
                       key={i}
-                      className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-background-6 rounded-full shadow-sm border border-stroke-1">
+                      className={cn(
+                        'w-full flex items-center gap-2 px-4 py-2 bg-white dark:bg-background-6 rounded-full shadow-sm border border-stroke-1',
+                        i === 4 && 'sm:col-span-2 sm:justify-self-center sm:w-fit',
+                      )}>
                       <div className="size-5 rounded-full bg-primary flex items-center justify-center text-white text-xs flex-shrink-0">
-                        ✓
+                        <span aria-hidden="true">{'\u2713'}</span>
                       </div>
                       <span className="text-sm text-secondary">
                         <TranslatedText i18nKey={`solutionsPage.details.smallBusinesses.benefits.b${i + 1}`} />
@@ -86,7 +83,7 @@ const SolutionsContent = () => {
               <div className="flex lg:justify-start justify-center">
                 <LinkButton href={TRIAL_URL} className="btn btn-primary btn-xl flex items-center gap-2 w-fit group">
                   <TranslatedText i18nKey="solutionsPage.cta.primary" />
-                  <ArrowIcon className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')} />
+                  {/* <ArrowIcon className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')} /> */}
                 </LinkButton>
               </div>
             </RevealAnimation>
@@ -143,14 +140,14 @@ const SolutionsContent = () => {
                 </h2>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
-                <div className="max-w-2xl mx-auto space-y-3 text-secondary/70">
+                <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 text-secondary/70 text-start">
                   <p>
                     <TranslatedText i18nKey="solutionsPage.details.freelancers.p1" />
                   </p>
                   <p>
                     <TranslatedText i18nKey="solutionsPage.details.freelancers.p2" />
                   </p>
-                  <p>
+                  <p className="md:col-span-2 md:text-center">
                     <TranslatedText i18nKey="solutionsPage.details.freelancers.p3" />
                   </p>
                 </div>
@@ -187,7 +184,7 @@ const SolutionsContent = () => {
                 href={TRIAL_URL}
                 className="btn btn-secondary hover:btn-primary btn-xl flex items-center gap-2 group">
                 <TranslatedText i18nKey="solutionsPage.cta.primary" />
-                <ArrowIcon className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')} />
+                {/* <ArrowIcon className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')} /> */}
               </LinkButton>
             </RevealAnimation>
           </div>
@@ -344,13 +341,10 @@ const SolutionsContent = () => {
                   <TranslatedText i18nKey="solutionsPage.keyBenefits" />
                 </h3>
               </RevealAnimation>
-              <div className="space-y-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {benefits.map((benefit, i) => (
                   <RevealAnimation key={i} delay={0.3 + i * 0.1}>
-                    <div className="flex items-center gap-4 group cursor-default">
-                      <div className="size-10 rounded-full bg-background-3 dark:bg-background-8 flex items-center justify-center text-secondary dark:text-accent font-semibold flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
-                        {i + 1}
-                      </div>
+                    <div className="rounded-full border border-stroke-1 dark:border-stroke-6 bg-white dark:bg-background-6 px-6 py-3 text-center shadow-sm">
                       <span className="text-secondary dark:text-accent font-medium">
                         <TranslatedText i18nKey={`solutionsPage.details.growingBusinesses.benefits.${benefit.key}`} />
                       </span>
@@ -365,9 +359,9 @@ const SolutionsContent = () => {
                     href={TRIAL_URL}
                     className="btn btn-secondary hover:btn-primary btn-xl flex items-center gap-2 justify-center group w-fit">
                     <TranslatedText i18nKey="solutionsPage.cta.primary" />
-                    <ArrowIcon
+                    {/* <ArrowIcon
                       className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')}
-                    />
+                    /> */}
                   </LinkButton>
                 </div>
               </RevealAnimation>
@@ -406,9 +400,9 @@ const SolutionsContent = () => {
               <div className={cn('flex flex-wrap justify-center gap-4 mt-8', isRTL && 'flex-row-reverse')}>
                 <LinkButton href={TRIAL_URL} className="btn btn-primary btn-xl flex items-center gap-2 group">
                   <TranslatedText i18nKey="solutionsPage.cta.primary" />
-                  <ArrowIcon
+                  {/* <ArrowIcon
                     className={cn(isRTL ? 'rotate-180' : '', 'group-hover:translate-x-1 transition-transform')}
-                  />
+                  /> */}
                 </LinkButton>
 
                 <LinkButton
@@ -450,7 +444,7 @@ const SolutionsContent = () => {
                   href={TRIAL_URL}
                   className="btn btn-secondary hover:btn-primary btn-xl flex items-center gap-2 group">
                   <TranslatedText i18nKey="solutionsPage.cta.primary" />
-                  <ArrowIcon className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')} />
+                  {/* <ArrowIcon className={cn('group-hover:translate-x-1 transition-transform', isRTL && 'rotate-180')} /> */}
                 </LinkButton>
 
                 <LinkButton
