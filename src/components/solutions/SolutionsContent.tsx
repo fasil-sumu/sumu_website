@@ -306,11 +306,11 @@ const SolutionsContent = () => {
     return (
       <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px]">
         <div className="main-container">
-          <div className="bg-gradient-to-br from-secondary to-[#1A1A1A] rounded-[20px] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
+          <div className="rounded-[20px] overflow-hidden shadow-2xl flex flex-col lg:flex-row">
             {/* Left */}
-            <div className="w-full lg:w-1/2 p-8 md:p-12 lg:p-16 text-white flex flex-col justify-center">
+            <div className="w-full lg:w-1/2 p-8 md:p-12 lg:p-16 text-white flex flex-col justify-center bg-primary-500 dark:bg-primary-700">
               <RevealAnimation delay={0.1}>
-                <span className="badge badge-yellow-v2 mb-6">
+                <span className="badge mb-6 !bg-secondary !text-accent">
                   <TranslatedText i18nKey="solutionsPage.items.growingBusinesses.title" />
                 </span>
               </RevealAnimation>
@@ -320,7 +320,7 @@ const SolutionsContent = () => {
                 </h3>
               </RevealAnimation>
               <RevealAnimation delay={0.3}>
-                <div className="space-y-4 text-white/80">
+                <div className="space-y-4 text-accent/90">
                   <p>
                     <TranslatedText i18nKey="solutionsPage.details.growingBusinesses.p1" />
                   </p>

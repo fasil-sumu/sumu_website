@@ -2,8 +2,8 @@
 title: 'Clients'
 description: 'Manage customers, contacts, and billing information.'
 icon: 'ns-shape-11'
-image: '/images/home-page-1/services-banking-aggregation.svg'
-coverImg: '/images/services/service-banking-aggregation-cover.png'
+image: '/img/client.png'
+coverImg: '/img/client.png'
 benefitImg: '/img/ns-img-110.webp'
 
 heroTitle: 'Manage Your Customers and Business Relationships'
