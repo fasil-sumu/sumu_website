@@ -2,6 +2,7 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import ResourcePageShell from '@/components/resources/ResourcePageShell';
 import LinkButton from '@/components/ui/button/LinkButton';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -83,26 +84,34 @@ const LearnResourcesPage = () => {
               ))}
             </div>
 
-            <div className="space-y-3 max-w-[830px]">
-              <RevealAnimation delay={0.2}>
-                <h4>Topics include</h4>
-              </RevealAnimation>
-              <RevealAnimation delay={0.3}>
-                <ul className="space-y-2">
-                  {[
-                    'financial management best practices',
-                    'managing invoices and payments',
-                    'controlling business expenses',
-                    'understanding financial reports',
-                    'tips for growing businesses',
-                  ].map((text) => (
-                    <li
-                      key={text}
-                      className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-normal before:relative before:content-[''] before:w-1.5 before:h-1.5 before:bg-secondary dark:before:bg-accent before:rounded-full before:left-0 before:-translate-y-1/2 before:mr-1 before:inline-block">
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white dark:bg-background-7 p-8 md:p-12 rounded-[24px] border border-stroke-3 dark:border-stroke-6">
+              <div className="space-y-6">
+                <RevealAnimation delay={0.2}>
+                  <h3 className="text-heading-4">Topics include</h3>
+                </RevealAnimation>
+                <RevealAnimation delay={0.3}>
+                  <ul className="space-y-4">
+                    {[
+                      'Financial management best practices',
+                      'Managing invoices and payments',
+                      'Controlling business expenses',
+                      'Understanding financial reports',
+                      'Tips for growing businesses',
+                    ].map((text) => (
+                      <li
+                        key={text}
+                        className="flex items-center gap-4 text-tagline-1 text-secondary/80 dark:text-accent/80 font-medium">
+                        <span className="flex-shrink-0 w-3 h-3 rounded-full bg-primary" />
+                        <span>{text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </RevealAnimation>
+              </div>
+              <RevealAnimation delay={0.4}>
+                <div className="relative w-full aspect-[4/3] rounded-[16px] overflow-hidden border border-stroke-3 dark:border-stroke-6 shadow-sm">
+                  <Image src="/img/O9VV3Q0.jpg" alt="Learn topics" fill className="object-cover" />
+                </div>
               </RevealAnimation>
             </div>
           </div>

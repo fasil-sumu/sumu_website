@@ -2,6 +2,7 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import ResourcePageShell from '@/components/resources/ResourcePageShell';
 import LinkButton from '@/components/ui/button/LinkButton';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -74,28 +75,57 @@ const CompanyResourcesPage = () => {
               ))}
             </div>
 
-            <div className="space-y-3 max-w-[830px]">
-              <RevealAnimation delay={0.2}>
-                <h4>Contact details</h4>
-              </RevealAnimation>
-              <RevealAnimation delay={0.3}>
-                <p>
-                  Office #2, 1st Floor, Zawamri Building, Opp. Salman Store, Central Salalah-211, Salalah, Dhofar,
-                  Sultanate of Oman.
-                </p>
-              </RevealAnimation>
-              <RevealAnimation delay={0.4}>
-                <div className="flex flex-wrap items-center gap-5">
-                  <Link
-                    href="mailto:info@joinsumu.com"
-                    className="text-secondary transition-colors hover:text-primary-500 dark:text-accent">
-                    info@joinsumu.com
-                  </Link>
-                  <Link
-                    href="tel:+98675008142"
-                    className="text-secondary transition-colors hover:text-primary-500 dark:text-accent">
-                    Mobile: +986 75008142
-                  </Link>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white dark:bg-background-7 p-8 md:p-12 rounded-[24px] border border-stroke-3 dark:border-stroke-6">
+              <div className="space-y-8">
+                <RevealAnimation delay={0.2}>
+                  <h3 className="text-heading-4">Contact details</h3>
+                </RevealAnimation>
+
+                <RevealAnimation delay={0.3}>
+                  <div className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <i className="ns-shape-16 text-xl"></i>
+                    </span>
+                    <div>
+                      <h5 className="text-heading-6 mb-2">Office Address</h5>
+                      <p className="text-secondary/80 dark:text-accent/80 leading-relaxed max-w-[320px]">
+                        Office #2, 1st Floor, Zawamri Building,
+                        <br />
+                        Opp. Salman Store, Central Salalah-211,
+                        <br />
+                        Salalah, Dhofar, Sultanate of Oman.
+                      </p>
+                    </div>
+                  </div>
+                </RevealAnimation>
+
+                <RevealAnimation delay={0.4}>
+                  <div className="flex items-start gap-4">
+                    <span className="flex-shrink-0 w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                      <i className="ns-shape-10 text-xl"></i>
+                    </span>
+                    <div className="space-y-3">
+                      <h5 className="text-heading-6">Reach Out</h5>
+                      <div className="flex flex-col gap-2">
+                        <Link
+                          href="mailto:info@joinsumu.com"
+                          className="text-secondary/80 hover:text-primary dark:text-accent/80 font-medium transition-colors inline-block">
+                          info@joinsumu.com
+                        </Link>
+                        <Link
+                          href="tel:+98675008142"
+                          className="text-secondary/80 hover:text-primary dark:text-accent/80 font-medium transition-colors inline-block">
+                          Mobile: +986 75008142
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </RevealAnimation>
+              </div>
+
+              <RevealAnimation delay={0.5}>
+                <div className="relative w-full aspect-[4/3] rounded-[16px] overflow-hidden border border-stroke-3 dark:border-stroke-6 shadow-sm">
+                  <Image src="/img/5138237.jpg" alt="Company contact" fill className="object-cover" />
                 </div>
               </RevealAnimation>
             </div>

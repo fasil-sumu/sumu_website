@@ -2,6 +2,7 @@ import RevealAnimation from '@/components/animation/RevealAnimation';
 import ResourcePageShell from '@/components/resources/ResourcePageShell';
 import LinkButton from '@/components/ui/button/LinkButton';
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -71,52 +72,67 @@ const SupportResourcesPage = () => {
               ))}
             </div>
 
-            <div className="grid grid-cols-12 gap-8">
-              <div className="col-span-12 lg:col-span-6 space-y-3 max-w-[830px]">
-                <RevealAnimation delay={0.2}>
-                  <h4>Help Center topics</h4>
-                </RevealAnimation>
-                <RevealAnimation delay={0.3}>
-                  <ul className="space-y-2">
-                    {[
-                      'platform setup and configuration',
-                      'invoicing and payment tracking',
-                      'expense management',
-                      'accounting and financial reports',
-                      'troubleshooting common issues',
-                    ].map((text) => (
-                      <li
-                        key={text}
-                        className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-normal before:relative before:content-[''] before:w-1.5 before:h-1.5 before:bg-secondary dark:before:bg-accent before:rounded-full before:left-0 before:-translate-y-1/2 before:mr-1 before:inline-block">
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </RevealAnimation>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 bg-white dark:bg-background-7 p-8 md:p-12 rounded-[24px] border border-stroke-3 dark:border-stroke-6 items-center">
+              <div className="space-y-10">
+                <div className="space-y-6">
+                  <RevealAnimation delay={0.2}>
+                    <h3 className="text-heading-4">Help Center topics</h3>
+                  </RevealAnimation>
+                  <RevealAnimation delay={0.3}>
+                    <ul className="space-y-4">
+                      {[
+                        'Platform setup and configuration',
+                        'Invoicing and payment tracking',
+                        'Expense management',
+                        'Accounting and financial reports',
+                        'Troubleshooting common issues',
+                      ].map((text) => (
+                        <li
+                          key={text}
+                          className="flex items-center gap-4 text-tagline-1 text-secondary/80 dark:text-accent/80 font-medium">
+                          <span className="flex-shrink-0 w-3 h-3 rounded-full bg-primary" />
+                          <span>{text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </RevealAnimation>
+                </div>
+
+                <div className="space-y-6">
+                  <RevealAnimation delay={0.4}>
+                    <h3 className="text-heading-4">Documentation includes</h3>
+                  </RevealAnimation>
+                  <RevealAnimation delay={0.5}>
+                    <ul className="space-y-4">
+                      {[
+                        'Invoicing and billing processes',
+                        'Payment recording and tracking',
+                        'Expense management',
+                        'Accounting tools and journal entries',
+                        'Financial reporting features',
+                      ].map((text) => (
+                        <li
+                          key={text}
+                          className="flex items-center gap-4 text-tagline-1 text-secondary/80 dark:text-accent/80 font-medium">
+                          <span className="flex-shrink-0 w-3 h-3 rounded-full bg-primary" />
+                          <span>{text}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </RevealAnimation>
+                </div>
               </div>
 
-              <div className="col-span-12 lg:col-span-6 space-y-3 max-w-[830px]">
-                <RevealAnimation delay={0.2}>
-                  <h4>Documentation includes</h4>
-                </RevealAnimation>
-                <RevealAnimation delay={0.3}>
-                  <ul className="space-y-2">
-                    {[
-                      'invoicing and billing processes',
-                      'payment recording and tracking',
-                      'expense management',
-                      'accounting tools and journal entries',
-                      'financial reporting features',
-                    ].map((text) => (
-                      <li
-                        key={text}
-                        className="text-tagline-1 text-secondary/60 dark:text-accent/60 font-normal before:relative before:content-[''] before:w-1.5 before:h-1.5 before:bg-secondary dark:before:bg-accent before:rounded-full before:left-0 before:-translate-y-1/2 before:mr-1 before:inline-block">
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </RevealAnimation>
-              </div>
+              <RevealAnimation delay={0.6}>
+                <div className="relative w-full aspect-[4/5] md:aspect-[3/4] rounded-[16px] overflow-hidden border border-stroke-3 dark:border-stroke-6 shadow-sm">
+                  <Image
+                    src="/img/invoice-billing-information-form-graphic-concept.jpg"
+                    alt="Support resources"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </RevealAnimation>
             </div>
           </div>
         </div>
