@@ -1,5 +1,5 @@
 import Features from '@/components/our-services-01/Features';
-import Pricing from '@/components/our-services-01/Pricing';
+import Pricing from '@/components/homepage-08/Pricing';
 import Services from '@/components/our-services-01/Services';
 import Solutions from '@/components/our-services-01/Solutions';
 import CTAV1 from '@/components/shared/cta/CTAV1';
