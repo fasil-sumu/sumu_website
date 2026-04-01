@@ -34,19 +34,21 @@ const OurServices01 = () => {
         <Pricing />
         <CTAV1
           className="dark:bg-background-7 bg-background-3"
-          badgeClass="hidden"
+          badgeText={<TranslatedText i18nKey="homepage08.cta.badge" defaultText="Get started" />}
           ctaHeading={
-            <TranslatedText i18nKey="productsPage.cta.heading" defaultText="Ready to transform your business" />
+            <TranslatedText
+              i18nKey="homepage08.cta.heading"
+              defaultText="Accelerate your business growth with Sumu's smart platform."
+            />
           }
-          spanText={<TranslatedText i18nKey="productsPage.cta.span" defaultText="finances?" />}
           description={
             <TranslatedText
-              i18nKey="productsPage.cta.description"
-              defaultText="Start your free trial today and experience the power of Sumu's complete financial platform."
+              i18nKey="homepage08.cta.description"
+              defaultText="Start your free trial today and see your business transformation happen easily and securely with Sumu."
             />
           }
           btnClass="btn-primary hover:btn-secondary dark:hover:btn-accent"
-          ctaBtnText={<TranslatedText i18nKey="productsPage.cta.button" defaultText="Get started" />}
+          ctaBtnText={<TranslatedText i18nKey="homepage08.cta.button" defaultText="Get started" />}
         />
       </main>
       <FooterThree />

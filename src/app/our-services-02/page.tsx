@@ -5,11 +5,12 @@ import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterOne from '@/components/shared/footer/FooterOne';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
+import TranslatedText from '@/components/shared/TranslatedText';
 import { Metadata } from 'next';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Our Services 02 - NextSaaS',
+  title: 'Our Services 02 - Sumu',
 };
 
 const OurServices02 = () => {
@@ -31,12 +32,21 @@ const OurServices02 = () => {
         />
         <CTAV1
           className="dark:bg-background-6 bg-white"
-          badgeClass="hidden"
-          ctaHeading="Build a complete website using the"
-          spanText="assistance"
-          description="Start your free trial today and see your ideas come to life easily and creatively."
+          badgeText={<TranslatedText i18nKey="homepage08.cta.badge" defaultText="Get started" />}
+          ctaHeading={
+            <TranslatedText
+              i18nKey="homepage08.cta.heading"
+              defaultText="Accelerate your business growth with Sumu's smart platform."
+            />
+          }
+          description={
+            <TranslatedText
+              i18nKey="homepage08.cta.description"
+              defaultText="Start your free trial today and see your business transformation happen easily and securely with Sumu."
+            />
+          }
           btnClass="hover:btn-secondary dark:hover:btn-accent"
-          ctaBtnText="Get started"
+          ctaBtnText={<TranslatedText i18nKey="homepage08.cta.button" defaultText="Get started" />}
         />
       </main>
       <FooterOne />
