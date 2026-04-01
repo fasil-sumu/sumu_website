@@ -102,7 +102,11 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
           {/* right side - always on the right */}
           <div className="flex items-center gap-4 flex-shrink-0">
             <LanguageSwitcher />
-            <NavCTAButton href="/signup-01" btnClassName={btnClassName} label="Get started" />
+            <NavCTAButton
+              href="https://sumu-frontend.vercel.app/signin"
+              btnClassName={btnClassName}
+              label="Get started"
+            />
             {/* mobile menu btn */}
             <MobileMenuButton />
           </div>

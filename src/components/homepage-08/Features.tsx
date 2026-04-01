@@ -98,7 +98,7 @@ const Features = () => {
               <RevealAnimation delay={0.5}>
                 <div className="mt-14">
                   <LinkButton
-                    href="/about-01"
+                    href="https://sumu-frontend.vercel.app/signin"
                     className="btn btn-md btn-secondary hover:btn-primary dark:btn-transparent w-[90%] md:w-auto mx-auto md:mx-0">
                     {t('homepage08.features.learnMore')}
                   </LinkButton>

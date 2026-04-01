@@ -48,7 +48,7 @@ const Hero = () => {
           <RevealAnimation delay={0.4}>
             <div className="w-full text-center">
               <LinkButton
-                href="/coming-soon"
+                href="https://sumu-frontend.vercel.app/signin"
                 className="btn btn-primary hover:btn-secondary dark:hover:btn-accent btn-lg md:btn-xl w-[90%] md:w-auto">
                 {t('hero.cta')}
               </LinkButton>
