@@ -367,11 +367,11 @@ const FooterThree: FC<FooterThreeProps> = ({ bgGradientImg, className, gradientC
                           {t('homepage08.footer.privacyPolicy')}
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link href="/faq" className="footer-link-v2">
                           {t('homepage08.footer.faq')}
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
                         <Link href="/terms-conditions" className="footer-link-v2">
                           {t('homepage08.footer.termsConditions')}

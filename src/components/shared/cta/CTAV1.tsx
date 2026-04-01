@@ -19,6 +19,7 @@ interface CTAV1Props {
   listTextClass?: string;
   inputFieldClass?: string;
   checkListVariant?: 'default' | 'gray';
+  formSubmitHref?: string;
 }
 
 const CTAV1 = ({
@@ -35,6 +36,7 @@ const CTAV1 = ({
   listTextClass,
   inputFieldClass,
   checkListVariant = 'default',
+  formSubmitHref = 'https://sumu-frontend.vercel.app/signin',
 }: CTAV1Props) => {
   return (
     <section className={cn('py-[50px] md:py-20 lg:py-28', className)} aria-label="cta section">
@@ -67,7 +69,12 @@ const CTAV1 = ({
               'w-full max-w-[562px] space-y-6 lg:pl-9 xl:pl-[96px]',
               badgeText && 'mt-[40px] lg:mt-[67px] space-y-6',
             )}>
-            <CtaInputForm btnClass={btnClass} ctaBtnText={ctaBtnText} inputFieldClass={inputFieldClass} />
+            <CtaInputForm
+              btnClass={btnClass}
+              ctaBtnText={ctaBtnText}
+              inputFieldClass={inputFieldClass}
+              submitHref={formSubmitHref}
+            />
             <CTACheckList
               className="xl:justify-start gap-x-4 gap-y-5 sm:gap-x-6 sm:gap-y-0"
               ctaCheckListData={[

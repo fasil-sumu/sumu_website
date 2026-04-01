@@ -107,7 +107,7 @@ const Solutions = () => {
             <RevealAnimation delay={0.7}>
               <div className="text-center lg:text-start">
                 <LinkButton
-                  href="/our-services-02"
+                  href="https://sumu-frontend.vercel.app/signin"
                   className="btn btn-xl dark:btn-transparent hover:btn-primary btn-secondary w-[90] sm:w-auto">
                   <TranslatedText i18nKey="common.getStarted" defaultText="Get started" />
                 </LinkButton>

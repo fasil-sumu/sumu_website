@@ -125,7 +125,7 @@ const Features = ({
               <RevealAnimation delay={0.6}>
                 <div>
                   <LinkButton
-                    href="/features-01"
+                    href="https://sumu-frontend.vercel.app/signin"
                     className={cn('btn btn-xl dark:btn-transparent hover:btn-primary btn-secondary', btnClassName)}>
                     <TranslatedText i18nKey="common.getStarted" defaultText="Get started" />
                   </LinkButton>

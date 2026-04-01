@@ -79,7 +79,9 @@ const AboutSumuPage = () => {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                <Link href="/signup-01" className="btn btn-md btn-primary hover:btn-secondary dark:hover:btn-accent">
+                <Link
+                  href="https://sumu-frontend.vercel.app/signin"
+                  className="btn btn-md btn-primary hover:btn-secondary dark:hover:btn-accent">
                   Start Free Trial
                 </Link>
                 <Link
@@ -123,7 +125,7 @@ const AboutSumuPage = () => {
                 </p>
                 <div className="mt-5">
                   <Link
-                    href="/signup-01"
+                    href="https://sumu-frontend.vercel.app/signin"
                     className="btn btn-md btn-primary hover:btn-secondary dark:hover:btn-accent w-full justify-center">
                     Start Free Trial
                   </Link>

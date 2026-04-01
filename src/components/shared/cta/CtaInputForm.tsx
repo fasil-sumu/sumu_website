@@ -3,13 +3,14 @@
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import { cn } from '@/utils/cn';
 import { useTranslation } from 'react-i18next';
-import { ReactNode } from 'react';
+import { FormEvent, ReactNode } from 'react';
 
 interface CtaInputFormProps {
   btnClass?: string;
   ctaBtnText?: ReactNode;
   inputFieldClass?: string;
   emailPlaceholder?: string;
+  submitHref?: string;
 }
 
 const CtaInputForm = ({
@@ -17,14 +18,22 @@ const CtaInputForm = ({
   ctaBtnText = 'Get Started',
   inputFieldClass,
   emailPlaceholder,
+  submitHref,
 }: CtaInputFormProps) => {
   const { t } = useTranslation();
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    if (!submitHref) return;
+    event.preventDefault();
+    window.location.assign(submitHref);
+  };
 
   return (
     <RevealAnimation delay={0.4}>
       <form
         action="#"
         method="post"
+        onSubmit={handleSubmit}
         className="flex flex-col items-center justify-start gap-3 md:flex-row"
         aria-label="cta-form">
         <input

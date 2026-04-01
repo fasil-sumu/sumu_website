@@ -44,9 +44,9 @@ const HelpCenterPage = () => {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                <Link href="/support" className="btn btn-md btn-primary hover:btn-secondary dark:hover:btn-accent">
+                {/* <Link href="/support" className="btn btn-md btn-primary hover:btn-secondary dark:hover:btn-accent">
                   Open support
-                </Link>
+                </Link> */}
                 <Link
                   href="/resources/documentation"
                   className="btn btn-md btn-white hover:btn-secondary dark:btn-transparent dark:hover:btn-accent">

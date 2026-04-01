@@ -146,7 +146,7 @@ const PricingCard = ({ plan, delay }: { plan: PricingPlan; delay: number }) => {
 
           <div className="mt-8 relative z-10">
             <Link
-              href="/coming-soon"
+              href="https://sumu-frontend.vercel.app/signin"
               className={cn(
                 'btn-md w-full before:content-none transition-all duration-300',
                 plan.isFeatured
