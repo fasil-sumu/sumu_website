@@ -62,7 +62,8 @@ const ProductDetailsProcess = ({ title, steps }: { title: string; steps: Product
                       <ReactMarkdown
                         rehypePlugins={[[rehypeSlug]]}
                         components={{
-                          p: ({ node: _node, children, ...props }) => {
+                          p: ({ node, children, ...props }) => {
+                            void node;
                             const content = Array.isArray(children) && children.length === 1 ? children[0] : null;
                             if (isTrialCta(content)) {
                               return (
@@ -81,16 +82,23 @@ const ProductDetailsProcess = ({ title, steps }: { title: string; steps: Product
                               </p>
                             );
                           },
-                          ul: ({ node: _node, ...props }) => (
-                            <ul
-                              className="mt-3 space-y-2 list-disc list-inside text-left md:text-left inline-block md:block"
-                              {...props}
-                            />
-                          ),
-                          li: ({ node: _node, ...props }) => <li {...props} />,
-                          strong: ({ node: _node, ...props }) => (
-                            <span className="font-semibold text-secondary dark:text-accent" {...props} />
-                          ),
+                          ul: ({ node, ...props }) => {
+                            void node;
+                            return (
+                              <ul
+                                className="mt-3 space-y-2 list-disc list-inside text-left md:text-left inline-block md:block"
+                                {...props}
+                              />
+                            );
+                          },
+                          li: ({ node, ...props }) => {
+                            void node;
+                            return <li {...props} />;
+                          },
+                          strong: ({ node, ...props }) => {
+                            void node;
+                            return <span className="font-semibold text-secondary dark:text-accent" {...props} />;
+                          },
                         }}>
                         {step.body}
                       </ReactMarkdown>

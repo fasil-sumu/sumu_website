@@ -44,6 +44,7 @@ const SkeletonImage = ({
       )}
       <Image
         {...props}
+        alt={props.alt}
         className={cn('transition-opacity duration-300', loaded ? 'opacity-100' : 'opacity-0', className)}
         onLoad={(e) => {
           onLoad?.(e);

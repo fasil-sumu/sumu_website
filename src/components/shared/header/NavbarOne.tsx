@@ -15,10 +15,6 @@ import NavItemLink from './NavItemLink';
 import LanguageSwitcher from '../LanguageSwitcher';
 
 // Lazy load mega menus for better performance
-const AboutMenu = lazy(() => import('../mega-menu/AboutMenu'));
-const BlogMenu = lazy(() => import('../mega-menu/BlogMenu'));
-const HomeMegaMenu = lazy(() => import('../mega-menu/HomeMegaMenu'));
-const PageMegaMenu = lazy(() => import('../mega-menu/PageMegaMenu'));
 const ResourcesMenu = lazy(() => import('../mega-menu/ResourcesMenu'));
 const ServicesMenu = lazy(() => import('../mega-menu/ServicesMenu'));
 
@@ -68,18 +64,10 @@ const NavbarOne: FC<NavbarOneProps> = ({ className, megaMenuColor, btnClassName 
                 const renderMegaMenu = () => {
                   const menuComponent = (() => {
                     switch (item?.megaMenuComponent) {
-                      case 'HomeMegaMenu':
-                        return <HomeMegaMenu />;
-                      case 'PageMegaMenu':
-                        return <PageMegaMenu className={megaMenuColor} />;
-                      case 'AboutMenu':
-                        return <AboutMenu className={megaMenuColor} />;
                       case 'ServicesMenu':
                         return <ServicesMenu className={megaMenuColor} isOpen={isOpen} />;
                       case 'ResourcesMenu':
                         return <ResourcesMenu className={megaMenuColor} isOpen={isOpen} />;
-                      case 'BlogMenu':
-                        return <BlogMenu className={megaMenuColor} />;
                       default:
                         return null;
                     }

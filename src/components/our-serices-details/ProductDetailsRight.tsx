@@ -77,19 +77,27 @@ const ProductDetailsRight = ({
                 <ReactMarkdown
                   rehypePlugins={[[rehypeSlug]]}
                   components={{
-                    p: ({ node: _node, ...props }) => (
-                      <p className="text-secondary/70 dark:text-accent/70 text-sm" {...props} />
-                    ),
-                    ul: ({ node: _node, ...props }) => (
-                      <ul
-                        className="mt-1 space-y-1 list-disc list-inside text-secondary/70 dark:text-accent/70 text-sm"
-                        {...props}
-                      />
-                    ),
-                    li: ({ node: _node, ...props }) => <li {...props} />,
-                    strong: ({ node: _node, ...props }) => (
-                      <span className="font-semibold text-secondary dark:text-accent" {...props} />
-                    ),
+                    p: ({ node, ...props }) => {
+                      void node;
+                      return <p className="text-secondary/70 dark:text-accent/70 text-sm" {...props} />;
+                    },
+                    ul: ({ node, ...props }) => {
+                      void node;
+                      return (
+                        <ul
+                          className="mt-1 space-y-1 list-disc list-inside text-secondary/70 dark:text-accent/70 text-sm"
+                          {...props}
+                        />
+                      );
+                    },
+                    li: ({ node, ...props }) => {
+                      void node;
+                      return <li {...props} />;
+                    },
+                    strong: ({ node, ...props }) => {
+                      void node;
+                      return <span className="font-semibold text-secondary dark:text-accent" {...props} />;
+                    },
                   }}>
                   {card.body}
                 </ReactMarkdown>
