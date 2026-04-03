@@ -39,7 +39,22 @@
     "blog": "Blog",
     "contact": "Contact",
     "login": "Login",
-    "signup": "Sign Up"
+    "signup": "Sign Up",
+    "megaMenu": {
+      "services": {
+        "invoicing": "Create, send & track invoices easily.",
+        "payments": "Securely manage your incoming payments.",
+        "expenses": "Track and manage every expense.",
+        "accounting": "Monitor your finances in real time.",
+        "reporting": "View insights, make smarter moves.",
+        "clients": "Manage banking and client profiles."
+      },
+      "resources": {
+        "learn": "Read tutorials and guides.",
+        "support": "Get help from our expert team.",
+        "company": "About our mission and team."
+      }
+    }
   },
   "hero": {
     "title": "Run your Business Smarter with SUMU",
@@ -264,6 +279,15 @@
       "heading": "Accelerate your business growth with Sumu's smart platform.",
       "button": "Get started",
       "badge": "Get started",
+      "emailPlaceholder": "Enter your email",
+      "noCreditCard": "No credit card required",
+      "freeTrial": "14-Day free trial"
+    },
+    "ctaGrow": {
+      "badge": "Support, Careers, and Partnerships",
+      "heading": "Ready to grow with Sumu?",
+      "description": "Contact Sales | Contact Support | Careers. Join us to transform businesses in Oman and across MENA, and explore our Blogs and Partnerships.",
+      "button": "Contact Sales",
       "emailPlaceholder": "Enter your email",
       "noCreditCard": "No credit card required",
       "freeTrial": "14-Day free trial"
@@ -518,5 +542,504 @@
     "learn": "Learn",
     "support": "Support",
     "company": "Company"
+  },
+  "contactPage": {
+    "hero": {
+      "title": "Contact Us",
+      "heading": "Contact Us"
+    },
+    "heading": "Reach out to our support team for help.",
+    "subheading": "Whether you have a question, need technical assistance, or just want some guidance, our support team is here to help. We're available around the clock to provide quick and friendly support.",
+    "info": {
+      "address": {
+        "title": "Our Address",
+        "content": "Office #2, 1st Floor, Zawamri Building, Opp. Salman Store, Central Salalah-211, Salalah, Dhofar, Sultanate of Oman."
+      },
+      "email": {
+        "title": "Email Us"
+      },
+      "phone": {
+        "title": "Call Us",
+        "content": "Mobile: +986 75008142"
+      }
+    },
+    "form": {
+      "name": {
+        "label": "Your name",
+        "placeholder": "Enter your name"
+      },
+      "phone": {
+        "label": "Your number",
+        "placeholder": "Enter your number"
+      },
+      "email": {
+        "label": "Email address",
+        "placeholder": "Enter your email"
+      },
+      "subject": {
+        "label": "Subject",
+        "placeholder": "Enter your subject"
+      },
+      "message": {
+        "label": "Write message",
+        "placeholder": "Enter your message"
+      },
+      "terms": {
+        "agree": "I agree with the",
+        "link": "terms and conditions"
+      },
+      "submit": "Submit"
+    },
+    "cta": {
+      "badge": "Get started",
+      "heading": "Get in touch",
+      "description": "We're here to help you with your inquiries and needs. Feel free to reach out to us using the contact form below, and we'll get back to you as soon as possible.",
+      "button": "Contact us"
+    }
+  },
+  "resourcesPage": {
+    "hero": { "title": "Resources", "heading": "Resources" },
+    "badge": "Resources",
+    "heading": "Everything you need to learn, get support, and grow with Sumu",
+    "subheading": "Explore insights, tutorials, documentation, and company information — organized in one place.",
+    "readMore": "Read more",
+    "backToResources": "Back to Resources",
+    "cards": {
+      "learn": {
+        "title": "Learn",
+        "description": "Blog, guides & tutorials, and product updates to help you get more value from Sumu."
+      },
+      "support": {
+        "title": "Support",
+        "description": "Help Center and documentation to troubleshoot issues and understand workflows clearly."
+      },
+      "company": {
+        "title": "Company",
+        "description": "Learn about Sumu and contact our team for product info, support, setup, or partnerships."
+      }
+    },
+    "cta": {
+      "badge": "Get Started",
+      "heading": "Want help setting up Sumu",
+      "span": "fast?",
+      "description": "Browse documentation, explore tutorials, or contact our team for guided support.",
+      "button": "Get started"
+    },
+    "learn": {
+      "heading": "Learn",
+      "title": "Insights, guidance, and what's new",
+      "description": "Explore practical business insights, step-by-step tutorials, and platform updates designed to help you make confident financial decisions.",
+      "topicsTitle": "Topics include",
+      "topics": [
+        "Financial management best practices",
+        "Managing invoices and payments",
+        "Controlling business expenses",
+        "Understanding financial reports",
+        "Tips for growing businesses"
+      ],
+      "cards": {
+        "blog": {
+          "title": "Blog",
+          "description": "Practical insights on financial management, invoicing, accounting, and business operations."
+        },
+        "guides": {
+          "title": "Guides & Tutorials",
+          "description": "Step-by-step instructions to help users understand the platform and manage workflows efficiently."
+        },
+        "updates": {
+          "title": "Product Updates",
+          "description": "Highlights the latest features, improvements, enhancements, and UX upgrades."
+        }
+      }
+    },
+    "support": {
+      "heading": "Support",
+      "title": "Find answers and get help fast",
+      "description": "Get guidance on using Sumu, troubleshoot common issues, and understand key workflows clearly.",
+      "helpTopicsTitle": "Help Center topics",
+      "helpTopics": [
+        "Platform setup and configuration",
+        "Invoicing and payment tracking",
+        "Expense management",
+        "Accounting and financial reports",
+        "Troubleshooting common issues"
+      ],
+      "docsTopicsTitle": "Documentation includes",
+      "docsTopics": [
+        "Invoicing and billing processes",
+        "Payment recording and tracking",
+        "Expense management",
+        "Accounting tools and journal entries",
+        "Financial reporting features"
+      ],
+      "cards": {
+        "helpCenter": {
+          "title": "Help Center",
+          "description": "Detailed answers to common questions and guidance on using the platform."
+        },
+        "documentation": {
+          "title": "Documentation",
+          "description": "Structured reference for modules, workflows, accounting tools, and reports."
+        }
+      }
+    },
+    "company": {
+      "heading": "Company",
+      "title": "About Sumu and how to reach us",
+      "description": "Learn who we are, why we built Sumu, and how to contact our team for product info, support, setup, and partnerships.",
+      "contactDetailsTitle": "Contact details",
+      "officeAddress": "Office Address",
+      "reachOut": "Reach Out",
+      "cards": {
+        "about": {
+          "title": "About Sumu",
+          "description": "Our story, mission, vision, and core values — built for modern businesses."
+        },
+        "contact": {
+          "title": "Contact Us",
+          "description": "Reach our team for product information, technical support, setup, and partnerships."
+        }
+      }
+    },
+    "aboutSumu": {
+      "heading": "About Sumu",
+      "badge": "Company",
+      "title": "Smart Financial Management for Modern Businesses",
+      "p1": "Sumu is the product brand of OceanGate for Smart Technologies LLC, an Omani technology company focused on developing innovative digital solutions for business and financial management.",
+      "p2": "Sumu brings invoicing, payment tracking, expense management, accounting, and financial reporting into one integrated system—helping businesses simplify financial operations and maintain structured records.",
+      "storyTitle": "Our Story",
+      "storyText": "Sumu was developed to solve a common challenge: managing financial operations using multiple disconnected tools. By bringing core workflows into one platform, businesses gain better visibility and operational control.",
+      "builtForTitle": "Built for Businesses",
+      "builtForText": "Designed to support modern businesses with structured financial tools that keep records clear, performance visible, and operations efficient.",
+      "missionTitle": "Our Mission",
+      "missionText": "To simplify financial management with reliable, accessible, and easy-to-use digital tools.",
+      "visionTitle": "Our Vision",
+      "visionText": "To become a trusted digital financial management platform across the region.",
+      "valuesTitle": "Core Values",
+      "valuesText": "Integrity, Customer Focus, Simplicity, Continuous Improvement, Innovation, Empowerment.",
+      "coreValuesTitle": "Our Core Values",
+      "coreValues": [
+        "Integrity",
+        "Customer Focus",
+        "Simplicity",
+        "Continuous Improvement",
+        "Innovation",
+        "Empowerment"
+      ],
+      "getStartedTitle": "Get started",
+      "getStartedText": "Start managing your business finances with a smarter and more organized platform.",
+      "startTrial": "Start Free Trial",
+      "contactTeam": "Contact Our Team",
+      "fullPage": "Full company page"
+    },
+    "blog": {
+      "heading": "Blog",
+      "badge": "Learn",
+      "title": "Insights for Modern Business Management",
+      "description": "The Sumu Blog provides practical insights on financial management, invoicing, accounting, and business operations. Our articles help entrepreneurs, freelancers, and growing companies improve financial practices and make informed decisions.",
+      "featuredTitle": "Featured",
+      "featuredText": "Expert insights on navigating Oman's accounting and tax landscape.",
+      "exploreBtn": "Explore articles",
+      "guidesBtn": "Browse guides",
+      "topicsTitle": "Topics include",
+      "topics": [
+        "financial management best practices",
+        "managing invoices and payments",
+        "controlling business expenses",
+        "understanding financial reports",
+        "tips for growing businesses"
+      ],
+      "topicsNote": "Stay updated with the latest insights and industry trends.",
+      "needSupportTitle": "Need support while learning?",
+      "needSupportText": "Visit the Help Center for step-by-step answers and troubleshooting.",
+      "helpCenterBtn": "Go to Help Center"
+    },
+    "helpCenter": {
+      "heading": "Help Center",
+      "badge": "Support",
+      "title": "Find Answers and Get Support",
+      "description": "The Help Center provides detailed answers to common questions and guidance on using the Sumu platform. Users can quickly find solutions and learn how to use features effectively.",
+      "coversTitle": "The Help Center covers",
+      "covers": [
+        "platform setup and configuration",
+        "invoicing and payment tracking",
+        "expense management",
+        "accounting and financial reports",
+        "troubleshooting common issues"
+      ],
+      "docsBtn": "Read documentation",
+      "quickStartTitle": "Prefer a quick step-by-step?",
+      "quickStartText": "Use Guides & Tutorials for structured walkthroughs and best practices.",
+      "guidesBtn": "Browse guides",
+      "contactTitle": "Need to contact us?",
+      "contactText": "Our team is ready to help.",
+      "contactBtn": "Contact"
+    },
+    "documentation": {
+      "heading": "Documentation",
+      "badge": "Support",
+      "title": "Detailed Platform Guidance",
+      "description": "The Sumu documentation provides structured information about modules, workflows, and financial management processes to help you fully understand how the platform works.",
+      "includesTitle": "Documentation includes",
+      "includes": [
+        "invoicing and billing processes",
+        "payment recording and tracking",
+        "expense management workflows",
+        "accounting tools and journal entries",
+        "financial reporting features"
+      ],
+      "openBtn": "Open documentation",
+      "helpBtn": "Help Center",
+      "quickStartTitle": "Want a quick start?",
+      "quickStartText": "Use Guides & Tutorials for step-by-step walkthroughs and examples.",
+      "guidesBtn": "Guides & Tutorials",
+      "stayUpdatedTitle": "Stay updated",
+      "stayUpdatedText": "Follow Product Updates to track new features and improvements.",
+      "updatesBtn": "Product Updates"
+    },
+    "guides": {
+      "heading": "Guides & Tutorials",
+      "badge": "Learn",
+      "title": "Learn How to Use Sumu Effectively",
+      "description": "Our guides and tutorials provide step-by-step instructions to help users understand the platform and manage financial activities more efficiently.",
+      "cards": [
+        { "title": "Invoice workflows", "text": "Create, customize, and manage invoices with confidence." },
+        { "title": "Payments tracking", "text": "Track customer payments and stay on top of receivables." },
+        { "title": "Expenses & reporting", "text": "Record expenses and understand your financial reports." }
+      ],
+      "topicsTitle": "Topics covered include",
+      "topics": [
+        "creating and managing invoices",
+        "tracking customer payments",
+        "recording and categorizing expenses",
+        "managing client records",
+        "understanding financial reports"
+      ],
+      "openBtn": "Open tutorials",
+      "updatesBtn": "See updates",
+      "whyTitle": "Why it helps",
+      "whyText": "These practical guides help businesses adopt better financial management practices with clarity and structure.",
+      "needAnswerTitle": "Need an answer now?",
+      "needAnswerText": "Check the Help Center for quick solutions.",
+      "helpBtn": "Help Center"
+    },
+    "productUpdates": {
+      "heading": "Product Updates",
+      "badge": "Learn",
+      "title": "Stay Updated with Platform Improvements",
+      "description": "Sumu continuously improves its platform to provide better tools for businesses. Product Updates highlights new features, enhancements, and improvements added to the system.",
+      "includesTitle": "Updates may include",
+      "includes": [
+        "new platform features",
+        "performance improvements",
+        "security enhancements",
+        "user experience improvements"
+      ],
+      "changelogBtn": "View changelog",
+      "blogBtn": "Read the blog",
+      "whyTitle": "Why it matters",
+      "whyText": "This helps you stay informed about the latest developments in Sumu, so your team can take advantage of new capabilities as soon as they launch.",
+      "needGuidanceTitle": "Need guidance?",
+      "needGuidanceText": "Explore tutorials and documentation for step-by-step workflows.",
+      "guidesBtn": "Guides",
+      "docsBtn": "Documentation"
+    },
+    "contactUs": {
+      "heading": "Contact Us",
+      "badge": "Company",
+      "title": "We're Here to Help",
+      "description": "If you need assistance with the Sumu platform or would like to learn more about our services, our team is ready to help.",
+      "reasonsTitle": "You can contact us for",
+      "reasons": ["product information", "technical support", "account setup assistance", "partnership inquiries"],
+      "formBtn": "Contact form",
+      "helpBtn": "Help Center",
+      "detailsTitle": "Contact details",
+      "emailLabel": "Email:",
+      "mobileLabel": "Mobile:",
+      "learnMoreTitle": "Learn more about Sumu",
+      "learnMoreText": "Explore our story, mission, and values.",
+      "aboutBtn": "About Sumu"
+    }
+  },
+  "termsPage": {
+    "hero": {
+      "title": "Terms & Conditions",
+      "heading": "Terms & Conditions"
+    },
+    "cta": {
+      "badge": "Get Started",
+      "heading": "Ready to start with Sumu?",
+      "description": "If you have any questions, feel free to reach out to our team.",
+      "button": "Get started"
+    },
+    "intro": {
+      "title": "Terms & conditions",
+      "p1": "This site, sumu.com (hereafter referred to as Sumu, site, or website) is owned and operated by Sumu Technologies LLC (hereafter referred to as Sumu we, or company).",
+      "p2": "Please carefully read, review, and understand our Terms and Conditions before using any services or products from Sumu.com. Your access to and use of this website and its products indicate that you accept and agree to be bound by these terms and conditions.",
+      "p3": "If you do not agree with these terms, you should leave the site immediately and not use any of the materials or services available here."
+    },
+    "sections": {
+      "liability": {
+        "title": "1. Limitation of liability",
+        "p1": "Under no circumstances shall Sumu be liable for any direct, indirect, incidental, special, or consequential damages, including but not limited to loss of data, profits, or business interruption, arising out of the use, or inability to use, the materials on this site, even if Sumu or an authorized representative has been advised of the possibility of such damages.",
+        "p2": "If your use of materials from this site results in the need for servicing, repair, or correction of equipment or data, you assume all associated costs."
+      },
+      "license": {
+        "title": "2. License",
+        "p1": "Sumu services, platforms, and tools are provided under a commercial license agreement. Each subscription or license purchased includes access to updates and support for 365 days from the completion of the order.",
+        "p2": "License activation is necessary to receive updates and premium support. You are not permitted to resell, redistribute, or offer Sumu products or services, modified or unmodified, without our written consent."
+      },
+      "ownership": {
+        "title": "3. Ownership and liability",
+        "p1": "All Sumu products, solutions, and materials remain the intellectual property of Sumu Technologies LLC. You may not claim ownership of our services, whether modified or unmodified.",
+        "p2": "Our products and services are provided \"as is\" without warranty of any kind, expressed or implied. Sumu is not liable for any losses or damages resulting from the use or inability to use its products.",
+        "p3": "User accounts and product licenses are",
+        "nonTransferable": "non-transferable",
+        "p3End": ". For agencies and development partners: Please ensure your clients purchase their own licenses if they require direct support access."
+      },
+      "refund": {
+        "title": "4. Refund policy",
+        "p1": "We believe you'll love Sumu! Still, if you're not satisfied, we offer a 14-day no-questions-asked refund policy. Simply contact our support team within 14 days of your original purchase, and we'll issue a full refund. We might ask for feedback to help us improve, but you're under no obligation to share.",
+        "link": "Learn more about our refund policy"
+      },
+      "warranty": {
+        "title": "5. Warranty",
+        "p1": "Sumu services are provided without any warranty, either expressed or implied. We do not guarantee full compatibility with all browsers, devices, third-party plugins, or external systems. Before purchasing, you may review demos or contact our support team to verify compatibility with your setup."
+      },
+      "termination": {
+        "title": "6. Account termination and suspension",
+        "p1": "Sumu reserves the right to suspend or terminate any user account without prior notice for reasons including but not limited to",
+        "items": [
+          "Abusive, defamatory, or malicious behavior towards Sumu staff or customers",
+          "Spreading false information or misleading reviews",
+          "Unauthorized resale, distribution, or promotion of competitor products",
+          "Involvement in hacking, spamming, piracy, or illegal activities",
+          "Security threats due to account compromise or unauthorized sharing"
+        ]
+      },
+      "privacy": {
+        "title": "7. Privacy policy",
+        "p1": "We value your privacy. Sumu does not sell, rent, or share your personal information with third parties. Your data is used solely for purposes such as",
+        "items": [
+          "Order processing",
+          "Account management",
+          "Billing disputes",
+          "Fraudulent activities",
+          "Legal compliance"
+        ],
+        "p2": "By using Sumu services, you consent to the collection and use of your data by our Privacy Policy.",
+        "link": "Read our detailed privacy policy"
+      }
+    }
+  },
+  "privacyPage": {
+    "hero": {
+      "title": "Privacy",
+      "heading": "Privacy"
+    },
+    "cta": {
+      "badge": "Get Started",
+      "heading": "Ready to start with Sumu?",
+      "description": "If you have any questions, feel free to reach out to our team.",
+      "button": "Get started"
+    },
+    "dataProtectionTitle": "Data protection guidelines",
+    "dataProtectionDesc": "Sumu is a product operated by Sumu Technologies LLC. We specialize in property management solutions, empowering businesses worldwide to streamline their operations efficiently. We are committed to protecting your privacy and handling your information transparently.",
+    "policyIntroTitle": "Sumu privacy policy",
+    "policyIntroDesc": "This Privacy Policy describes how your personal information is collected, used, and shared when you visit, subscribe, register, or make a purchase from https://Sumu.com (the \"Site\").",
+    "personalInfo": {
+      "title": "Personal information we collect",
+      "content": "When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and cookies installed on your device. Additionally, as you browse the Site, we collect information about the individual pages you view, what websites or search terms referred you to the Site, and how you interact with the Site. We call this automatically-collected information <span class=\"text-secondary dark:text-accent\">\"Device Information.\"</span>",
+      "deviceItems": [
+        {
+          "title": "Cookies",
+          "content": "Data files placed on your device, often including an anonymous unique identifier. ( Learn more about cookies and how to disable them: <a href=\"http://www.allaboutcookies.org\" class=\"text-secondary\">http://www.allaboutcookies.org</a> )"
+        },
+        {
+          "title": "Log Files",
+          "content": "Track actions on the Site and collect IP address, browser type, ISP, referring/exit pages, and timestamps."
+        },
+        {
+          "title": "Web Beacons, Tags, and Pixels",
+          "content": "Electronic files to monitor site usage and interaction."
+        },
+        {
+          "title": "Google Analytics and Pixels",
+          "content": "Collect traffic-related information and interaction behavior."
+        }
+      ]
+    },
+    "orderInfo": {
+      "text": "When you make or attempt to purchase through the Site, we collect information such as your name, email address, billing address, shipping address, payment details, and any other relevant data necessary to process your order."
+    },
+    "form": {
+      "fields": [
+        { "id": "name", "label": "Your name", "placeholder": "Enter your name" },
+        {
+          "id": "billing-shipping-addresses",
+          "label": "Billing and shipping addresses",
+          "placeholder": "Billing and shipping addresses"
+        },
+        {
+          "id": "payment-information",
+          "label": "Payment information",
+          "placeholder": "credit card, PayPal, or bank details"
+        },
+        { "id": "email", "label": "Email address", "placeholder": "Enter your email address" }
+      ],
+      "termsAgree": "I agree with the",
+      "termsLink": "terms and conditions",
+      "submit": "Submit"
+    },
+    "useInfo": {
+      "title": "How we use your personal information",
+      "orderDesc": "We use the collected Order Information to:",
+      "orderItems": [
+        "Process your orders, payments, and generate invoices",
+        "Communicate with you",
+        "Screen for potential fraud or risks",
+        "Provide you with information or promotions related to our services, when aligned with your preferences"
+      ],
+      "deviceDesc": "We use the collected Device Information to:",
+      "deviceItems": [
+        "Improve and optimize the Site experience",
+        "Analyze customer interactions for performance tracking",
+        "Screen for potential risk and fraud"
+      ]
+    },
+    "sharingInfo": {
+      "title": "Sharing your personal information",
+      "desc": "We share your Personal Information with trusted third-party service providers to help us operate effectively:",
+      "items": [
+        "Google Analytics: To understand customer interactions and optimize experience (Learn more: <a href=\"#\" class=\"text-secondary dark:text-accent\">Google Privacy Policy</a>)",
+        "Payment processors (PayPal, Stripe)"
+      ]
+    },
+    "rights": {
+      "title": "Your rights",
+      "desc": "If you are a resident of the European Economic Area (EEA):",
+      "items": [
+        "You have the right to access, update, or delete your personal information.",
+        "If you wish to exercise these rights, please contact us at <a href=\"mailto:support@nextsaas.com\" class=\"text-secondary dark:text-accent\">support@nextsaas.com</a>"
+      ]
+    },
+    "simpleSections": [
+      {
+        "title": "Do not track",
+        "content": "Please note, we do not alter our Site's data collection practices when we detect a \"Do Not Track\" signal from your browser."
+      },
+      {
+        "title": "Data retention",
+        "content": "We will retain your Order Information for our records unless you ask us to delete this information."
+      },
+      {
+        "title": "Minors",
+        "content": "Our Site is not intended for individuals under the age of 18."
+      },
+      {
+        "title": "Changes",
+        "content": "We may update this Privacy Policy periodically to reflect changes to our practices or for other operational, legal, or regulatory reasons."
+      }
+    ]
   }
 }

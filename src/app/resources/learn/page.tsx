@@ -1,18 +1,17 @@
+'use client';
+
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import ResourcePageShell from '@/components/resources/ResourcePageShell';
 import LinkButton from '@/components/ui/button/LinkButton';
-import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Learn - Resources | Sumu',
-  description: 'Blog, guides & tutorials, and product updates to help you get more value from Sumu.',
-};
+import { useTranslation } from 'react-i18next';
 
 const LearnResourcesPage = () => {
+  const { t } = useTranslation();
+
   return (
-    <ResourcePageShell heading="Learn" link="/resources/learn">
+    <ResourcePageShell heading={t('resourcesPage.learn.heading')} link="/resources/learn">
       <section className="pt-7 pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]" aria-label="Learn resources">
         <div className="main-container">
           <div className="space-y-14 md:space-y-[70px]">
@@ -21,17 +20,14 @@ const LearnResourcesPage = () => {
                 href="/resources"
                 className="text-tagline-1 text-secondary/70 hover:text-secondary dark:text-accent/70 dark:hover:text-accent inline-flex items-center gap-2 transition-colors">
                 <span aria-hidden>←</span>
-                Back to Resources
+                {t('resourcesPage.backToResources')}
               </Link>
             </div>
 
             <RevealAnimation delay={0.1}>
               <div className="md:text-center max-w-[602px] space-y-1.5 md:space-y-3 mx-auto">
-                <h2>Insights, guidance, and what’s new</h2>
-                <p>
-                  Explore practical business insights, step-by-step tutorials, and platform updates designed to help you
-                  make confident financial decisions.
-                </p>
+                <h2>{t('resourcesPage.learn.title')}</h2>
+                <p>{t('resourcesPage.learn.description')}</p>
               </div>
             </RevealAnimation>
 
@@ -39,24 +35,22 @@ const LearnResourcesPage = () => {
               {[
                 {
                   id: 'learn-blog',
-                  title: 'Blog',
-                  description:
-                    'Practical insights on financial management, invoicing, accounting, and business operations.',
+                  title: t('resourcesPage.learn.cards.blog.title'),
+                  description: t('resourcesPage.learn.cards.blog.description'),
                   href: '/resources/blog',
                   icon: 'ns-shape-8',
                 },
                 {
                   id: 'learn-guides',
-                  title: 'Guides & Tutorials',
-                  description:
-                    'Step-by-step instructions to help users understand the platform and manage workflows efficiently.',
+                  title: t('resourcesPage.learn.cards.guides.title'),
+                  description: t('resourcesPage.learn.cards.guides.description'),
                   href: '/resources/guides-tutorials',
                   icon: 'ns-shape-14',
                 },
                 {
                   id: 'learn-updates',
-                  title: 'Product Updates',
-                  description: 'Highlights the latest features, improvements, enhancements, and UX upgrades.',
+                  title: t('resourcesPage.learn.cards.updates.title'),
+                  description: t('resourcesPage.learn.cards.updates.description'),
                   href: '/resources/product-updates',
                   icon: 'ns-shape-13',
                 },
@@ -75,7 +69,7 @@ const LearnResourcesPage = () => {
                         <LinkButton
                           href={card.href}
                           className="btn btn-white dark:btn-transparent dark:hover:btn-accent hover:btn-secondary btn-md">
-                          Read more
+                          {t('resourcesPage.readMore')}
                         </LinkButton>
                       </div>
                     </div>
@@ -87,17 +81,11 @@ const LearnResourcesPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white dark:bg-background-7 p-8 md:p-12 rounded-[24px] border border-stroke-3 dark:border-stroke-6">
               <div className="space-y-6">
                 <RevealAnimation delay={0.2}>
-                  <h3 className="text-heading-4">Topics include</h3>
+                  <h3 className="text-heading-4">{t('resourcesPage.learn.topicsTitle')}</h3>
                 </RevealAnimation>
                 <RevealAnimation delay={0.3}>
                   <ul className="space-y-4">
-                    {[
-                      'Financial management best practices',
-                      'Managing invoices and payments',
-                      'Controlling business expenses',
-                      'Understanding financial reports',
-                      'Tips for growing businesses',
-                    ].map((text) => (
+                    {(t('resourcesPage.learn.topics', { returnObjects: true }) as string[]).map((text) => (
                       <li
                         key={text}
                         className="flex items-center gap-4 text-tagline-1 text-secondary/80 dark:text-accent/80 font-medium">

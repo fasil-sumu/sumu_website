@@ -1,17 +1,16 @@
+'use client';
+
 import ContactInfo from '@/components/contact-page/ContactInfo';
 import ContactMap from '@/components/contact-page/ContactMap';
 import CTAV1 from '@/components/shared/cta/CTAV1';
 import FooterThree from '@/components/homepage-08/FooterThree';
 import NavbarOne from '@/components/shared/header/NavbarOne';
 import PageHero from '@/components/shared/PageHero';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Contact Us - NextSaaS',
-  description: 'Contact Us Page - NextSaaS',
-};
+import { useTranslation } from 'react-i18next';
 
 const ContactUs = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <NavbarOne
@@ -20,8 +19,8 @@ const ContactUs = () => {
       />
       <main className="bg-background-3 dark:bg-background-7">
         <PageHero
-          title="Contact us"
-          heading="Contact us"
+          title={t('contactPage.hero.title')}
+          heading={t('contactPage.hero.heading')}
           link="/contact-us"
           className="pt-24 md:pt-36 lg:pt-40 xl:pt-[200px]"
         />
@@ -30,15 +29,16 @@ const ContactUs = () => {
         <CTAV1
           className="dark:bg-background-5 bg-white"
           badgeClass="badge-yellow-v2"
-          badgeText="Get started"
-          ctaBtnText="Contact us"
-          ctaHeading="Get in touch"
-          description="We're here to help you with your inquiries and needs. Feel free to reach out to us using the contact form below, and we'll get back to you as soon as possible."
+          badgeText={t('contactPage.cta.badge')}
+          ctaBtnText={t('contactPage.cta.button')}
+          ctaHeading={t('contactPage.cta.heading')}
+          description={t('contactPage.cta.description')}
         />
       </main>
       <FooterThree />
     </>
   );
 };
-ContactUs.displayName = 'AboutPage03';
+
+ContactUs.displayName = 'ContactUs';
 export default ContactUs;

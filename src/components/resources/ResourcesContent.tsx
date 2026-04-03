@@ -1,46 +1,49 @@
+'use client';
+
 import RevealAnimation from '../animation/RevealAnimation';
 import LinkButton from '../ui/button/LinkButton';
-
-const resourcesCards = [
-  {
-    id: 'resources-learn',
-    title: 'Learn',
-    description: 'Blog, guides & tutorials, and product updates to help you get more value from Sumu.',
-    href: '/resources/learn',
-    icon: 'ns-shape-8',
-  },
-  {
-    id: 'resources-support',
-    title: 'Support',
-    description: 'Help Center and documentation to troubleshoot issues and understand workflows clearly.',
-    href: '/resources/support',
-    icon: 'ns-shape-15',
-  },
-  {
-    id: 'resources-company',
-    title: 'Company',
-    description: 'Learn about Sumu and contact our team for product info, support, setup, or partnerships.',
-    href: '/resources/company',
-    icon: 'ns-shape-9',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 const ResourcesContent = () => {
+  const { t } = useTranslation();
+
+  const resourcesCards = [
+    {
+      id: 'resources-learn',
+      title: t('resourcesPage.cards.learn.title'),
+      description: t('resourcesPage.cards.learn.description'),
+      href: '/resources/learn',
+      icon: 'ns-shape-8',
+    },
+    {
+      id: 'resources-support',
+      title: t('resourcesPage.cards.support.title'),
+      description: t('resourcesPage.cards.support.description'),
+      href: '/resources/support',
+      icon: 'ns-shape-15',
+    },
+    {
+      id: 'resources-company',
+      title: t('resourcesPage.cards.company.title'),
+      description: t('resourcesPage.cards.company.description'),
+      href: '/resources/company',
+      icon: 'ns-shape-9',
+    },
+  ];
+
   return (
     <section className="py-14 md:py-16 lg:py-[88px] xl:py-[100px] pt-[100px]" aria-label="Resources content">
       <div className="main-container">
         <div className="text-center space-y-5 mb-[70px]">
           <RevealAnimation delay={0.2}>
-            <span className="badge badge-yellow-v2">Resources</span>
+            <span className="badge badge-yellow-v2">{t('resourcesPage.badge')}</span>
           </RevealAnimation>
           <div className="space-y-3">
             <RevealAnimation delay={0.3}>
-              <h2 className="max-w-[878px] mx-auto">Everything you need to learn, get support, and grow with Sumu</h2>
+              <h2 className="max-w-[878px] mx-auto">{t('resourcesPage.heading')}</h2>
             </RevealAnimation>
             <RevealAnimation delay={0.4}>
-              <p className="max-w-[700px] mx-auto">
-                Explore insights, tutorials, documentation, and company information — organized in one place.
-              </p>
+              <p className="max-w-[700px] mx-auto">{t('resourcesPage.subheading')}</p>
             </RevealAnimation>
           </div>
         </div>
@@ -61,7 +64,7 @@ const ResourcesContent = () => {
                     <LinkButton
                       href={item.href}
                       className="btn btn-white dark:btn-transparent dark:hover:btn-accent hover:btn-secondary btn-md">
-                      Read more
+                      {t('resourcesPage.readMore')}
                     </LinkButton>
                   </div>
                 </div>

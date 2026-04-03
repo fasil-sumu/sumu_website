@@ -1,146 +1,116 @@
+'use client';
+
 import Link from 'next/link';
+import { useTranslation } from 'react-i18next';
 import RevealAnimation from '../animation/RevealAnimation';
 
 const TermsConditionContent = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="pb-14 md:pb-16 lg:pb-[88px] xl:pb-[200px] pt-[100px]">
       <div className="main-container">
         <RevealAnimation delay={0.3}>
           <div className="space-y-3">
-            <h2>Terms &amp; conditions</h2>
+            <h2>{t('termsPage.intro.title')}</h2>
             <div className="space-y-7">
-              <p>
-                This site, sumu.com (hereafter referred to as Sumu, site, or website) is owned and operated by Sumu
-                Technologies LLC (hereafter referred to as Sumu we, or company).
-              </p>
-              <p>
-                Please carefully read, review, and understand our Terms and Conditions before using any services or
-                products from Sumu.com. Your access to and use of this website and its products indicate that you accept
-                and agree to be bound by these terms and conditions.
-              </p>
-              <p>
-                If you do not agree with these terms, you should leave the site immediately and not use any of the
-                materials or services available here.
-              </p>
+              <p>{t('termsPage.intro.p1')}</p>
+              <p>{t('termsPage.intro.p2')}</p>
+              <p>{t('termsPage.intro.p3')}</p>
             </div>
           </div>
         </RevealAnimation>
+
         <article className="terms-conditions-body">
+          {/* 1. Limitation of liability */}
           <RevealAnimation delay={0.4}>
             <div className="space-y-6">
-              <h3>1. Limitation of liability</h3>
-              <p>
-                Under no circumstances shall Sumu be liable for any direct, indirect, incidental, special, or
-                consequential damages, including but not limited to loss of data, profits, or business interruption,
-                arising out of the use, or inability to use, the materials on this site, even if Sumu or an authorized
-                representative has been advised of the possibility of such damages.
-              </p>
-              <p>
-                If your use of materials from this site results in the need for servicing, repair, or correction of
-                equipment or data, you assume all associated costs.
-              </p>
+              <h3>{t('termsPage.sections.liability.title')}</h3>
+              <p>{t('termsPage.sections.liability.p1')}</p>
+              <p>{t('termsPage.sections.liability.p2')}</p>
             </div>
           </RevealAnimation>
+
+          {/* 2. License */}
           <RevealAnimation delay={0.5}>
             <div className="space-y-6">
-              <h3>2. License</h3>
-              <p>
-                Sumu services, platforms, and tools are provided under a commercial license agreement. Each subscription
-                or license purchased includes access to updates and support for 365 days from the completion of the
-                order.
-              </p>
-              <p>
-                License activation is necessary to receive updates and premium support. You are not permitted to resell,
-                redistribute, or offer Sumu products or services, modified or unmodified, without our written consent.
-              </p>
+              <h3>{t('termsPage.sections.license.title')}</h3>
+              <p>{t('termsPage.sections.license.p1')}</p>
+              <p>{t('termsPage.sections.license.p2')}</p>
             </div>
           </RevealAnimation>
+
+          {/* 3. Ownership and liability */}
           <RevealAnimation delay={0.6}>
             <div className="space-y-6">
-              <h3>3. Ownership and liability</h3>
+              <h3>{t('termsPage.sections.ownership.title')}</h3>
+              <p>{t('termsPage.sections.ownership.p1')}</p>
+              <p>{t('termsPage.sections.ownership.p2')}</p>
               <p>
-                All Sumu products, solutions, and materials remain the intellectual property of Sumu Technologies LLC.
-                You may not claim ownership of our services, whether modified or unmodified.
-              </p>
-              <p>
-                Our products and services are provided &quot;as is&quot; without warranty of any kind, expressed or
-                implied. Sumu is not liable for any losses or damages resulting from the use or inability to use its
-                products.
-              </p>
-              <p>
-                User accounts and product licenses are
-                <strong className="font-bold !text-secondary dark:!text-accent"> non-transferable </strong>. For
-                agencies and development partners: Please ensure your clients purchase their own licenses if they
-                require direct support access.
+                {t('termsPage.sections.ownership.p3')}
+                <strong className="font-bold !text-secondary dark:!text-accent">
+                  {' '}
+                  {t('termsPage.sections.ownership.nonTransferable')}{' '}
+                </strong>
+                {t('termsPage.sections.ownership.p3End')}
               </p>
             </div>
           </RevealAnimation>
+
+          {/* 4. Refund policy */}
           <RevealAnimation delay={0.3}>
             <div className="space-y-6">
-              <h3>4. Refund policy</h3>
-              <p>
-                We believe you&apos;ll love Sumu! Still, if you&apos;re not satisfied, we offer a 14-day
-                no-questions-asked refund policy. Simply contact our support team within 14 days of your original
-                purchase, and we&apos;ll issue a full refund. We might ask for feedback to help us improve, but
-                you&apos;re under no obligation to share.
-              </p>
+              <h3>{t('termsPage.sections.refund.title')}</h3>
+              <p>{t('termsPage.sections.refund.p1')}</p>
             </div>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <Link
               href="/refund-policy"
               className="section-button btn dark:btn-accent hover:btn-primary btn-xl btn-secondary">
-              Learn more about our refund policy
+              {t('termsPage.sections.refund.link')}
             </Link>
           </RevealAnimation>
+
+          {/* 5. Warranty */}
           <RevealAnimation delay={0.5}>
             <div className="space-y-6">
-              <h3>5. Warranty</h3>
-              <p>
-                Sumu services are provided without any warranty, either expressed or implied. We do not guarantee full
-                compatibility with all browsers, devices, third-party plugins, or external systems. Before purchasing,
-                you may review demos or contact our support team to verify compatibility with your setup.
-              </p>
+              <h3>{t('termsPage.sections.warranty.title')}</h3>
+              <p>{t('termsPage.sections.warranty.p1')}</p>
             </div>
           </RevealAnimation>
+
+          {/* 6. Account termination */}
           <RevealAnimation delay={0.6}>
             <div className="space-y-6">
-              <h3>6. Account termination and suspension</h3>
-              <p>
-                Sumu reserves the right to suspend or terminate any user account without prior notice for reasons
-                including but not limited to
-              </p>
+              <h3>{t('termsPage.sections.termination.title')}</h3>
+              <p>{t('termsPage.sections.termination.p1')}</p>
               <ul>
-                <li>Abusive, defamatory, or malicious behavior towards Sumu staff or customers</li>
-                <li>Spreading false information or misleading reviews</li>
-                <li>Unauthorized resale, distribution, or promotion of competitor products</li>
-                <li>Involvement in hacking, spamming, piracy, or illegal activities</li>
-                <li>Security threats due to account compromise or unauthorized sharing</li>
+                {(t('termsPage.sections.termination.items', { returnObjects: true }) as string[]).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
           </RevealAnimation>
+
+          {/* 7. Privacy policy */}
           <RevealAnimation delay={0.3}>
             <div className="space-y-6">
-              <h3>7. Privacy policy</h3>
-              <p>
-                We value your privacy. Sumu does not sell, rent, or share your personal information with third parties.
-                Your data is used solely for purposes such as
-              </p>
+              <h3>{t('termsPage.sections.privacy.title')}</h3>
+              <p>{t('termsPage.sections.privacy.p1')}</p>
               <ul>
-                <li>Order processing</li>
-                <li>Account management</li>
-                <li>Billing disputes</li>
-                <li>Fraudulent activities</li>
-                <li>Legal compliance</li>
+                {(t('termsPage.sections.privacy.items', { returnObjects: true }) as string[]).map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
-              <p>By using Sumu services, you consent to the collection and use of your data by our Privacy Policy.</p>
+              <p>{t('termsPage.sections.privacy.p2')}</p>
             </div>
           </RevealAnimation>
           <RevealAnimation delay={0.4}>
             <Link
               href="/refund-policy"
               className="section-button btn btn-xl dark:btn-accent hover:btn-primary btn-secondary">
-              Read our detailed privacy policy
+              {t('termsPage.sections.privacy.link')}
             </Link>
           </RevealAnimation>
         </article>

@@ -1,18 +1,17 @@
+'use client';
+
 import RevealAnimation from '@/components/animation/RevealAnimation';
 import ResourcePageShell from '@/components/resources/ResourcePageShell';
 import LinkButton from '@/components/ui/button/LinkButton';
-import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Support - Resources | Sumu',
-  description: 'Help Center and documentation to help you find answers and troubleshoot issues.',
-};
+import { useTranslation } from 'react-i18next';
 
 const SupportResourcesPage = () => {
+  const { t } = useTranslation();
+
   return (
-    <ResourcePageShell heading="Support" link="/resources/support">
+    <ResourcePageShell heading={t('resourcesPage.support.heading')} link="/resources/support">
       <section className="pt-7 pb-14 md:pb-16 lg:pb-[88px] xl:pb-[100px]" aria-label="Support resources">
         <div className="main-container">
           <div className="space-y-14 md:space-y-[70px]">
@@ -21,14 +20,14 @@ const SupportResourcesPage = () => {
                 href="/resources"
                 className="text-tagline-1 text-secondary/70 hover:text-secondary dark:text-accent/70 dark:hover:text-accent inline-flex items-center gap-2 transition-colors">
                 <span aria-hidden>←</span>
-                Back to Resources
+                {t('resourcesPage.backToResources')}
               </Link>
             </div>
 
             <RevealAnimation delay={0.1}>
               <div className="md:text-center max-w-[602px] space-y-1.5 md:space-y-3 mx-auto">
-                <h2>Find answers and get help fast</h2>
-                <p>Get guidance on using Sumu, troubleshoot common issues, and understand key workflows clearly.</p>
+                <h2>{t('resourcesPage.support.title')}</h2>
+                <p>{t('resourcesPage.support.description')}</p>
               </div>
             </RevealAnimation>
 
@@ -36,15 +35,15 @@ const SupportResourcesPage = () => {
               {[
                 {
                   id: 'support-help-center',
-                  title: 'Help Center',
-                  description: 'Detailed answers to common questions and guidance on using the platform.',
+                  title: t('resourcesPage.support.cards.helpCenter.title'),
+                  description: t('resourcesPage.support.cards.helpCenter.description'),
                   href: '/resources/help-center',
                   icon: 'ns-shape-15',
                 },
                 {
                   id: 'support-documentation',
-                  title: 'Documentation',
-                  description: 'Structured reference for modules, workflows, accounting tools, and reports.',
+                  title: t('resourcesPage.support.cards.documentation.title'),
+                  description: t('resourcesPage.support.cards.documentation.description'),
                   href: '/resources/documentation',
                   icon: 'ns-shape-11',
                 },
@@ -63,7 +62,7 @@ const SupportResourcesPage = () => {
                         <LinkButton
                           href={card.href}
                           className="btn btn-white dark:btn-transparent dark:hover:btn-accent hover:btn-secondary btn-md">
-                          Read more
+                          {t('resourcesPage.readMore')}
                         </LinkButton>
                       </div>
                     </div>
@@ -76,17 +75,11 @@ const SupportResourcesPage = () => {
               <div className="space-y-10">
                 <div className="space-y-6">
                   <RevealAnimation delay={0.2}>
-                    <h3 className="text-heading-4">Help Center topics</h3>
+                    <h3 className="text-heading-4">{t('resourcesPage.support.helpTopicsTitle')}</h3>
                   </RevealAnimation>
                   <RevealAnimation delay={0.3}>
                     <ul className="space-y-4">
-                      {[
-                        'Platform setup and configuration',
-                        'Invoicing and payment tracking',
-                        'Expense management',
-                        'Accounting and financial reports',
-                        'Troubleshooting common issues',
-                      ].map((text) => (
+                      {(t('resourcesPage.support.helpTopics', { returnObjects: true }) as string[]).map((text) => (
                         <li
                           key={text}
                           className="flex items-center gap-4 text-tagline-1 text-secondary/80 dark:text-accent/80 font-medium">
@@ -97,20 +90,13 @@ const SupportResourcesPage = () => {
                     </ul>
                   </RevealAnimation>
                 </div>
-
                 <div className="space-y-6">
                   <RevealAnimation delay={0.4}>
-                    <h3 className="text-heading-4">Documentation includes</h3>
+                    <h3 className="text-heading-4">{t('resourcesPage.support.docsTopicsTitle')}</h3>
                   </RevealAnimation>
                   <RevealAnimation delay={0.5}>
                     <ul className="space-y-4">
-                      {[
-                        'Invoicing and billing processes',
-                        'Payment recording and tracking',
-                        'Expense management',
-                        'Accounting tools and journal entries',
-                        'Financial reporting features',
-                      ].map((text) => (
+                      {(t('resourcesPage.support.docsTopics', { returnObjects: true }) as string[]).map((text) => (
                         <li
                           key={text}
                           className="flex items-center gap-4 text-tagline-1 text-secondary/80 dark:text-accent/80 font-medium">
@@ -122,7 +108,6 @@ const SupportResourcesPage = () => {
                   </RevealAnimation>
                 </div>
               </div>
-
               <RevealAnimation delay={0.6}>
                 <div className="relative w-full aspect-[4/5] md:aspect-[3/4] rounded-[16px] overflow-hidden border border-stroke-3 dark:border-stroke-6 shadow-sm">
                   <Image
