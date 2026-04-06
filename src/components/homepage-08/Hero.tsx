@@ -1,8 +1,12 @@
 'use client';
 
+import hero1Dark from '@public/images/home-page-8/hero-1-dark.png';
+import hero1 from '@public/images/home-page-8/hero-1.png';
+import hero2 from '@public/img/dashboard1.png';
+import hero3Dark from '@public/images/home-page-8/hero-3-dark.png';
+import hero3 from '@public/images/home-page-8/hero-3.png';
 import heroPatternDark from '@public/images/home-page-8/hero-pattern-dark.png';
 import heroPattern from '@public/images/home-page-8/hero-pattern.png';
-import dashboard from '@public/img/dashboard1.png';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import RevealAnimation from '../animation/RevealAnimation';
@@ -52,11 +56,30 @@ const Hero = () => {
           </RevealAnimation>
         </div>
       </div>
-      {/* Dashboard image */}
-      <div className="lp:max-w-[1416px] xl:max-w-[1280px] lg:max-w-[1140px] max-w-[980px] mx-auto px-4">
+      {/* Images container - fixed LTR layout for consistent image positioning */}
+      <div
+        className="lp:max-w-[1416px] xl:max-w-[1280px] lg:max-w-[1140px] max-w-[980px] mx-auto relative flex justify-center"
+        style={{ direction: 'ltr' }}>
+        {/* Left image - always on the left */}
+        <RevealAnimation delay={1.2} offset={100} direction="up" useSpring duration={2} instant>
+          <figure className="lg:max-w-[282px] sm:max-w-[200px] max-w-[120px] rounded-[20px] overflow-hidden absolute z-20 xl:left-0 xl:top-1/2 xl:-translate-y-1/2 lg:top-20 lg:left-20 -top-10 left-10">
+            <Image src={hero1} alt="hero" className="w-full h-full object-cover block dark:hidden" />
+            <Image src={hero1Dark} alt="hero" className="w-full h-full object-cover hidden dark:block" />
+          </figure>
+        </RevealAnimation>
+
+        {/* Center image - always centered */}
         <RevealAnimation delay={1} offset={100} instant>
-          <figure className="rounded-[20px] overflow-hidden w-full">
-            <Image src={dashboard} alt="dashboard" className="w-full h-full object-cover" />
+          <figure className="rounded-[20px] relative z-10 overflow-hidden w-full block mx-auto px-4 lg:px-0 text-center">
+            <Image src={hero2} alt="hero" className="w-full h-full object-cover rounded-[20px] mx-auto" />
+          </figure>
+        </RevealAnimation>
+
+        {/* Right image - always on the right */}
+        <RevealAnimation delay={1.2} offset={100} direction="right" useSpring duration={2} instant>
+          <figure className="lg:max-w-[320px] sm:max-w-[200px] max-w-[150px] rounded-[20px] overflow-hidden absolute z-20 xl:-right-7 xl:top-1/2 xl:-translate-y-1/2 lg:right-20 lg:bottom-5 xl:bottom-auto sm:right-14 sm:bottom-14 right-[11%] bottom-0">
+            <Image src={hero3} alt="hero" className="w-full h-full block dark:hidden" />
+            <Image src={hero3Dark} alt="hero" className="w-full h-full hidden dark:block" />
           </figure>
         </RevealAnimation>
       </div>
