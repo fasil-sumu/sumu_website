@@ -14,26 +14,26 @@ const CTA = () => {
     <section className="py-[50px] md:py-20 lg:py-[100px]" aria-label="cta section wrapper" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="2xl:max-w-[1440px] xl:max-w-[1260px] lg:max-w-[980px] mx-auto xl:px-0 px-5">
         <RevealAnimation delay={0.1}>
-          <div className="relative xl:px-20 md:px-10 px-6 bg-secondary dark:bg-background-8 rounded-[20px]  overflow-hidden">
-            <RevealAnimation delay={0.1} offset={200}>
+          <div className="relative xl:px-20 md:px-10 px-6  rounded-[20px]  overflow-hidden">
+            {/* <RevealAnimation delay={0.1} offset={200}>
               <div className="absolute -z-0 left-7 -bottom-52 -translate-x-1/2 w-[600px] h-[600px] rotate-[120deg] select-none pointer-events-none">
                 <figure>
                   <Image src={gradient5} alt="cta-bg" className="w-full h-full object-cover" />
                 </figure>
               </div>
-            </RevealAnimation>
+            </RevealAnimation> */}
 
             <CTAV1
               className="lg:py-[100px] py-[50px] md:py-20 "
               description={t('homepage08.ctaGrow.description')}
-              headingClass="text-accent"
-              descriptionClass="text-accent/60"
+              headingClass="text-black"
+              descriptionClass="text-black/60"
               ctaHeading={t('homepage08.ctaGrow.heading')}
               ctaBtnText={t('homepage08.ctaGrow.button')}
               badgeText={t('homepage08.ctaGrow.badge')}
-              badgeClass="badge badge-blur text-ns-green"
-              inputFieldClass="sm:w-auto flex-1 bg-accent/5 border-0 px-5 py-3 shadow-1 rounded-full min-h-[48px] h-12 placeholder:text-accent/40 placeholder:text-tagline-1 placeholder:font-normal focus:outline-none focus:border focus:border-primary-600 dark:focus:border-primary-400 text-accent font-normal w-[85%]"
-              listTextClass="text-accent font-normal text-tagline-3 sm:text-tagline-2"
+              badgeClass="bg-ns-green/40 text-black/70"
+              inputFieldClass="sm:w-auto flex-1 bg-accent/5 border-0 px-5 py-3 shadow-1 rounded-full min-h-[48px] h-12 placeholder:text-black/40 placeholder:text-tagline-1 placeholder:font-normal focus:outline-none focus:border focus:border-primary-600 dark:focus:border-primary-400 text-black font-normal w-[85%]"
+              listTextClass="text-black font-normal text-tagline-3 sm:text-tagline-2"
               checkListVariant="gray"
             />
           </div>

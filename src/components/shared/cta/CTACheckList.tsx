@@ -31,11 +31,11 @@ const CTACheckList = ({
             <span
               className={cn(
                 'flex size-[18px] items-center justify-center rounded-full',
-                checkListVariant === 'gray' && 'bg-accent/10 dark:bg-accent/10',
+                checkListVariant === 'gray' && 'bg-primary-500',
                 checkListVariant === 'default' && 'bg-secondary dark:bg-accent',
               )}>
               <span className="size-5 flex items-center justify-center shrink-0">
-                <CheckIcon className={cn(checkListVariant === 'gray' && 'dark:fill-accent')} />
+                <CheckIcon className={cn(checkListVariant === 'gray' && 'fill-white')} />
               </span>
             </span>
             <p
